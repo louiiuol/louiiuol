@@ -5,4 +5,4 @@
 - 👯 I’m looking to collaborate on any cool projects
 - 🤔 I’m looking for help with weirds parts of JS
 
-![Codewars badge](https://www.codewars.com/users/louiiuol/badges/large)
+![Codewars badge](https://www.codewars.com/users/louiiuol/badges/micro)
