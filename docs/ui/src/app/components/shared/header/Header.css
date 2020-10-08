@@ -1,0 +1,22 @@
+nav.main-nav {
+  top: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #FFF;
+  height: 64px;
+  padding: 0 .5rem; }
+  nav.main-nav h3 {
+    font-size: 2rem;
+    color: #0f3057; }
+  nav.main-nav .links {
+    display: flex; }
+    nav.main-nav .links a {
+      text-decoration: none; }
+    nav.main-nav .links li {
+      list-style-type: none;
+      margin: 0 1rem;
+      font-size: 1.25rem;
+      color: #0f3057; }

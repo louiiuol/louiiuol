@@ -1,0 +1,25 @@
+nav.main-nav {
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #FFF;
+    height: 64px;
+    padding: 0 .5rem;
+    h3 {
+        font-size: 2rem;
+        color: rgb(15,48,87);
+    }
+    .links {
+        display: flex;
+        a { text-decoration: none;}
+        li {
+            list-style-type: none;
+            margin: 0 1rem;
+            font-size: 1.25rem;
+            color: rgb(15,48,87);
+        }
+    }
+}

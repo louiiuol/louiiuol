@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0f3057;
+  background: linear-gradient(191deg, #0f3057 0%, #00587a 100%); }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+
+/* FONTS IMPORT */
+@font-face {
+  font-family: "open24";
+  src: url("./assets/fonts/Open-24.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
