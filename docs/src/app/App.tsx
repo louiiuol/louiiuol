@@ -12,7 +12,7 @@ function App() {
         <Header />
         <section className="global-container">
           <Switch>
-            <Route path='/louiiuo/' component={Home}></Route>
+            <Route path='/louiiuol/' component={Home}></Route>
             <Route path='/louiiuol/parcours' component={Parcours}></Route>
           </Switch>
         </section>
