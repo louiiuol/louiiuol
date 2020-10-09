@@ -1,19 +1,31 @@
-.content h2 {
-  font-size: 3rem;
-  color: white;
-  text-shadow: 2px 2px rbga(0, 0, 0, 0.7);
-  text-align: center; }
-  .content h2 > *:not(span) {
-    font-family: open24; }
-  .content h2 .Cursor {
-    padding-left: 1rem;
+.content {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center; }
+  .content .app-logo {
+    width: 80vw;
+    max-width: 720px; }
+  .content h2 {
+    font-size: 3rem;
     color: white;
-    font-family: Helvetica, sans-serif;
-    text-decoration: underline;
-    animation-name: blinker;
-    animation-duration: 0.7s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; }
+    text-shadow: 2px 2px rbga(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 720px;
+    height: 130px; }
+    .content h2 > *:not(span) {
+      font-family: open24; }
+    .content h2 .Cursor {
+      padding-left: 1rem;
+      color: white;
+      font-family: Helvetica, sans-serif;
+      text-decoration: underline;
+      animation-name: blinker;
+      animation-duration: 0.7s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
 
 @keyframes blinker {
   0% {

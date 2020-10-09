@@ -1,9 +1,21 @@
 .content {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    .app-logo {
+        width: 80vw;
+        max-width: 720px;
+    }
     h2 {
         font-size: 3rem;
         color: white;
         text-shadow: 2px 2px rbga(0,0,0, .7);
         text-align: center;
+        margin-top: 2rem;
+        max-width: 720px;
+        height: 130px;
         & > *:not(span) { font-family: open24; }
         .Cursor {
             padding-left: 1rem;

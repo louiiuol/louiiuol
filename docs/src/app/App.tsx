@@ -12,8 +12,8 @@ function App() {
         <Header />
         <section className="global-container">
           <Switch>
-            <Route exact path='/' component={Home}></Route>
-            <Route path='/parcours' component={Parcours}></Route>
+            <Route path='/louiiuo/' component={Home}></Route>
+            <Route path='/louiiuol/parcours' component={Parcours}></Route>
           </Switch>
         </section>
       </div>
