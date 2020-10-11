@@ -1,4 +1,4 @@
-## Hi there, I'm Louis aka <a href='https://louiiuol.github.io/louiiuol/'>louiiuol</a> 🖖
+## Hi there, I'm Louis ! Welcome 🖖
 
 <strong>Padawan Web developer</strong> that loves to <strong> design </strong> and <strong> develop </strong> all sort of web projects ! Mainly working on a weird language that is <strong>Javascript</strong>, and  more recently discovering peace with <strong>Typescript</strong>.
 
