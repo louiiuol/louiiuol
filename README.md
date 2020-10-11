@@ -1,6 +1,6 @@
 ## Hi there, I'm Louis aka <a href='https://louiiuol.github.io/louiiuol/'>louiiuol</a> 🖖
 
-<strong>Padawan Web developer</strong> that loves to <strong> design </strong> and <strong> conceive </strong> all sort of web projects ! Mainly working on a weird language that is <strong>Javascript</strong>, and  more recently discovering peace with <strong>Typescript</strong>.
+<strong>Padawan Web developer</strong> that loves to <strong> design </strong> and <strong> develop </strong> all sort of web projects ! Mainly working on a weird language that is <strong>Javascript</strong>, and  more recently discovering peace with <strong>Typescript</strong>.
 
 - 🔭 I just deployed my <a href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages !
 - 🌱 I’m currently learning JS frameworks and Node.js
