@@ -40,6 +40,10 @@
 [<img align="left" alt="louiiuol | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://www.youtube.com/channel/UCN30BlbvlBF8aqpdEmKv13g)
 [<img align="left" alt="louiiuol | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />](https://mobile.twitter.com/GodlewskiLouis)
 [<img align="left" alt="louiiuol | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](https://www.linkedin.com/in/louis-godlewski/)
+[<img align="left" alt="louiiuol | CodeWars" width="22px" src="https://www.codewars.com/assets/logos/logo-glyph-36-red-583450fbf586726c570cfd610c94b8f631abfd89d5c4996b4c821a770ca498f9.png" />](https://www.linkedin.com/in/louis-godlewski/)
+[<img align="left" alt="louiiuol | Codepen" width="22px" src="https://cdn1.iconfinder.com/data/icons/simple-icons/2048/codepen-2048-black.png" />](https://codepen.io/louiiuol)
+
+
 <br/>
 
 ***
