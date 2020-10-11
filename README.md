@@ -35,11 +35,15 @@
 [<img align="left" alt="louiiuol | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://www.youtube.com/channel/UCN30BlbvlBF8aqpdEmKv13g)
 [<img align="left" alt="louiiuol | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />](https://mobile.twitter.com/GodlewskiLouis)
 [<img align="left" alt="louiiuol | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](https://www.linkedin.com/in/louis-godlewski/)
-<br /> <br />
+
+<br />
+
 ***
 
 ![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=louiiuol&&show_icons=true&hide_border=true)
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=louiiuol) (including you 🤭)
 
-Feel free to check my repositories below ⬇️
+***
+
+*Feel free to check my repositories below* ⬇️
