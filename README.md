@@ -32,7 +32,7 @@
 <br />
 <br />
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)](https://github.com/anuraghazra/github-readme-stats)
 
 ### Connect with me:
 
@@ -44,7 +44,7 @@
 
 ***
 
-![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=louiiuol&&show_icons=true&hide_border=true)
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=louiiuol&&show_icons=true&hide_border=true&theme=nord)
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=louiiuol) (including you 🤭)
 
