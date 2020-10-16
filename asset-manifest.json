@@ -1,24 +1,32 @@
 {
   "files": {
-    "main.css": "/louiiuol/static/css/main.2d9abee2.chunk.css",
-    "main.js": "/louiiuol/static/js/main.c8884eea.chunk.js",
-    "main.js.map": "/louiiuol/static/js/main.c8884eea.chunk.js.map",
+    "main.css": "/louiiuol/static/css/main.40e06027.chunk.css",
+    "main.js": "/louiiuol/static/js/main.4cad0f82.chunk.js",
+    "main.js.map": "/louiiuol/static/js/main.4cad0f82.chunk.js.map",
     "runtime-main.js": "/louiiuol/static/js/runtime-main.b940eed3.js",
     "runtime-main.js.map": "/louiiuol/static/js/runtime-main.b940eed3.js.map",
-    "static/js/2.823c79b3.chunk.js": "/louiiuol/static/js/2.823c79b3.chunk.js",
-    "static/js/2.823c79b3.chunk.js.map": "/louiiuol/static/js/2.823c79b3.chunk.js.map",
+    "static/css/2.5c17b9f1.chunk.css": "/louiiuol/static/css/2.5c17b9f1.chunk.css",
+    "static/js/2.5aeaca99.chunk.js": "/louiiuol/static/js/2.5aeaca99.chunk.js",
+    "static/js/2.5aeaca99.chunk.js.map": "/louiiuol/static/js/2.5aeaca99.chunk.js.map",
     "index.html": "/louiiuol/index.html",
-    "precache-manifest.d37353d9d96adc23f071c050452d4c86.js": "/louiiuol/precache-manifest.d37353d9d96adc23f071c050452d4c86.js",
+    "precache-manifest.89c83f80b998453ab4fdb906dad15845.js": "/louiiuol/precache-manifest.89c83f80b998453ab4fdb906dad15845.js",
     "service-worker.js": "/louiiuol/service-worker.js",
-    "static/css/main.2d9abee2.chunk.css.map": "/louiiuol/static/css/main.2d9abee2.chunk.css.map",
-    "static/js/2.823c79b3.chunk.js.LICENSE.txt": "/louiiuol/static/js/2.823c79b3.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/louiiuol/static/media/Open-24.9d65f4e6.ttf",
-    "static/media/lg.svg": "/louiiuol/static/media/lg.53b666f9.svg"
+    "static/css/2.5c17b9f1.chunk.css.map": "/louiiuol/static/css/2.5c17b9f1.chunk.css.map",
+    "static/css/main.40e06027.chunk.css.map": "/louiiuol/static/css/main.40e06027.chunk.css.map",
+    "static/js/2.5aeaca99.chunk.js.LICENSE.txt": "/louiiuol/static/js/2.5aeaca99.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/louiiuol/static/media/Regular.41e8dead.ttf",
+    "static/media/codepen.svg": "/louiiuol/static/media/codepen.697a9674.svg",
+    "static/media/codewars.svg": "/louiiuol/static/media/codewars.550fc92a.svg",
+    "static/media/github.svg": "/louiiuol/static/media/github.78808471.svg",
+    "static/media/lg.svg": "/louiiuol/static/media/lg.28dcccd9.svg",
+    "static/media/linkedin.svg": "/louiiuol/static/media/linkedin.10b183f3.svg",
+    "static/media/louis-godlewski.png": "/louiiuol/static/media/louis-godlewski.b3fd354a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b940eed3.js",
-    "static/js/2.823c79b3.chunk.js",
-    "static/css/main.2d9abee2.chunk.css",
-    "static/js/main.c8884eea.chunk.js"
+    "static/css/2.5c17b9f1.chunk.css",
+    "static/js/2.5aeaca99.chunk.js",
+    "static/css/main.40e06027.chunk.css",
+    "static/js/main.4cad0f82.chunk.js"
   ]
 }
