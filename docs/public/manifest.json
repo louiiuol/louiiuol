@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "L-Godlewski_Portfolio",
+  "name": "Louis Godlewski Portfolio | Conception et développement d'applications",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "rgb(15,48,87);",
   "background_color": "#ffffff"
 }

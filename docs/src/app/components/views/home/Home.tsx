@@ -1,18 +1,17 @@
 import React from 'react';
 import logo from '../../../../assets/img/lg.svg';
-import TypeWriter from './TypeWriter';
-import Icon from '../../shared/Icon';
+import IntroWriter from './intro-writer/IntroWriter';
+import Icon from '../../shared/icon/Icon';
 
 import './Home.css';
 
 function Home() {
 
     return (
-        <div className='content'>
+        <section className='container cols'>
             <Icon src={logo} className="app-logo" />
-            <TypeWriter />
-        </div>
+            <IntroWriter />
+        </section>
     );
-}
 
-export default Home;
+} export default Home;

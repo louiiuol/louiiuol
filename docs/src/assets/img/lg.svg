@@ -70,7 +70,7 @@
 		animation: drawing 2s ease forwards 3.25s; }
 
 	@-webkit-keyframes drawing {
-		70% {
+		30% {
 			fill: transparent;
 		}
 		80% {

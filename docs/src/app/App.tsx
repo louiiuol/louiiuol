@@ -1,22 +1,23 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/views/home/Home';
 import Header from './components/shared/header/Header';
-import Parcours from './components/views/parcours/Parcours';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css';
+import Presentation from './components/views/presentation/Presentation';
+import Works from './components/views/works/Works';
 
 function App() {
   return (
     <Router>
-      <div id="app">
+      <section id="app">
         <Header />
         <section className="global-container">
           <Switch>
-            <Route path='/louiiuol/' component={Home}></Route>
-            <Route path='/louiiuol/parcours' component={Parcours}></Route>
+            <Route exact path='/louiiuol/' component={Home}></Route>
+            <Route path='/louiiuol/presentation' component={Presentation}></Route>
+            <Route path='/louiiuol/projets' component={Works}></Route>
           </Switch>
         </section>
-      </div>
+      </section>
     </Router>);
 }
 
