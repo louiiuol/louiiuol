@@ -34,16 +34,6 @@
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)
 
-### Connect with me:
-
-[<img align="left" alt="portfolio" width="22px" src="https://static.vecteezy.com/system/resources/previews/000/615/869/non_2x/globe-logo-icon-design-vector-illustration-icon-element.jpg" />](https://louiiuol.github.io/louiiuol/)
-[<img align="left" alt="louiiuol | YouTube" width="22px" src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Emblem.png" />](https://www.youtube.com/channel/UCN30BlbvlBF8aqpdEmKv13g)
-[<img align="left" alt="louiiuol | Twitter" width="22px" src="https://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo.png" />](https://mobile.twitter.com/GodlewskiLouis)
-[<img align="left" alt="louiiuol | LinkedIn" width="22px" src="https://i.pinimg.com/originals/ce/09/3c/ce093c7214ad357bb665cfd2f66a8b6b.png" />](https://www.linkedin.com/in/louis-godlewski/)
-[<img align="left" alt="louiiuol | CodeWars" width="22px" src="https://www.codewars.com/assets/logos/logo-glyph-36-red-583450fbf586726c570cfd610c94b8f631abfd89d5c4996b4c821a770ca498f9.png" />](https://www.codewars.com/users/louiiuol/)
-[<img align="left" alt="louiiuol | Codepen" width="22px" src="https://cdn1.iconfinder.com/data/icons/simple-icons/2048/codepen-2048-black.png" />](https://codepen.io/louiiuol)
-
-
 <br/>
 
 ***
