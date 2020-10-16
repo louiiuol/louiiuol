@@ -1,0 +1,15 @@
+.socials {
+  margin-top: 1rem;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  text-align: center; }
+  .socials ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: .5rem; }
+    .socials ul svg {
+      width: 32px;
+      height: 32px; }
+      .socials ul svg path {
+        fill: white; }

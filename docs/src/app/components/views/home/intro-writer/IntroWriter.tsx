@@ -1,8 +1,10 @@
 import React from 'react';
 import Typist from 'react-typist';
 
-function TypeWriter() {
-    return <h2>
+import './IntroWriter.css';
+
+function IntroWriter() {
+    return <h2 className='intro typist'>
         <Typist avgTypingDelay={50} startDelay={0}>
             Bienvenue !
             <Typist.Backspace count={28} delay={950} /><Typist.Delay ms={200} />
@@ -17,4 +19,4 @@ function TypeWriter() {
     </h2>
 }
 
-export default TypeWriter;
+export default IntroWriter;
