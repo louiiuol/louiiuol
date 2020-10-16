@@ -5,7 +5,7 @@ import './Header.css';
 
 function Header() {
     return (<nav className="main-nav is-flex between shadowed">
-        <Link to='/louiiuol/'>
+        <Link to='/'>
             <h3 className='is-primary'>
                 L<span>ouis </span>
                 G<span>ODLEWSKI</span>
@@ -13,10 +13,10 @@ function Header() {
         </Link>
         
         <ul className='links is-flex'>
-            <NavLink exact to='/louiiuol/' activeClassName="selected"><li className='is-primary'>Accueil</li></NavLink>
-            <NavLink to='/louiiuol/presentation' activeClassName="selected"><li className='is-primary'>Présentation</li></NavLink>
-            <NavLink to='/louiiuol/projets' activeClassName="selected"><li className='is-primary'>Projets</li></NavLink>
-            <NavLink to='/louiiuol/contact' activeClassName="selected"><li className='is-primary'>Contact</li></NavLink>
+            <NavLink exact to='/' activeClassName="selected"><li className='is-primary'>Accueil</li></NavLink>
+            <NavLink to='/presentation' activeClassName="selected"><li className='is-primary'>Présentation</li></NavLink>
+            <NavLink to='/projets' activeClassName="selected"><li className='is-primary'>Projets</li></NavLink>
+            <NavLink to='/contact' activeClassName="selected"><li className='is-primary'>Contact</li></NavLink>
         </ul>
     </nav>);
 }

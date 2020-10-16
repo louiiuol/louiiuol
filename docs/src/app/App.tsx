@@ -7,14 +7,14 @@ import Works from './components/views/works/Works';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/louiiuol">
       <section id="app">
         <Header />
         <section className="global-container">
           <Switch>
-            <Route exact path='/louiiuol/' component={Home}></Route>
-            <Route path='/louiiuol/presentation' component={Presentation}></Route>
-            <Route path='/louiiuol/projets' component={Works}></Route>
+            <Route exact path='/' component={Home}></Route>
+            <Route path='/presentation' component={Presentation}></Route>
+            <Route path='/projets' component={Works}></Route>
           </Switch>
         </section>
       </section>
