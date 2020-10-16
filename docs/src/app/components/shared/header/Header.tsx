@@ -1,18 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import './Header.css';
 
 function Header() {
-    return <nav className="main-nav">
-        <h3><strong>L</strong>ouis <strong>G</strong>ODLEWSKI</h3>
-        <ul className='links'>
-            <Link to='/'><li className="nav-links">Accueil</li></Link>
-            <Link to='/parcours'><li className="nav-links">Parcours</li></Link>
-            <Link to='/projets'><li className="nav-links">Projets</li></Link>
-            <Link to='/contact'><li className="nav-links">Contact</li></Link>
+    return (<nav className="main-nav is-flex between shadowed">
+        <Link to='/louiiuol/'>
+            <h3 className='is-primary'>
+                L<span>ouis </span>
+                G<span>ODLEWSKI</span>
+            </h3>
+        </Link>
+        
+        <ul className='links is-flex'>
+            <NavLink exact to='/louiiuol/' activeClassName="selected"><li className='is-primary'>Accueil</li></NavLink>
+            <NavLink to='/louiiuol/presentation' activeClassName="selected"><li className='is-primary'>Présentation</li></NavLink>
+            <NavLink to='/louiiuol/projets' activeClassName="selected"><li className='is-primary'>Projets</li></NavLink>
+            <NavLink to='/louiiuol/contact' activeClassName="selected"><li className='is-primary'>Contact</li></NavLink>
         </ul>
-    </nav>
+    </nav>);
 }
 
 export default Header;

@@ -1,0 +1,79 @@
+/* GLOBAL LAYOUT STYLES */
+::-moz-selection {
+  background: #ee6f57;
+  color: #f6f5f5; }
+
+::selection {
+  background: #ee6f57;
+  color: #f6f5f5; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body, #root, #app {
+  min-height: 100vh; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(-45deg, #0087bd 0%, #0f3057 100%);
+  background-size: 200% 200%;
+  animation: gradient 20s ease infinite; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+#app {
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  overflow: hidden; }
+
+section.global-container {
+  flex: 1; }
+
+.container {
+  width: 100%;
+  height: 100%; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+
+.is-flex, .container {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .is-flex.evenly, .container.evenly {
+    justify-content: space-around; }
+  .is-flex.evenly, .container.evenly {
+    justify-content: space-evenly; }
+  .is-flex.between, .container.between {
+    justify-content: space-between; }
+  .is-flex.start, .container.start {
+    justify-content: start; }
+  .is-flex.reverse, .container.reverse {
+    flex-flow: row wrap-reverse; }
+  .is-flex.cols, .container.cols {
+    flex-flow: column nowrap; }
+
+.fullsize {
+  width: 100%;
+  height: 100%; }
+
+.shadowed {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6); }
+
+.spaced {
+  padding: .5rem 1rem; }
+  .spaced-lg {
+    padding: 1rem 2rem; }
