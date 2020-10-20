@@ -1,5 +1,8 @@
 ## Hi there, I'm Louis ! Welcome 🖖
 
+
+![visitors](https://visitor-badge.glitch.me/badge?page_id=louiiuol) (including you 🤭)
+
 <strong>Padawan Web developer</strong> that loves to <strong> design </strong> and <strong> develop </strong> all sort of web projects ! Mainly working on a weird language that is <strong>Javascript</strong>, and  more recently discovering peace with <strong>Typescript</strong>.
 
 - 🔭 I just deployed my <a href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages !
@@ -32,15 +35,10 @@
 <br />
 <br />
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)
-
-<br/>
-
 ***
 
-![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=louiiuol&&show_icons=true&hide_border=true&theme=nord)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=louiiuol) (including you 🤭)
 
 ***
 
