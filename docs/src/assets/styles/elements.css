@@ -8,7 +8,10 @@
   margin: .5rem; }
   .chip.white {
     background: white;
-    color: #0f3057; }
+    color: #0f3057 !important; }
+  .chip.xs {
+    padding: .35rem;
+    margin: 0; }
 
 .Cursor {
   padding-left: 1rem;

@@ -5,20 +5,18 @@ import Typist from 'react-typist';
 
 import './Experience.css';
 
-function ExperienceTable() {
-    experiences.sort((current, next) => next.id - current.id );
+const ExperienceTable = () => {
+    experiences.sort((current, next) => next.id - current.id);
     return (
-        <section id='experience-table' className='container'>
-            <h4 className='typist'>
-                <Typist avgTypingDelay={50} startDelay={0}>
-                    historique d'expériences significatives
-                </Typist>
-            </h4>
-            <div className="table-wrapper">
+        <section id='experience-table' className='container cols start tabs'>
+            <Typist avgTypingDelay={50} startDelay={0}>
+                historique d'expériences significatives
+            </Typist>
+            <section className="container table-wrapper">
                 <ul className='container cols start'>
                     {experiences.map(xp =>
                         <li className="card-wrapper">
-                            <article key={xp.id} className={`card shadowed ${xp.type === 'FORMATION' ? 'accent' : '' }`}>
+                            <article key={xp.id} className={`card shadowed ${xp.type === 'FORMATION' ? 'accent' : ''}`}>
                                 <aside className="aside">
                                     <p>{xp.date.end}</p>
                                     <p>{xp.date.start}</p>
@@ -37,14 +35,13 @@ function ExperienceTable() {
                                         </ul>
                                     </div>
                                     <footer>
-                                        {/* <div className="chip"><strong>{xp.type}</strong></div> */}
-                                            {xp.keyword.map(skill => <strong className='skill'>{skill}</strong>)}
+                                        {xp.keyword.map(keyword => <strong className='keyword'>{keyword}</strong>)}
                                     </footer>
                                 </section>
                             </article>
-                        </li> )}
+                        </li>)}
                 </ul>
-            </div>
+            </section>
         </section>
-        );
-} export default ExperienceTable;
+    );
+}; export default ExperienceTable;

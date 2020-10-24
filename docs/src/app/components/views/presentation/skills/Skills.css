@@ -1,11 +1,35 @@
-.formations, .diplomes {
-  width: 50%; }
-  .formations h2, .diplomes h2 {
-    font-size: 3rem;
-    font-family: 'open24';
-    color: #0f3057;
-    margin-bottom: 1rem; }
-  .formations .card, .diplomes .card {
-    margin: .25rem .5rem !important; }
-  .formations .chip, .diplomes .chip {
-    margin: 0 .5rem; }
+#skills {
+  align-content: flex-start; }
+  #skills .card-list {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    transition: .2s; }
+    #skills .card-list:hover {
+      transform: translateX(-69px); }
+    #skills .card-list .card {
+      width: 300px;
+      height: 400px;
+      border-radius: 8px;
+      background: #FFF;
+      transition: .2s;
+      overflow: hidden;
+      box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.6); }
+      #skills .card-list .card:not(:first-child) {
+        margin-left: -105px; }
+      #skills .card-list .card:hover {
+        transform: translateY(2.5rem) scale(1.2); }
+      #skills .card-list .card header.header {
+        padding: 1rem;
+        background: #0f3057; }
+        #skills .card-list .card header.header h2 {
+          font-size: 1rem !important;
+          color: white;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold; }
+      #skills .card-list .card section.content {
+        height: 345px;
+        overflow-y: scroll; }
+    #skills .card-list .card:focus-within ~ .card, #skills .card-list .card:hover ~ .card {
+      transform: translateX(138px); }

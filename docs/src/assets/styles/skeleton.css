@@ -60,11 +60,15 @@ code {
   .is-flex.between, .container.between {
     justify-content: space-between; }
   .is-flex.start, .container.start {
-    justify-content: start; }
+    justify-content: start;
+    align-content: start; }
   .is-flex.reverse, .container.reverse {
     flex-flow: row wrap-reverse; }
   .is-flex.cols, .container.cols {
     flex-flow: column nowrap; }
+
+.noflex {
+  flex: 0; }
 
 .fullsize {
   width: 100%;
