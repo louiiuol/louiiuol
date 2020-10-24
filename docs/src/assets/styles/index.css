@@ -121,11 +121,15 @@ code {
   .is-flex.between, .container.between {
     justify-content: space-between; }
   .is-flex.start, .container.start {
-    justify-content: start; }
+    justify-content: start;
+    align-content: start; }
   .is-flex.reverse, .container.reverse {
     flex-flow: row wrap-reverse; }
   .is-flex.cols, .container.cols {
     flex-flow: column nowrap; }
+
+.noflex {
+  flex: 0; }
 
 .fullsize {
   width: 100%;
@@ -149,7 +153,10 @@ code {
   margin: .5rem; }
   .chip.white {
     background: white;
-    color: #0f3057; }
+    color: #0f3057 !important; }
+  .chip.xs {
+    padding: .35rem;
+    margin: 0; }
 
 .Cursor {
   padding-left: 1rem;

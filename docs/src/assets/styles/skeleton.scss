@@ -45,13 +45,13 @@ code {
     &.evenly { justify-content: space-around; }
     &.evenly { justify-content: space-evenly; }
     &.between { justify-content: space-between; }
-    &.start { justify-content: start; }
+    &.start { justify-content: start; align-content: start;}
     &.reverse { flex-flow: row wrap-reverse; }
     &.cols {
         flex-flow: column nowrap;
     }
 }
-
+.noflex { flex: 0;}
 .fullsize {
     width: 100%;
     height: 100%;

@@ -3,16 +3,21 @@
   overflow: hidden; }
   #presentation ul.react-tabs__tab-list {
     width: 100%;
+    height: 40px;
     background: white;
     border: none;
     margin: 0;
-    padding: 0 1.45rem; }
+    padding: 0 1.45rem;
+    display: flex;
+    align-items: center; }
     #presentation ul.react-tabs__tab-list li {
       color: #0f3057;
       font-size: .85rem;
       line-height: 1.5rem;
       text-transform: uppercase;
-      background: none; }
+      background: none;
+      margin: 0 1rem;
+      cursor: pointer; }
       #presentation ul.react-tabs__tab-list li.react-tabs__tab--selected {
         font-weight: bold;
         border: none; }
@@ -22,6 +27,13 @@
     width: 100%;
     height: 100%;
     max-width: 1024px; }
+    #presentation .react-tabs__tab-panel--selected section.tabs .Typist {
+      font-size: 3rem;
+      color: white;
+      width: 100%;
+      padding: .5rem 2rem;
+      font-family: open24;
+      text-align: center; }
   #presentation .react-tabs__tab:focus {
     box-shadow: none;
     border: none; }

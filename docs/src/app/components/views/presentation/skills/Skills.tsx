@@ -1,16 +1,28 @@
 import React from 'react';
+import Typist from 'react-typist';
+import categories from '../../../../../assets/json/skills.json';
 
 import './Skills.css';
-import Typist from 'react-typist';
+import Skill from './Skill/Skill';
 
-function Skills() {
-    return (
-        <section className="container">
-            <h4 className='typist'>
-                <Typist avgTypingDelay={50} startDelay={0}>
-                    Coming soon
-                </Typist>
-            </h4>
-        </section>
-    );
-} export default Skills;
+const Skills = () => {
+
+  return (
+    <section id='skills' className="container cols start tabs animate__animated animate__bounceInRight">
+        <Typist avgTypingDelay={50} startDelay={0}>
+          Domaines de compétences
+        </Typist>
+      <section className="card-list">
+        {categories.map(category =>
+          <article key={category.id} className='card'>
+            <header className="header">
+              <h2>{category.title}</h2>
+            </header>
+            <section className="content">
+              {category.skills.map(skill => <Skill key={skill.id} value={skill} className="card-skill"></Skill>)}
+            </section>
+          </article>)}
+      </section>
+    </section>);
+
+}; export default Skills;

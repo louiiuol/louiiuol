@@ -9,7 +9,11 @@
     margin: .5rem;
     &.white {
         background: white;
-        color: #0f3057;
+        color: #0f3057 !important;
+    }
+    &.xs {
+        padding: .35rem;
+        margin: 0;
     }
 }
 
