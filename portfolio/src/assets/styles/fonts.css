@@ -1,0 +1,63 @@
+/* FONTS IMPORT */
+@font-face {
+  font-family: "open24";
+  src: url("../fonts/Open-24.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/Regular-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/Black-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+/* GLOBAL FONT STYLES */
+p, .is-bold, strong, .is-italic, em, .content {
+  font-family: poppins, sans-serif !important; }
+
+.is-bold, strong {
+  font-weight: bold !important; }
+
+.is-italic, em {
+  font-style: italic !important; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+.Typist {
+  font-size: 2.5rem;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rbga(0, 0, 0, 0.7);
+  text-align: left;
+  font-family: open24 !important; }
+
+p.centered, li.centered, a.centered, em.centered, strong.centered {
+  text-align: center; }
+
+p.bolded, li.bolded, a.bolded, em.bolded, strong.bolded {
+  font-weight: bold; }
+
+p.legend {
+  font-style: italic; }
