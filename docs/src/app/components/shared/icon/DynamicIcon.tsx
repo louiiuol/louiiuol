@@ -22,7 +22,7 @@ const DynamicIcon = (props: any) => {
     
         if (!loading && ImportedIconRef.current) {
         const { current: ImportedIcon } = ImportedIconRef;
-        return <Icon src={ImportedIcon} />;
+            return <Icon size={props.size} src={ImportedIcon} />;
         }
     
         return null;

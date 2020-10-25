@@ -39,22 +39,25 @@ p, .is-bold, strong, .is-italic, em, .content {
 .is-italic, em {
   font-style: italic !important; }
 
-.is-primary {
-  color: #0f3057; }
-
-.is-legend {
-  color: #AAA; }
-
 a {
   text-decoration: none; }
 
 li {
   list-style-type: none; }
 
-.typist {
-  font-size: 3rem;
+.Typist {
+  font-size: 2.5rem;
   color: white;
   letter-spacing: 2px;
-  text-shadow: 2px 2px rbga(0, 0, 0, 0.7); }
-  .typist > *:not(span) {
-    font-family: open24; }
+  text-shadow: 2px 2px 4px rbga(0, 0, 0, 0.7);
+  text-align: left;
+  font-family: open24 !important; }
+
+p.centered, li.centered, a.centered, em.centered, strong.centered {
+  text-align: center; }
+
+p.bolded, li.bolded, a.bolded, em.bolded, strong.bolded {
+  font-weight: bold; }
+
+p.legend {
+  font-style: italic; }

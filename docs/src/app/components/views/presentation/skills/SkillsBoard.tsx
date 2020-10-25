@@ -1,11 +1,10 @@
 import React from 'react';
 import Typist from 'react-typist';
+import Skill from './Skill';
+
 import categories from '../../../../../assets/json/skills.json';
 
-import './Skills.css';
-import Skill from './Skill/Skill';
-
-const Skills = () => {
+const SkillsBoard = () => {
 
   return (
     <section id='skills' className="container cols start tabs animate__animated animate__bounceInRight">
@@ -23,6 +22,7 @@ const Skills = () => {
             </section>
           </article>)}
       </section>
-    </section>);
+    </section>
+  );
 
-}; export default Skills;
+}; export default SkillsBoard;

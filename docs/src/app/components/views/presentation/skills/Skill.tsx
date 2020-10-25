@@ -1,13 +1,12 @@
 import React from 'react';
-import Icon from '../../../../shared/icon/Icon';
-import DynamicIcon from '../../../../shared/icon/DynamicIcon';
+import Icon from '../../../shared/icon/Icon';
+import DynamicIcon from '../../../shared/icon/DynamicIcon';
 
-import certifiedIcon from '../../../../../../assets/img/icons/skills/certified.svg';
-import proIcon from '../../../../../../assets/img/icons/skills/pro.svg';
+import certifiedIcon from '../../../../../assets/img/icons/skills/certified.svg';
+import proIcon from '../../../../../assets/img/icons/skills/pro.svg';
 
-import './Skill.css';
+const Skill = (props: any) => {
 
-function Skill(props: any) {
     const skill = props.value;
     return (
         <section className="skill">
@@ -24,4 +23,5 @@ function Skill(props: any) {
             </div>
         </section>
     );
-} export default Skill;
+
+}; export default Skill;

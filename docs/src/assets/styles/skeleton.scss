@@ -28,39 +28,40 @@ body {
     overflow: hidden;
 }
 
-section.global-container { flex: 1; }
 .container {
     width: 100%;
     height: 100%;
 }
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
 
-.is-flex, .container {
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    justify-content: center;
-    &.evenly { justify-content: space-around; }
-    &.evenly { justify-content: space-evenly; }
-    &.between { justify-content: space-between; }
-    &.start { justify-content: start; align-content: start;}
-    &.reverse { flex-flow: row wrap-reverse; }
-    &.cols {
-        flex-flow: column nowrap;
-    }
-}
-.noflex { flex: 0;}
-.fullsize {
+nav#main-nav {
+    top: 0;
+    position: absolute;
     width: 100%;
-    height: 100%;
-}
-
-.shadowed {
-    box-shadow: 1px 2px 4px rgba($color: #000000, $alpha: .6);
-}
-.spaced {
-    padding: .5rem 1rem;
-    &-lg { padding: 1rem 2rem; }
+    background: #FFF;
+    height: 50px;
+    padding: 0 2rem;
+    z-index: 500;
+    h3 {
+        font-size: 2rem;
+        span {
+            max-width: 0;
+            transition: all .6s ease;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+            opacity: 0;
+            margin-right: 5px;
+        }
+        &:hover span{
+            max-width: 250px;
+            opacity: 1;
+        }
+    }
+    .links {
+        a.selected { font-weight: bold; }
+        li {
+            margin: 0 1rem;
+            font-size: 1.25rem;
+        }
+    }
 }

@@ -1,15 +1,13 @@
 import React from 'react';
 import logo from '../../../../assets/img/lg.svg';
-import IntroWriter from './intro-writer/IntroWriter';
+import IntroWriter from './IntroWriter';
 import Icon from '../../shared/icon/Icon';
-
-import './Home.css';
 
 function Home() {
 
     return (
         <section className='container cols'>
-            <Icon src={logo} className="app-logo" />
+            <Icon src={logo} id="app-logo" />
             <IntroWriter />
         </section>
     );

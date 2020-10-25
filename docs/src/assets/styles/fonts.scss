@@ -18,16 +18,19 @@ p, .is-bold, strong, .is-italic, em, .content { font-family: poppins, sans-serif
 .is-bold, strong { font-weight: bold !important; }
 .is-italic, em { font-style: italic !important; }
 
-.is-primary { color: rgb(15,48,87); }
-.is-legend { color: #AAA; }
-
 a { text-decoration: none;}
 li { list-style-type: none;}
 
-.typist {
-    font-size: 3rem;
+.Typist {
+    font-size: 2.5rem;
     color: white;
     letter-spacing: 2px;
-    text-shadow: 2px 2px rbga(0,0,0, .7);
-    & > *:not(span) { font-family: open24; }
+    text-shadow: 2px 2px 4px rbga(0,0,0, .7);
+    text-align: left;
+    font-family: open24 !important;
 }
+p, li, a, em, strong {
+    &.centered { text-align: center; }
+    &.bolded { font-weight: bold; }
+}
+p.legend { font-style: italic; }
