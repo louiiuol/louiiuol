@@ -1,16 +1,13 @@
-## Hi there, I'm Louis ! Welcome 🖖
+## Hi there, I'm Louis, Welcome ! 🖖
 
-<a href= "https://www.codewars.com/users/louiiuol/completed"><img src="https://www.codewars.com/users/louiiuol/badges/micro"/></a> (last completed Katas) 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=louiiuol) (including you 🤭)
+**Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! ☮
 
-<strong>Padawan Web developer</strong> that loves to <strong> design </strong> and <strong> develop </strong> all sort of web projects ! Mainly working on a weird language that is <strong>Javascript</strong>, and  more recently discovering peace with <strong>Typescript</strong>.
-
-> - 🔭 I just deployed my <a href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages ! 🌍
-> - 🌱 I’m currently learning JS frameworks (React) and Node.js 📚
-> - 🕹 I Love solving problems on Codewars and developing various UI 🎨
-> - 👯 I’m looking to collaborate with other project creators .. Feel free to share your ideas 💡
-> - 🥅 2020 Goals: Deploy first concrete <a href='https://github.com/louiiuol/ride-community'>project</a> (security, scaling...) ⚔️
-> - ⚡ Fun fact: Loves to chat and explore new concepts, even the weird ones .. 🤔
+> - I've just deployed my **<a href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages** ! 🌍
+> - I’m currently **learning in depth JS frameworks** (React) and Node.js 📚
+> - I Love **solving problems** on <a hre='https://www.codewars.com/users/louiiuol/completed'>Codewars</a> and developing various UI 🎨
+> - I’m looking to **collaborate with other project creators** .. Feel free to share your ideas 💡
+> - I Loves to **chat and explore new concepts**, even the weird ones .. 🤔
+> - In 2020, I'd like to **deploy and maintiain my first concrete <a href='https://github.com/louiiuol/ride-community'>project</a>** with a friend (security, scaling...) ⚔️
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)
 
