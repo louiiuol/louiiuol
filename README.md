@@ -11,9 +11,10 @@
 > - I Loves to **chat and explore new concepts**, even the weird ones .. 🤔
 > - In 2020, I'd like to **deploy and maintiain my first concrete <a target="blank" href='https://github.com/louiiuol/ride-community'>project</a>** with a friend (security, scaling...) ⚔️
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)
-
-<p>
+<p align='center'>
+  <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord' />
+</p>
+<p align='center'>
   <img alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
   <img alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
   <img alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
@@ -27,4 +28,4 @@
   <img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
 </p>
 
-#### *Feel free to check my repositories below* ⬇️
+<p align='center'>*Feel free to check my repositories below* ⬇️</p>
