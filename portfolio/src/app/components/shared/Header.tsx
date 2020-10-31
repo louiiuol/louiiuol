@@ -16,7 +16,7 @@ const Header = () => {
                 <NavLink exact to='/' activeClassName="selected"><li className='is-primary'>Accueil</li></NavLink>
                 <NavLink to='/presentation' activeClassName="selected"><li className='is-primary'>Présentation</li></NavLink>
                 <NavLink to='/projets' activeClassName="selected"><li className='is-primary'>Projets</li></NavLink>
-                <NavLink to='/contact' activeClassName="selected"><li className='is-primary'>Contact</li></NavLink>
+                <li className='is-primary'><a href="mailto:louis.godlewski@gmail.com">Contact</a></li>
             </ul>
         </nav>
     );

@@ -48,7 +48,7 @@ h1#intro-typer {
     align-content: start;
     .table-wrapper {
         height: 75vh;
-        overflow-x: scroll;
+        overflow: auto;
         padding-left: 3rem;
         animation: entrance 3s forwards ease;
         li.card-wrapper {
@@ -125,22 +125,32 @@ h1#intro-typer {
                         }
                     }
                     footer {
+                        position: relative;
+                        top: -10px;
                         display: flex;
                         align-items: center;
-                        justify-content: space-between;
+                        transition: all 1.2s ease;
+                        justify-content: flex-start;
                         .keyword {
                             margin-left: 1rem;
                             color: #333;
+                            &:nth-of-type(1) {
+                                margin-left: 0;
+                            }
                         }
                     }
                 }
                 &:hover {
                     max-height: 350px;
+                    
                 }
                 &:hover .description {
                         max-height: 250px !important;
                         padding-bottom: 1rem !important;
                         opacity: 1 !important;
+                }
+                &:hover footer {
+                    top: -5px !important;
                 }
                 &.accent {
                     background: none;
@@ -241,7 +251,7 @@ h1#intro-typer {
                 }
             }
             section.content {
-                height: 345px;
+                height: 325px;
                 overflow-y: scroll;
             }
         }
@@ -255,14 +265,6 @@ h1#intro-typer {
         justify-content: space-around;
         align-items: center;
         padding: 1.5rem 1rem;
-        aside {
-            width: 20%;
-            .skill-icon, svg {
-                width: 100%;
-                max-width: 48px;
-                fill: rgb(15,48,87);
-            }
-        }
         .content {
             align-items: flex-start;
             display: flex;
@@ -276,22 +278,126 @@ h1#intro-typer {
             }
             .infos {
                 margin-top: .5rem;
+                p { font-size: .8rem;}
                 .icon-svg {
                     height: 30px;
                     margin-left: .5rem;
+                    &.graduated svg { fill: #ffe05d; }
                 }
-                svg {
-                    width: 100%;
-                    max-width: 28px;
-                    fill: #444;
-                    &:first-of-type {
-                        fill: ffe05d;
-                    }
-                }
+                svg { fill: #777; }
             }
         }
     }
 }
+
+#works {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .quarter {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background: rgba(0, 0, 0, 0.2);
+        transition: .3s;
+        z-index: 2;
+        &:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+        &:nth-of-type(1) { top: 0; left: 0}
+        &:nth-of-type(2) { top: 0; left: 50%;}
+        &:nth-of-type(3) { top: 50%; left: 0;}
+        &:nth-of-type(4) { top: 50%; left: 50%;}
+        header {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            & > section {
+                opacity: 0;
+                animation: fadeIn 1s .3s forwards;
+            }
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        &.full {
+            width: 100%;
+            height: 100%;
+            background: rgb(245, 245, 245);
+            z-index: 10;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            header {
+                height: 60px;
+                .Typist { color: rgb(15,48,87) !important; }
+            }
+            .content {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+        }
+    }
+}
+
+.videos-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 0 1rem 0;
+    .video-details, .next {
+        padding: 1rem;
+        padding-top: .5rem;
+    }
+    .video-details {
+        width: 70vw;
+        .screen {
+            width: 60vw;
+            max-width: 1280px;
+            display: flex;
+            iframe {
+                width: 70vw;
+                height: 70vh;
+                max-height: 60vh;
+                margin: 0 auto;
+            }
+        }
+        .infos {
+            padding-top: 1rem;
+            h3 { font-size: 2.5rem; text-transform: uppercase; }
+            p {
+                padding: 0 1rem 0 1rem;
+                max-height: 80px;
+                overflow: auto;
+            }
+        }
+    }
+    .next {
+        height: 80vh;
+        min-width: 25vw;
+        overflow: scroll;
+        .video-preview {
+            margin: 0 0 02rem;
+            cursor: pointer;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+            padding: .5rem;
+            .cover { width: 100%; }
+            
+        }
+    }
+}
+
 
 @keyframes entrance {
     0% {
@@ -315,19 +421,18 @@ h1#intro-typer {
 }
 
 .icon-svg {
-    &.xs {
-        width: 32px;
-        height: 32px;
-    }
     svg { fill: currentColor; width: 100%; }
+    &.is-primary svg{fill: #0f3057 !important;}
 }
 
-img {
+img, .icon-svg {
     width: 100%;
-    &.xs { max-width: 32px; }
-    &.sm { max-width: 64px; }
-    &.md { max-width: 128px; }
-    &.lg { max-width: 256px; }
+    &.undefined { width: auto !important;}
+    &.xxs { max-width: 24px; max-height: 24px; }
+    &.xs { max-width: 32px; max-height: 32px; }
+    &.sm { max-width: 64px; max-height: 64px; }
+    &.md { max-width: 128px; max-height: 128px; }
+    &.lg { max-width: 256px; max-height: 256px; }
     &.rounded { border-radius: 50%; }
 }
 
@@ -362,7 +467,12 @@ code {
     }
 }
 .noflex { flex: 0; }
-.flexed { flex: 1; }
+.flexed { 
+    flex: 1;
+    &-2 { flex: 2; }
+    &-3 { flex: 3; }
+    &-4 { flex: 4; }
+}
 .fullwidth { width: 100%; }
 .fullsize {
     width: 100%;

@@ -10,15 +10,15 @@ const Skill = (props: any) => {
     const skill = props.value;
     return (
         <section className="skill">
-            <aside>
-                <DynamicIcon skill={true} className='skill-icon' name={skill.icon} />
+            <aside className='is-primary'>
+                <DynamicIcon size='xs' skill={true} className='skill-icon' name={skill.icon} />
             </aside>
             <div className="content">
                 <h3 className="name">{skill.name}</h3>
                 <div className="infos container start">
-                    <p className='chip xs'>{skill.level}</p>
-                    {skill.certified ? <Icon className='icon hoverable' src={certifiedIcon} /> : null}
-                    {skill.pro ? <Icon className='icon hoverable' src={proIcon} /> : null}
+                    <p>{skill.level}</p>
+                    {skill.certified ? <Icon size='xxs' extra='graduated hoverable' src={certifiedIcon} /> : null}
+                    {skill.pro ? <Icon size='xxs' extra='hoverable' src={proIcon} /> : null}
                 </div>
             </div>
         </section>

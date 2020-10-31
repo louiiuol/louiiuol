@@ -5,10 +5,11 @@ import Socials from './Socials';
 import portrait from '../../../../../assets/img/louis-godlewski.png';
 
 const Introduction = () => {
+
     return (
         <section className="container cols start tabs no-overflow">
             <Typist avgTypingDelay={50} startDelay={0}>
-                Développeur Fullstack Javascript & JAVA
+                Développeur Fullstack Javascript
             </Typist>
             <section className="container evenly reverse noflex">
                 <div className="is-flex cols animate__animated animate__zoomInDown">
@@ -30,4 +31,5 @@ const Introduction = () => {
             </section>
         </section>
     );
+
 }; export default Introduction;

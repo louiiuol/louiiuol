@@ -6,6 +6,7 @@ import categories from '../../../../../assets/json/skills.json';
 
 const SkillsBoard = () => {
 
+  categories.sort((current, next) => next.id - current.id);
   return (
     <section id='skills' className="container cols start tabs animate__animated animate__bounceInRight">
         <Typist avgTypingDelay={50} startDelay={0}>
