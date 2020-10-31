@@ -5,19 +5,20 @@
 
 <strong>Padawan Web developer</strong> that loves to <strong> design </strong> and <strong> develop </strong> all sort of web projects ! Mainly working on a weird language that is <strong>Javascript</strong>, and  more recently discovering peace with <strong>Typescript</strong>.
 
-- 🔭 I just deployed my <a href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages ! 🌍
-- 🌱 I’m currently learning JS frameworks (React) and Node.js 📚
-- 🕹 I Love solving problems on Codewars and developing various UI 🎨
-- 👯 I’m looking to collaborate with other project creators .. Feel free to share your ideas 💡
-- 🥅 2020 Goals: Deploy first concrete <a href='https://github.com/louiiuol/ride-community'>project</a> (security, scaling...) ⚔️
-- ⚡ Fun fact: Loves to chat and explore new concepts, even the weird ones .. 🤔
+> - 🔭 I just deployed my <a href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages ! 🌍
+> - 🌱 I’m currently learning JS frameworks (React) and Node.js 📚
+> - 🕹 I Love solving problems on Codewars and developing various UI 🎨
+> - 👯 I’m looking to collaborate with other project creators .. Feel free to share your ideas 💡
+> - 🥅 2020 Goals: Deploy first concrete <a href='https://github.com/louiiuol/ride-community'>project</a> (security, scaling...) ⚔️
+> - ⚡ Fun fact: Loves to chat and explore new concepts, even the weird ones .. 🤔
 
 ### Languages and Tools:
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)
+
 <br />
-<br />
-<p align='center'>
+
+<p>
   <img alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
   <img alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
   <img alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
