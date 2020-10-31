@@ -1,5 +1,7 @@
 ## Hi there, I'm Louis, Welcome ! 🖖
 
+<p align='center'><img width=600 src='https://raw.githubusercontent.com/louiiuol/louiiuol/main/logo.svg'/></p>
+
 **Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! 🕊
 
 > - I've just deployed my **<a target="blank" href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages** ! 🌍
