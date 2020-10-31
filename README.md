@@ -2,12 +2,12 @@
 
 **Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! 🕊
 
-> - I've just deployed my **<a href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages** ! 🌍
+> - I've just deployed my **<a target="blank" href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages** ! 🌍
 > - I’m currently **learning in depth JS frameworks** (React) and Node.js 📚
-> - I'm probably **solving problems** on <a href='https://www.codewars.com/users/louiiuol/completed'>codewars</a> or designing various UI on <a href="https://codepen.io/louiiuol">codepen</a> 🎨
+> - I'm probably **solving problems** on <a target="blank" href='https://www.codewars.com/users/louiiuol/completed'>codewars</a> or designing various UI on <a target="blank" href="https://codepen.io/louiiuol">codepen</a> 🎨
 > - I’m looking to **collaborate with other project creators** .. Feel free to share your ideas 💡
 > - I Loves to **chat and explore new concepts**, even the weird ones .. 🤔
-> - In 2020, I'd like to **deploy and maintiain my first concrete <a href='https://github.com/louiiuol/ride-community'>project</a>** with a friend (security, scaling...) ⚔️
+> - In 2020, I'd like to **deploy and maintiain my first concrete <a target="blank" href='https://github.com/louiiuol/ride-community'>project</a>** with a friend (security, scaling...) ⚔️
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)
 
