@@ -154,7 +154,7 @@
                 "pro": true
             },
             {
-                "id": 2,
+                "id": 3,
                 "name":"Springboot",
                 "icon": "springboot",
                 "level": "avancé",
@@ -162,7 +162,7 @@
                 "pro": true
             },
             {
-                "id": 3,
+                "id": 4,
                 "name":"JPA Hibernate",
                 "icon": "hibernate",
                 "level": "avancé",
@@ -170,7 +170,7 @@
                 "pro": false
             },
             {
-                "id": 4,
+                "id": 5,
                 "name":"Déploiement et gestion des environnements",
                 "icon": "server",
                 "level": "avancé",
@@ -178,7 +178,7 @@
                 "pro": true
             },
             {
-                "id": 5,
+                "id": 6,
                 "name":"algorithmique",
                 "icon": "algos",
                 "level": "avancé",

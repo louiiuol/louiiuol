@@ -19,11 +19,11 @@ const Experience = (props: any) => {
                     <div className="description">
                         <em>{props.xp.description}</em>
                         <ul>
-                            {props.xp.actions.map((action: string) => <li className='action'>{action}</li>)}
+                            {props.xp.actions.map((action: string, index: number) => <li key={index} className='action'>{action}</li>)}
                         </ul>
                     </div>
                     <footer>
-                        {props.xp.keyword.map((keyword: string) => <strong className='keyword'>{keyword}</strong>)}
+                        {props.xp.keyword.map((keyword: string, index: string) => <strong key={index} className='keyword'>{keyword}</strong>)}
                     </footer>
                 </section>
             </article>

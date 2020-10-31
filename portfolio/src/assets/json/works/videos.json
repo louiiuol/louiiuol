@@ -1,0 +1,51 @@
+[
+    {
+        "id": 0,
+        "name": "immersion - court métrage",
+        "description": "simple descritpion coming soon ... ",
+        "src": "immersion.mp4",
+        "cover": "immersion.JPG"
+    },
+    {
+        "id": 1,
+        "name": "interview Conrad - MMI",
+        "description": "simple descritpion coming soon ... ",
+        "src": "interview-conrad.mp4",
+        "cover": "interview-conrad.JPG"
+    },
+    {
+        "id": 2,
+        "name": "Reportage formation MMI",
+        "description": "simple descritpion coming soon ... ",
+        "src": "mmi.mp4",
+        "cover": "mmi.JPG"
+    },
+    {
+        "id": 3,
+        "name": "CCFD reportage Mali",
+        "description": "simple descritpion coming soon ... ",
+        "src": "CCFD-Mali.mp4",
+        "cover": "mmi.JPG"
+    },
+    {
+        "id": 4,
+        "name": "Investissement Responsable",
+        "description": "simple descritpion coming soon ... ",
+        "src": "EE-ISR.mov",
+        "cover": "mmi.JPG"
+    },
+    {
+        "id": 5,
+        "name": "GAIA",
+        "description": "simple descritpion coming soon ... ",
+        "src": "gaia.mp4",
+        "cover": "mmi.JPG"
+    },
+    {
+        "id": 6,
+        "name": "Enchères VO - comparatif de voitures",
+        "description": "simple descritpion coming soon ... ",
+        "src": "VO_Comparatif.mov",
+        "cover": "mmi.JPG"
+    }
+]

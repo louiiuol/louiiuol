@@ -74,7 +74,7 @@
         "keyword": ["Motion Design", "Web Design", "Graphisme", "WordPress", "Suite Adobe"]
     },
     { "id": 5,
-        "title": "Concepteur Développeur d'Application",
+        "title": "Titre RNCP Concepteur d'application",
         "description": ["Formation intensive autour de la programmation orientée objet via JAVA & SpringBoot 2. Préparation d'un titre RNCP 'Concepteur Développeur d'Application' certifiant la conception et le développement:"],
         "actions": ["Composants d'interface utilisateur", "Persistance des données", "Application multicouche répartie", "Veille sur les recommandations de sécurité"],
         "date":{"start": "oct. 2018", "end": "sept. 2020"},

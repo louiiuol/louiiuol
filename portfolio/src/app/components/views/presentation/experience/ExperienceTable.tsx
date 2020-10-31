@@ -14,7 +14,7 @@ const ExperienceTable = () => {
             </Typist>
             <section className="container table-wrapper">
                 <ul className='container cols start'>
-                    {experiences.map(xp => <Experience xp={xp}/> )}
+                    {experiences.map(xp => <Experience key={xp.id} xp={xp}/> )}
                 </ul>
             </section>
         </section>
