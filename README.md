@@ -12,8 +12,6 @@
 > - 🥅 2020 Goals: Deploy first concrete <a href='https://github.com/louiiuol/ride-community'>project</a> (security, scaling...) ⚔️
 > - ⚡ Fun fact: Loves to chat and explore new concepts, even the weird ones .. 🤔
 
-***
-
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)
 
 <p>
@@ -30,6 +28,4 @@
   <img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
 </p>
 
-***
-
-*Feel free to check my repositories below* ⬇️
+#### *Feel free to check my repositories below* ⬇️
