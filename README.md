@@ -12,7 +12,7 @@
 > - 🥅 2020 Goals: Deploy first concrete <a href='https://github.com/louiiuol/ride-community'>project</a> (security, scaling...) ⚔️
 > - ⚡ Fun fact: Loves to chat and explore new concepts, even the weird ones .. 🤔
 
-### Languages and Tools:
+***
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord)
 
@@ -26,9 +26,7 @@
   <img alt="Angular" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/200px-Angular_full_color_logo.svg.png" />
   <img alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
   <img alt="Java" width="26px" src="https://codingexplained.com/wp-content/uploads/2017/06/java.png" />
-  <img alt="SQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />
   <img alt="MySQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" />
-  <img alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
   <img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
   <img alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
 </p>
