@@ -1,5 +1,3 @@
-## Hi there, I'm Louis, Welcome ! 🖖
-
 <p align='center'><img width=400 src='https://raw.githubusercontent.com/louiiuol/louiiuol/main/logo.svg'/></p>
 
 **Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! 🕊
