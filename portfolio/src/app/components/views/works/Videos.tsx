@@ -15,7 +15,7 @@ const Videos = () => {
                     { feed.map((video, index) =>
                         <article key={index} className="video-preview" onClick={() => setSelected(feed[index])}>
                             <div className="cover">
-                                <img src={`${process.env.PUBLIC_URL}/works/movies/covers/${video.cover}`} alt={video.description}/>
+                                <img src={`${process.env.PUBLIC_URL}/works/videos-covers/${video.cover}`} alt={video.description}/>
                             </div>
                             <h4 className='is-primary'>{video.name}</h4>
                         </article> )}

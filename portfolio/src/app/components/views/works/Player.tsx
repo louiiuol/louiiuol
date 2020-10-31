@@ -5,11 +5,7 @@ const Player = (props: any) => {
     return (
         <section className="video-details">
             <div className="screen">
-                <video controls key={props?.src}
-                    src={`${process.env.PUBLIC_URL}/works/movies/${props.selected?.src}`}
-                    poster={`${process.env.PUBLIC_URL}/works/movies/covers/${props.selected?.cover}`}>
-                    Désolé, votre navigateur ne supporte pas ce type de vidéo ..
-                </video>
+                <iframe key={props?.src} src={`https://www.youtube.com/embed/${props.selected?.src}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
             <div className="infos">
                 <h3 className='is-primary'>{props.selected?.name}</h3>

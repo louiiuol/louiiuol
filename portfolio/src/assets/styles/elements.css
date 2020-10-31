@@ -315,8 +315,9 @@ h1#intro-typer {
       width: 60vw;
       max-width: 1280px;
       display: flex; }
-      .videos-container .video-details .screen video {
-        width: 100%;
+      .videos-container .video-details .screen iframe {
+        width: 70vw;
+        height: 70vh;
         max-height: 60vh;
         margin: 0 auto; }
     .videos-container .video-details .infos {
