@@ -1,10 +1,10 @@
 ## Hi there, I'm Louis, Welcome ! 🖖
 
-**Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! ☮
+**Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! 🕊
 
 > - I've just deployed my **<a href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages** ! 🌍
 > - I’m currently **learning in depth JS frameworks** (React) and Node.js 📚
-> - I Love **solving problems** on <a hre='https://www.codewars.com/users/louiiuol/completed'>Codewars</a> and developing various UI 🎨
+> - I Love **solving problems** on <a href='https://www.codewars.com/users/louiiuol/completed'>Codewars</a> and developing various UI 🎨
 > - I’m looking to **collaborate with other project creators** .. Feel free to share your ideas 💡
 > - I Loves to **chat and explore new concepts**, even the weird ones .. 🤔
 > - In 2020, I'd like to **deploy and maintiain my first concrete <a href='https://github.com/louiiuol/ride-community'>project</a>** with a friend (security, scaling...) ⚔️
