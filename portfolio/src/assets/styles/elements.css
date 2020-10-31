@@ -278,6 +278,9 @@ h1#intro-typer {
       cursor: pointer; }
     #works .quarter .content {
       display: none; }
+      #works .quarter .content > section {
+        opacity: 0;
+        animation: fadeIn 1s .3s forwards; }
     #works .quarter .close {
       position: absolute;
       top: 15px;
