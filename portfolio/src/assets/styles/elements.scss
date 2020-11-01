@@ -49,6 +49,7 @@ h1#intro-typer {
     .table-wrapper {
         height: 75vh;
         overflow: auto;
+        overflow-x: hidden;
         padding-left: 3rem;
         animation: entrance 3s forwards ease;
         li.card-wrapper {

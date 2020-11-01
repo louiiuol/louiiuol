@@ -11,7 +11,7 @@ const Introduction = () => {
             <Typist avgTypingDelay={50} startDelay={0}>
                 Développeur Fullstack Javascript
             </Typist>
-            <section className="container evenly reverse noflex">
+            <section className="container evenly reverse">
                 <div className="is-flex cols animate__animated animate__zoomInDown">
                     <img src={portrait} alt="Louis Godlewski's avatar" className='shadowed rounded lg' />
                     <Socials />
