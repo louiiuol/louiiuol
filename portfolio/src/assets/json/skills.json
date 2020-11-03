@@ -112,7 +112,7 @@
                 "id": 3,
                 "name":"React",
                 "icon": "react",
-                "level": "débutant",
+                "level": "novice",
                 "certified": false,
                 "pro": false
             },
@@ -141,7 +141,7 @@
                 "id": 1,
                 "name":"Node.js",
                 "icon": "nodejs",
-                "level": "débutant",
+                "level": "novice",
                 "certified": false,
                 "pro": false
                 },
@@ -173,7 +173,7 @@
                 "id": 5,
                 "name":"Déploiement et gestion des environnements",
                 "icon": "server",
-                "level": "avancé",
+                "level": "intermédiaire",
                 "certified": true,
                 "pro": true
             },

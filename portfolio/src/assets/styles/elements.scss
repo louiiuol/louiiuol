@@ -32,6 +32,7 @@
     width: 80vw;
     max-width: 1024px;
     max-height: 40vh;
+    margin: 0 auto;
 }
 
 h1#intro-typer {
@@ -49,6 +50,7 @@ h1#intro-typer {
     .table-wrapper {
         height: 75vh;
         overflow: auto;
+        overflow-x: hidden;
         padding-left: 3rem;
         animation: entrance 3s forwards ease;
         li.card-wrapper {
@@ -278,13 +280,14 @@ h1#intro-typer {
             }
             .infos {
                 margin-top: .5rem;
-                p { font-size: .8rem;}
+                p { font-size: .8rem; color: #444}
                 .icon-svg {
                     height: 30px;
                     margin-left: .5rem;
                     &.graduated svg { fill: #ffe05d; }
+                    &.pro svg { fill: #734046; }
                 }
-                svg { fill: #777; }
+                
             }
         }
     }
@@ -315,6 +318,10 @@ h1#intro-typer {
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            .Typist {
+                position: relative;
+                span.Cursor { position: absolute; right: -15px; top: 65%; transform: translateY(-50%); }
+            }
         }
         .content {
             display: none;
@@ -341,7 +348,7 @@ h1#intro-typer {
             transform: translate(-50%, -50%);
             header {
                 height: 60px;
-                .Typist { color: rgb(15,48,87) !important; }
+                .Typist { color: rgb(15,48,87) !important;}
             }
             .content {
                 display: flex;
@@ -398,14 +405,13 @@ h1#intro-typer {
     }
 }
 
-
 @keyframes entrance {
     0% {
         overflow: hidden;
         height: 0;
         width: 100px;
     } 50% {
-        height: 80vh;
+        height: 75vh;
         width: 100px;
         overflow: hidden;
     } 99% {
@@ -473,6 +479,7 @@ code {
     &-3 { flex: 3; }
     &-4 { flex: 4; }
 }
+
 .fullwidth { width: 100%; }
 .fullsize {
     width: 100%;
@@ -488,10 +495,18 @@ code {
 .shadowed {
     box-shadow: 1px 2px 4px rgba($color: #000000, $alpha: .6);
 }
+
 .spaced {
     padding: 1rem 2rem;
     &-xs { padding: 0 .5rem; }
     &-lg { padding: 2rem 3rem; }
+}
+.colorless {
+    filter: grayscale(1);
+    transition: .6s;
+    &:hover {
+        filter: grayscale(0);
+    }
 }
 .no-overflow { overflow: hidden; }
 

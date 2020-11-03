@@ -79,7 +79,7 @@
         "actions": ["Composants d'interface utilisateur", "Persistance des données", "Application multicouche répartie", "Veille sur les recommandations de sécurité"],
         "date":{"start": "oct. 2018", "end": "sept. 2020"},
         "type": "FORMATION",
-        "location": { "city": "Paris", "establishment": "Simlon.co"},
+        "location": { "city": "Paris", "establishment": "Simplon.co"},
         "keyword": ["OOP", "Conception", "Algorithmique", "Design Patterns", "Qualité Web"]
     },
     {
