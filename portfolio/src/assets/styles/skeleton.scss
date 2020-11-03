@@ -438,9 +438,8 @@ nav#main-nav {
                 #graphism {
                     overflow: scroll !important;
                     height: 80vh;
-                    width: 90vw;
+                    width: 95vw;
                     margin: 0 auto;
-                    padding-bottom: 2rem;
                     article.graphic {
                         width: 328px;
                         height: 225px;
@@ -461,7 +460,7 @@ nav#main-nav {
                             text-transform: uppercase;
                             text-shadow: 1px 1px #000;
                             text-align: center;
-                            transition: all 0.3s ease;
+                            transition: .3s ease;
                         }
                         img {
                             min-height: 100%;
