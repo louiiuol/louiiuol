@@ -5,7 +5,7 @@ import {Svg} from '../../shared';
 
 export const Works = () => {
 
-    const worksCategories = ['Vidéos', 'Graphsime', 'Web-UI', 'Algorithme'];
+    const worksCategories = ['Vidéos', 'Graphisme', 'Web UI', 'Algorithme'];
 
     const setFullScreen = (quarter: Element) => () => {
         quarter.classList.add('full');
@@ -22,7 +22,7 @@ export const Works = () => {
         <section id='works' className="container">
             { worksCategories.map( (category, index) => <article key={index} className="quarter">
                 <header>
-                    <Typist avgTypingDelay={50} startDelay={index}>{category}</Typist>
+                    <Typist avgTypingDelay={50} startDelay={index} cursor={{ hideWhenDone: true }}>{category}</Typist>
                 </header>
                 <section className="content">
                     <Svg src='ui' name='close' size='xs' styles='close is-primary' />

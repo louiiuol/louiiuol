@@ -318,6 +318,10 @@ h1#intro-typer {
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            .Typist {
+                position: relative;
+                span.Cursor { position: absolute; right: -15px; top: 65%; transform: translateY(-50%); }
+            }
         }
         .content {
             display: none;
@@ -344,7 +348,7 @@ h1#intro-typer {
             transform: translate(-50%, -50%);
             header {
                 height: 60px;
-                .Typist { color: rgb(15,48,87) !important; }
+                .Typist { color: rgb(15,48,87) !important;}
             }
             .content {
                 display: flex;
