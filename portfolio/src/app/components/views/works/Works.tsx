@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react';
 import Typist from 'react-typist';
-import {Videos} from '.';
+import { Graphism, Apps, Algos, Videos } from '.';
 import {Svg} from '../../shared';
-import { Graphism } from './Graphism';
-import { Apps } from './Apps';
-import { Algos } from './Algos';
 
 export const Works = () => {
 
