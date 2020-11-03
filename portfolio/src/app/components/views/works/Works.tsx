@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import Typist from 'react-typist';
-import {Videos} from '.';
+import { Graphism, Apps, Algos, Videos } from '.';
 import {Svg} from '../../shared';
 
 export const Works = () => {
 
-    const worksCategories = ['Vidéos', 'Graphisme', 'Web UI', 'Algorithme'];
+    const worksCategories = ['Vidéos', 'Graphisme', 'Web Apps', 'Algorithmes'];
 
     const setFullScreen = (quarter: Element) => () => {
         quarter.classList.add('full');
@@ -20,25 +20,28 @@ export const Works = () => {
 
     return (
         <section id='works' className="container">
-            { worksCategories.map( (category, index) => <article key={index} className="quarter">
-                <header>
-                    <Typist avgTypingDelay={50} startDelay={index} cursor={{ hideWhenDone: true }}>{category}</Typist>
-                </header>
-                <section className="content">
-                    <Svg src='ui' name='close' size='xs' styles='close is-primary' />
-                    <WorksDetails category={category} />
-                </section>
-            </article> )}
+            {worksCategories.map((category, index) =>
+                <article key={index} className="quarter">
+                    <header>
+                        <Typist avgTypingDelay={50} startDelay={0} cursor={{ hideWhenDone: true }}>{category}</Typist>
+                    </header>
+                    <section className="content">
+                        <Svg src='ui' name='close' size='xs' styles='close is-primary' />
+                        <WorksDetails category={index} />
+                    </section>
+                </article> )}
         </section> );
 
 }
 
-const WorksDetails = (props: {category:string}) => {
+const WorksDetails = (props: {category:number}) => {
 
-    if (props.category === "Vidéos") {
-        return <Videos />
-    } else {
-        return (<div></div>);
+    switch (props.category) {
+        case 0: return <Videos />;
+        case 1: return <Graphism />;
+        case 2: return <Apps />;
+        case 3: return <Algos />;
+        default: return <p>This category does'nt exist</p>;
     }
 
 }

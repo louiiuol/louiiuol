@@ -3,7 +3,7 @@ import {Svg} from '../../shared/Svg';
 import Typist from 'react-typist';
 
 export const Home = () =>
-    <section className='container cols'>
+    <section id='home' className='container cols'>
         <Svg styles="app-logo" src='socials' name='logo'/>
         <IntroWriter />
     </section>

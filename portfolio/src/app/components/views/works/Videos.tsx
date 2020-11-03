@@ -9,7 +9,7 @@ export const Videos = () => {
     const [selected, setSelected] = useState(feed[0]);
 
     return (
-        <section className='videos-container fullsize'>
+        <section id='videos-container' className='fullsize'>
             <Player selected={selected} />
                 <section className="next">
                     { feed.map((video, index) =>
