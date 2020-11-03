@@ -1,4 +1,4 @@
-# Jar it | the first electronic swear Jar
+# Louis Godlewski | Portfolio
 
 ![React CI](https://github.com/louiiuol/jar-it/workflows/Spring%20CI/badge.svg)
 
