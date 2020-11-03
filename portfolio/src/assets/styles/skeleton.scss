@@ -7,9 +7,9 @@ Regroup all views and define their structure.
 ::selection { background: #ee6f57; color: #f6f5f5; }
 
 ::-webkit-scrollbar { width: 5px; } /* scrollbar width */
-::-webkit-scrollbar-track { border-radius: 10px; background-color: #000 ; } /* Track */
-::-webkit-scrollbar-thumb { background:white; border-radius: 10px; } /* Handle */
-::-webkit-scrollbar-thumb:hover { background: lightgray; } /* Handle on hover */
+::-webkit-scrollbar-track { border-radius: 10px; background-color: rgba($color: #777, $alpha: .4) ; } /* Track */
+::-webkit-scrollbar-thumb { background:rgb(15,48,87); border-radius: 10px; } /* Handle */
+::-webkit-scrollbar-thumb:hover { background: rgb(0, 135, 189); } /* Handle on hover */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body, #root, #app { min-height: 100vh; }
