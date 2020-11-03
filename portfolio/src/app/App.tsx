@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home, Presentation, Works } from './components/views';
-import Header from './components/shared/Header';
+import {Header} from './components/shared';
 
 export const App = () =>
   (<Router basename="/louiiuol">
