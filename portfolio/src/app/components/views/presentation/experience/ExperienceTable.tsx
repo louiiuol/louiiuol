@@ -10,7 +10,7 @@ const ExperienceTable = () => {
     return (
         <section id='experience-table' className='container cols start tabs'>
             <Typist avgTypingDelay={50} startDelay={0}>
-                historique d'expériences significatives
+                Expériences professionnelles
             </Typist>
             <section className="container table-wrapper">
                 <ul className='container cols start'>

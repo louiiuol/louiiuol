@@ -5,7 +5,7 @@ const Player = (props: any) => {
     return (
         <section className="video-details">
             <div className="screen">
-                <iframe title={props.selected?.name} key={props?.src} src={`https://www.youtube.com/embed/${props.selected?.src}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                <iframe title={props.selected?.name} key={props?.src} src={`https://www.youtube.com/embed/${props.selected?.src}`}></iframe>
             </div>
             <div className="infos">
                 <h3 className='is-primary'>{props.selected?.name}</h3>
