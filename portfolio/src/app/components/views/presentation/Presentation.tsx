@@ -9,8 +9,8 @@ const Presentation = () => {
     return (
         <Tabs id='presentation' className='container'>
             <TabList className='react-tabs__tab-list animate__animated animate__fadeInDown'>
-                <Tab className='is-primary'>Introduction</Tab>
-                <Tab className='is-primary'>Expérience & Diplômes</Tab>
+                <Tab className='is-primary'>Profil</Tab>
+                <Tab className='is-primary'>Expériences</Tab>
                 <Tab className='is-primary'>Compétences</Tab>
             </TabList>
             <TabPanel> <Introduction /> </TabPanel>

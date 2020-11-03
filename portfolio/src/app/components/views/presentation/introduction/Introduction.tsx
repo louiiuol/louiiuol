@@ -26,7 +26,7 @@ const Introduction = () => {
                         <li className='animate__animated animate__fadeInLeft animate__delay-2s'>Vérification du code via des tests d'intégration ou unitaire.</li>
                         <li className='animate__animated animate__fadeInLeft animate__delay-2s'>Déploiement en continue des fonctionnalités via Github, Jenkins, AWS</li>
                     </ul>
-                    <p className='animate__animated animate__flipInX animate__delay-3s spaced-xs' >Je suis actuellement à la recherche d’un CDI en tant que développeur full stack Javascript. Si mon profil vous intéresse, n'hésitez pas à me contacter !</p>
+                    <p className='animate__animated animate__flipInX animate__delay-3s spaced-xs' ><strong>Poste recherché</strong>: développeur full stack Javascript. <br />Si mon profil vous intéresse, n'hésitez pas à me contacter !</p>
                 </div>
             </section>
         </section>
