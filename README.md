@@ -11,8 +11,6 @@
 > 💡 I’m looking to **collaborate with other project creators** .. Feel free to share your ideas !
 >
 > 🤔 I Loves to **chat and explore new concepts**, even the weird ones ..
->
-> ⚔️ In 2020, I'd like to **deploy and maintiain my first concrete <a target="blank" href='https://github.com/louiiuol/ride-community'>project</a>** with a friend ! (security, scaling...)
 
 <p align='center'>
   <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord' />
