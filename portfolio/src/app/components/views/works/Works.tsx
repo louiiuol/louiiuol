@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import Typist from 'react-typist';
-import WorkDetail from './WorkDetail';
+import {Videos} from '.';
 import {Svg} from '../../shared';
 
-const WorksPlatform = () => {
+export const Works = () => {
 
     const worksCategories = ['Vidéos', 'Graphsime', 'Web-UI', 'Algorithme'];
 
@@ -26,9 +26,19 @@ const WorksPlatform = () => {
                 </header>
                 <section className="content">
                     <Svg src='ui' name='close' size='xs' styles='close is-primary' />
-                    <WorkDetail category={category} />
+                    <WorksDetails category={category} />
                 </section>
             </article> )}
         </section> );
 
-}; export default WorksPlatform;
+}
+
+const WorksDetails = (props: {category:string}) => {
+
+    if (props.category === "Vidéos") {
+        return <Videos />
+    } else {
+        return (<div></div>);
+    }
+
+}

@@ -1,4 +1,25 @@
 import React from 'react';
+import Typist from 'react-typist';
+
+import experiences from '../../../../assets/json/experiences.json';
+
+export const Experiences = () => {
+
+    experiences.sort((current, next) => next.id - current.id);
+    return (
+        <section id='experience-table' className='container cols start tabs'>
+            <Typist avgTypingDelay={50} startDelay={0}>
+                Expériences professionnelles
+            </Typist>
+            <section className="container table-wrapper">
+                <ul className='container cols start'>
+                    {experiences.map(xp => <Experience key={xp.id} xp={xp}/> )}
+                </ul>
+            </section>
+        </section>
+    );
+
+}
 
 const Experience = (props: any) => {
 
@@ -30,4 +51,4 @@ const Experience = (props: any) => {
         </li>
     );
 
-}; export default Experience;
+}
