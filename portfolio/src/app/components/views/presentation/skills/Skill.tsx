@@ -1,9 +1,6 @@
 import React from 'react';
-import Icon from '../../../shared/icon/Icon';
-import DynamicIcon from '../../../shared/icon/DynamicIcon';
+import { Svg } from '../../../shared/Svg';
 
-import certifiedIcon from '../../../../../assets/img/icons/skills/certified.svg';
-import proIcon from '../../../../../assets/img/icons/skills/pro.svg';
 
 const Skill = (props: any) => {
 
@@ -11,14 +8,14 @@ const Skill = (props: any) => {
     return (
         <section className="skill">
             <aside className='is-primary'>
-                <DynamicIcon size='xs' skill={true} className='skill-icon' name={skill.icon} />
+                <Svg size='xs' styles='skill-icon' src='skills' name={skill.icon} />
             </aside>
             <div className="content">
                 <h3 className="name">{skill.name}</h3>
                 <div className="infos container start">
                     <p>{skill.level}</p>
-                    {skill.certified ? <Icon size='xxs' extra='graduated hoverable' src={certifiedIcon} /> : null}
-                    {skill.pro ? <Icon size='xxs' extra='hoverable' src={proIcon} /> : null}
+                    {skill.certified ? <Svg size='xxs' styles='graduated hoverable' src='ui' name='certified' /> : null}
+                    {skill.pro ? <Svg size='xxs' styles='pro hoverable' src='ui' name='pro' /> : null}
                 </div>
             </div>
         </section>

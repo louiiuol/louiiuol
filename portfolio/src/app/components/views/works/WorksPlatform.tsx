@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Typist from 'react-typist';
 import WorkDetail from './WorkDetail';
-import Icon from '../../shared/icon/Icon';
-import closeIcon from '../../../../assets/img/icons/ui/close.svg'
+import {Svg} from '../../shared/Svg';
 
 const WorksPlatform = () => {
 
@@ -31,7 +30,7 @@ const WorksPlatform = () => {
                     </Typist>
                 </header>
                 {clicked ? <section className="content">
-                    <Icon src={closeIcon} size='xs' extra='close is-primary'></Icon>
+                    <Svg src='ui' name='close' size='xs' styles='close is-primary' />
                     <WorkDetail category={category} />
                 </section> : null}
             </article> )}

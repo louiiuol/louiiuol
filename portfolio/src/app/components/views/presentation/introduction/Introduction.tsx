@@ -1,8 +1,7 @@
 import React from 'react';
 import Typist from 'react-typist';
 import Socials from './Socials';
-
-import portrait from '../../../../../assets/img/louis-godlewski.png';
+import { Img } from '../../../shared/Img';
 
 const Introduction = () => {
 
@@ -13,7 +12,8 @@ const Introduction = () => {
             </Typist>
             <section className="container evenly reverse">
                 <div className="is-flex cols animate__animated animate__zoomInDown">
-                    <img src={portrait} alt="Louis Godlewski's avatar" className='shadowed rounded lg' />
+                    <Img alt="Louis Godlewski's avatar" styles='shadowed rounded colorless' size='lg'
+                        src='intro' name='portrait' type='png'/>
                     <Socials />
                 </div>
                 <div className="is-white spaced-lg halfwidth-md no-overflow">
