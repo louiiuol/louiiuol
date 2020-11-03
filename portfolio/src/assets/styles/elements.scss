@@ -510,6 +510,23 @@ code {
 }
 .no-overflow { overflow: hidden; }
 
+.construction {
+    width: 40vw;
+    min-width: 300px;
+    margin: 2rem auto;
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(15,48,87)
+    }
+    p {
+        padding: 1rem;
+        color: #666;
+        a { color: rgb(15,48,87); border-bottom: 2px solid rgb(15,48,87);}
+    }
+}
+
 @keyframes blinker {
     0% { opacity: 1.0; }
     50% { opacity: 0.0; }
