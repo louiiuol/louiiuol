@@ -6,7 +6,7 @@ Regroup all views and define their structure.
 ::-moz-selection { background: #ee6f57; color: #f6f5f5; }
 ::selection { background: #ee6f57; color: #f6f5f5; }
 
-::-webkit-scrollbar { width: 5px; } /* scrollbar width */
+::-webkit-scrollbar { width: 5px; z-index: 0;} /* scrollbar width */
 ::-webkit-scrollbar-track { border-radius: 10px; background-color: rgba($color: #777, $alpha: .4) ; } /* Track */
 ::-webkit-scrollbar-thumb { background:rgb(15,48,87); border-radius: 10px; } /* Handle */
 ::-webkit-scrollbar-thumb:hover { background: rgb(0, 135, 189); } /* Handle on hover */
@@ -340,9 +340,6 @@ nav#main-nav {
         background: rgba(0, 0, 0, 0.2);
         transition: .3s;
         z-index: 2;
-        &:hover {
-            background: rgba(0, 0, 0, 0.4);
-        }
         &:nth-of-type(1) { top: 0; left: 0}
         &:nth-of-type(2) { top: 0; left: 50%;}
         &:nth-of-type(3) { top: 50%; left: 0;}
@@ -350,13 +347,34 @@ nav#main-nav {
         header {
             width: 100%;
             height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            position: relative;
             cursor: pointer;
             .Typist {
                 position: relative;
-                span.Cursor { position: absolute; right: -15px; top: 65%; transform: translateY(-50%); }
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: .6s;
+            }
+            .category-icon {
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0;
+                transition: .4s;
+            }
+        }
+        &:hover {
+            background: rgba(0, 0, 0, 0.4);
+            header {
+                .Typist {
+                    top: 60%;
+                }
+                .category-icon {
+                    transition: .8s;
+                    opacity: 1;
+                }
             }
         }
         .content {
@@ -383,15 +401,18 @@ nav#main-nav {
             left: 50%;
             transform: translate(-50%, -50%);
             header {
-                height: 60px;
-                .Typist { color: rgb(15,48,87) !important;}
+                height: 0;
+                .Typist, .category-icon { display: none;}
             }
             .content {
                 display: flex;
                 flex-flow: column nowrap;
+                height: 100%;
+                justify-content: center;
+                padding: 0 2rem;
                 #videos-container {
                     display: flex;
-                    align-items: stretch;
+                    align-items: center;
                     justify-content: space-around;
                     padding: 0 1rem 0;
                     .video-details, .next {
@@ -437,13 +458,14 @@ nav#main-nav {
                 }
                 #graphism {
                     overflow: scroll !important;
-                    height: 80vh;
-                    width: 95vw;
+                    height: 90vh;
+                    width: 93vw;
                     margin: 0 auto;
+                    justify-content: space-evenly;
                     article.graphic {
                         width: 328px;
                         height: 225px;
-                        margin: 25px auto;
+                        margin: .5rem .25rem;
                         overflow: hidden;
                         box-shadow: 1px 2px 4px rgba(0,0,0,.6);
                         border-radius: 5px;
@@ -482,6 +504,49 @@ nav#main-nav {
                             img {
                                 opacity: 0.4;
                                 filter: blur(2px) brigthness(.4);
+                            }
+                        }
+                    }
+                    #gallery-fullscreen {
+                        position: fixed;
+                        height: 100%;
+                        width: 100%;
+                        overflow: hidden;
+                        background: rgba(15,48,87, .95);
+                        z-index: 10;
+                        top: 0;
+                        section.selected {
+                            img {
+                                width: auto;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                max-width: 80vw;
+                                max-height: 70vh;
+                            }
+                            header h3 {
+                                color: white;
+                                font-size: 2rem;
+                                text-shadow: 1px 2px 4px rgba($color: #000, $alpha: .8);
+                                text-transform: uppercase;
+                                text-align: center;
+                                width: 100%;
+                                position: absolute;
+                                top: 1rem;
+                            }
+                            p {
+                                display: none;
+                            }
+                        }
+                        nav {
+                            .nav {
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%) translateZ(100px);
+                                cursor: pointer;
+                                &.prev { left: 0 }
+                                &.next { right: 0; transform: translateY(-50%) rotateY(180deg); }
                             }
                         }
                     }
