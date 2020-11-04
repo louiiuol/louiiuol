@@ -1,6 +1,5 @@
 [
     {
-        "id": 0,
         "title":"co fondateur du projet Save Yourself",
         "description":[
             "Transformez les matériaux que vous avez sous la main en outils de survie. Création du projet lors d'un hackaton sur 48h.",
@@ -15,7 +14,7 @@
         "location": { "city": "Paris", "establishment": "école 42"},
         "keyword": ["Conception", "Intégration", "brainstorm", "Symfony", "angular", "Gestion de Projet"]
     },
-    { "id": 1,
+    {
         "title": " DUT Métiers du Mutimédia et de l'Internet",
         "description": ["Formation générale initiant à l'ensemble des métiers du multimédia:"],
         "actions": [
@@ -32,7 +31,6 @@
         "keyword": ["DUT", "Infographie", "Gestion de projet", "Intégration web"]
     },
     {
-        "id": 2,
         "title":"Intégrateur Front end pour un site vitrine web",
         "description":["Réalisation de maquettes en respectant les exigences du client:"],
         "actions": [
@@ -46,7 +44,6 @@
         "keyword": ["Référencement naturel", "Intégration", "Relation client"]
     },
     {
-        "id": 3,
         "title":"Organisation de chantiers internationnaux",
         "description": ["Appui à l'organisation de différents chantiers de volontaires:"],
         "actions": [
@@ -60,7 +57,6 @@
         "keyword": ["organisation", "écoute", "encadrement", "coordination"]
     },
     {
-        "id": 4,
         "title":"Asssistant chargé de production",
         "description": ["Production visuelle de l'agence sur une durée de 6 mois:"],
         "actions": [
@@ -73,7 +69,7 @@
         "location": { "city": "Paris", "establishment": "Trajectoires"},
         "keyword": ["Motion Design", "Web Design", "Graphisme", "WordPress", "Suite Adobe"]
     },
-    { "id": 5,
+    {
         "title": "Titre RNCP Concepteur d'application",
         "description": ["Formation intensive autour de la programmation orientée objet via JAVA & SpringBoot 2. Préparation d'un titre RNCP 'Concepteur Développeur d'Application' certifiant la conception et le développement:"],
         "actions": ["Composants d'interface utilisateur", "Persistance des données", "Application multicouche répartie", "Veille sur les recommandations de sécurité"],
@@ -83,7 +79,6 @@
         "keyword": ["OOP", "Conception", "Algorithmique", "Design Patterns", "Qualité Web"]
     },
     {
-        "id": 6,
         "title":"Développeur Fullstack JS & JAVA",
         "description": ["2 années d'alternance très enrichissantes au sein d'une équipe agile de développeurs web & mainframe:  Résolution de bugs existants, implémentation de solutions en JS (angular.js) ou JAVA (springboot) selon les besoins fonctionnels du product owner."],
         "actions": ["Animation de séances agile (sprint review)", "Intégration de pages web via angular"],

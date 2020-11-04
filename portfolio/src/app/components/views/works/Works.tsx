@@ -5,7 +5,7 @@ import {Svg} from '../../shared';
 
 export const Works = () => {
 
-    const worksCategories = ['Vidéos', 'Graphisme', 'Web Apps', 'Algorithmes'];
+    const worksCategories = [{name:'Audiovisuel', img:'motion'},{name:'Graphisme', img:'graphic'}, {name:'Web UI', img:'wireframe'}, {name: 'Algorithmes', 'img': 'algos'}];
 
     const setFullScreen = (quarter: Element) => () => {
         quarter.classList.add('full');
@@ -23,7 +23,8 @@ export const Works = () => {
             {worksCategories.map((category, index) =>
                 <article key={index} className="quarter">
                     <header>
-                        <Typist avgTypingDelay={50} startDelay={0} cursor={{ hideWhenDone: true }}>{category}</Typist>
+                        <Typist avgTypingDelay={50} startDelay={0}>{category.name}</Typist>
+                        <Svg src='skills' name={category.img} size='sm' styles='category-icon is-white' />
                     </header>
                     <section className="content">
                         <Svg src='ui' name='close' size='xs' styles='close is-primary' />
