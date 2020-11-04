@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Typist from 'react-typist';
 import { Svg } from '../../shared';
 
@@ -6,20 +6,31 @@ import categories from '../../../../assets/json/skills.json';
 
 export const Skills = () => {
 
-  categories.sort((current, next) => next.id - current.id);
+  const addHoverEffect = (cards: Element | null) => {
+    if (cards) {
+      const childs = cards.children;
+      for (let i = 0; i < childs.length - 1; i++) {
+        childs[i].addEventListener('mouseenter', () => childs[i].parentElement?.classList.add('hovered'))
+        childs[i].addEventListener('mouseleave', () => childs[i].parentElement?.classList.remove('hovered'))
+      }
+    }
+  }
+
+  const feed = [...categories].reverse();
+  useEffect(() => addHoverEffect(document.querySelector('.card-list')))
   return (
     <section id='skills' className="container cols start tabs animate__animated animate__bounceInRight">
       <Typist avgTypingDelay={50} startDelay={0}>
         Domaines de compétences
         </Typist>
       <section className="card-list">
-        {categories.map(category =>
-          <article key={category.id} className='card'>
+        {feed.map((category, index) =>
+          <article key={index} className='card'>
             <header className="header">
               <h2>{category.title}</h2>
             </header>
             <section className="content">
-              {category.skills.map(skill => <Skill key={skill.id} value={skill} className="card-skill" />)}
+              {category.skills.map((skill, i) => <Skill key={i} value={skill} className="card-skill" />)}
             </section>
           </article>)}
       </section>

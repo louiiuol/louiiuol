@@ -1,54 +1,7 @@
 [
     {
-        "id": 0,
-        "title": "Architecture de projets",
-        "skills": [{
-            "id": 0,
-            "name":"UML | MCD | MLD",
-            "icon": "database",
-            "level": "confirmé",
-            "certified": true,
-            "pro": false
-            },
-            {
-                "id": 1,
-                "name":"Diagrammes de classes",
-                "icon": "schema",
-                "level": "confirmé",
-                "certified": true,
-                "pro": true
-            },
-            {
-                "id": 2,
-                "name":"Administration de Bases De Données",
-                "icon": "users",
-                "level": "confirmé",
-                "certified": true,
-                "pro": true
-            },
-            {
-                "id": 3,
-                "name":"Intégration Continue (Github, Jenkins, AWS)",
-                "icon": "github",
-                "level": "confirmé",
-                "certified": true,
-                "pro": true
-            },
-            {
-                "id": 4,
-                "name":"Gestion de packages (npm, webpack) ",
-                "icon": "npm",
-                "level": "confirmé",
-                "certified": true,
-                "pro": true
-            }
-        ]
-    },
-    {
-        "id": 1,
         "title": "Création d'interfaces utilisateur",
         "skills": [{
-            "id": 0,
             "name":"Suite adobe",
             "icon": "adobe",
             "level": "avancé",
@@ -56,7 +9,6 @@
             "pro": true
             },
             {
-                "id": 1,
                 "name":"Wireframes & maquettes",
                 "icon": "wireframe",
                 "level": "expert",
@@ -64,7 +16,6 @@
                 "pro": true
             },
             {
-                "id": 2,
                 "name":"Animations & motion design",
                 "icon": "motion",
                 "level": "avancé",
@@ -72,7 +23,6 @@
                 "pro": true
             },
             {
-                "id": 3,
                 "name":"Productions graphiques",
                 "icon": "graphic",
                 "level": "confirmé",
@@ -82,10 +32,8 @@
         ]
     },
     {
-        "id": 2,
         "title": "Intégration de composants web",
         "skills": [{
-            "id": 0,
             "name":"HTML5 | CSS3 | SCSS",
             "icon": "html",
             "level": "expert",
@@ -93,7 +41,6 @@
             "pro": true
             },
             {
-                "id": 1,
                 "name":"Javascript natif ES6",
                 "icon": "javascript",
                 "level": "avancé",
@@ -101,7 +48,6 @@
                 "pro": true
             },
             {
-                "id": 2,
                 "name":"Angular X",
                 "icon": "angular",
                 "level": "avancé",
@@ -109,7 +55,6 @@
                 "pro": true
             },
             {
-                "id": 3,
                 "name":"React",
                 "icon": "react",
                 "level": "novice",
@@ -117,7 +62,6 @@
                 "pro": false
             },
             {
-                "id": 4,
                 "name":"Sécurité & authentification",
                 "icon": "security",
                 "level": "confirmé",
@@ -127,10 +71,8 @@
         ]
     },
     {
-        "id": 3,
         "title": "Développement de besoins fonctionnels",
         "skills": [{
-            "id": 0,
             "name":"JAVA 8 - 13",
             "icon": "java",
             "level": "avancé",
@@ -138,7 +80,6 @@
             "pro": true
             },
             {
-                "id": 1,
                 "name":"Node.js",
                 "icon": "nodejs",
                 "level": "novice",
@@ -146,7 +87,6 @@
                 "pro": false
                 },
             {
-                "id": 2,
                 "name":"REST API",
                 "icon": "rest",
                 "level": "confirmé",
@@ -154,7 +94,6 @@
                 "pro": true
             },
             {
-                "id": 3,
                 "name":"Springboot",
                 "icon": "springboot",
                 "level": "avancé",
@@ -162,7 +101,6 @@
                 "pro": true
             },
             {
-                "id": 4,
                 "name":"JPA Hibernate",
                 "icon": "hibernate",
                 "level": "avancé",
@@ -170,7 +108,6 @@
                 "pro": false
             },
             {
-                "id": 5,
                 "name":"Déploiement et gestion des environnements",
                 "icon": "server",
                 "level": "intermédiaire",
@@ -178,7 +115,6 @@
                 "pro": true
             },
             {
-                "id": 6,
                 "name":"algorithmique",
                 "icon": "algos",
                 "level": "avancé",
@@ -188,10 +124,47 @@
         ]
     },
     {
-        "id": 4,
+        "title": "Architecture de projets",
+        "skills": [{
+            "name":"UML | MCD | MLD",
+            "icon": "database",
+            "level": "confirmé",
+            "certified": true,
+            "pro": false
+            },
+            {
+                "name":"Diagrammes de classes",
+                "icon": "schema",
+                "level": "confirmé",
+                "certified": true,
+                "pro": true
+            },
+            {
+                "name":"Administration de Bases De Données",
+                "icon": "users",
+                "level": "confirmé",
+                "certified": true,
+                "pro": true
+            },
+            {
+                "name":"Intégration Continue (Github, Jenkins, AWS)",
+                "icon": "github",
+                "level": "confirmé",
+                "certified": true,
+                "pro": true
+            },
+            {
+                "name":"Gestion de packages (npm, webpack) ",
+                "icon": "npm",
+                "level": "confirmé",
+                "certified": true,
+                "pro": true
+            }
+        ]
+    },
+    {
         "title": "Compétences transverses",
         "skills": [{
-            "id": 0,
             "name":"Anglais",
             "icon": "anglais",
             "level": "C1 (oral)",
@@ -199,7 +172,6 @@
             "pro": false
             },
             {
-                "id": 1,
                 "name":"Agilité (SCRUM, Lean)",
                 "icon": "agilite",
                 "level": "confirmé",
@@ -207,7 +179,6 @@
                 "pro": true
             },
             {
-                "id": 2,
                 "name":"Gestion de projet",
                 "icon": "gestion",
                 "level": "confirmé",

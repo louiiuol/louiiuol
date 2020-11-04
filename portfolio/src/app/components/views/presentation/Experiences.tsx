@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Typist from 'react-typist';
 
 import experiences from '../../../../assets/json/experiences.json';
 
 export const Experiences = () => {
 
-    experiences.sort((current, next) => next.id - current.id);
+    const feed = [...experiences].reverse();
+    useEffect(() => {
+        window.setTimeout(() => document.querySelector('.table-wrapper')?.classList.add('scrollable'), 3000);
+    });
     return (
-        <section id='experience-table' className='container cols start tabs'>
+        <section id='experiences' className='container cols start tabs'>
             <Typist avgTypingDelay={50} startDelay={0}>
                 Expériences professionnelles
             </Typist>
             <section className="container table-wrapper">
                 <ul className='container cols start'>
-                    {experiences.map(xp => <Experience key={xp.id} xp={xp}/> )}
+                    {feed.map((xp, index) => <Experience key={index} xp={xp}/> )}
                 </ul>
             </section>
         </section>

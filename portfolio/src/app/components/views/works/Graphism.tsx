@@ -5,29 +5,24 @@ import works from '../../../../assets/json/works/graphism.json'
 
 export const Graphism = () => {
 
+    const feed = [...works].reverse();
+
     const [index, setIndex] = useState(0);
     const [selected, setSelected] = useState({});
     const [isSelected, setIsSelected] = useState(false);
 
     const select = (currentIndex: number) => {
-        const workSize = works.length -1
-        if (currentIndex === 0) {
-            currentIndex = workSize;
-        } else if (currentIndex === workSize) {
-            currentIndex = 0;
-        }
-        setIndex(currentIndex);
-        setSelected(works[currentIndex]);
+        const formated = currentIndex === -1 ? feed.length - 1 : (currentIndex === feed.length ? 0 : currentIndex);
+        setIndex(formated );
+        setSelected(feed[formated]);
         if (!isSelected) { setIsSelected(true) }
     }
-
-    const hide = () => setIsSelected(false)
 
     return (
         <div id="graphism-wrapper" className='content'>
             <section id='graphism' className='container evenly'>
-                {works.map((graphic, current) =>
-                    <article key={graphic.id} className="graphic shadowed" onClick={() => select(current)}>
+                {feed.map((graphic, current) =>
+                    <article key={current} className="graphic shadowed" onClick={() => select(current)}>
                         <Img src='works/graphism' name={graphic.src} alt={graphic.name}/>
                         <h2>{graphic.name}</h2>
                         <p className='description'>{graphic.description}</p>
@@ -37,7 +32,7 @@ export const Graphism = () => {
             {isSelected && (<section id="gallery-fullscreen">
                 <ImgExpanded selected={selected} />
                 <nav>
-                    <Svg src='ui' name='close' size='xs' styles='close is-white' onClick={() => hide()} />
+                    <Svg src='ui' name='close' size='xs' styles='close is-white' onClick={() => setIsSelected(false)} />
                     <Svg src='ui' name='left' size='sm' styles='nav prev is-white' onClick={() => select(index - 1)} />
                     <Svg src='ui' name='left' size='sm' styles='nav next is-white' onClick={() => select(index + 1)}/>
                 </nav>

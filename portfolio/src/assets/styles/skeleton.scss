@@ -3,12 +3,11 @@ GLOBAL LAYOUT STYLES
 Regroup all views and define their structure.
 */
 
-::-moz-selection { background: #ee6f57; color: #f6f5f5; }
 ::selection { background: #ee6f57; color: #f6f5f5; }
 
 ::-webkit-scrollbar { width: 5px; z-index: 0;} /* scrollbar width */
-::-webkit-scrollbar-track { border-radius: 10px; background-color: rgba($color: #777, $alpha: .4) ; } /* Track */
-::-webkit-scrollbar-thumb { background:rgb(15,48,87); border-radius: 10px; } /* Handle */
+::-webkit-scrollbar-track { border-radius: 10px; background-color: rgba($color: #EEE, $alpha: .6) ; } /* Track */
+::-webkit-scrollbar-thumb { background: #ee6f57; border-radius: 10px; } /* Handle */
 ::-webkit-scrollbar-thumb:hover { background: rgb(0, 135, 189); } /* Handle on hover */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -161,14 +160,16 @@ nav#main-nav {
                 text-align: center;
             }
         }
-        #experience-table {
+        #experiences {
             align-content: start;
             .table-wrapper {
                 height: 75vh;
-                overflow: auto;
-                overflow-x: hidden;
+                overflow: hidden;
                 padding-left: 3rem;
                 animation: entrance 3s forwards ease;
+                &.scrollable {
+                    overflow-y: auto;
+                }
                 li.card-wrapper {
                     position: relative;
                     width: 100%;
@@ -286,7 +287,7 @@ nav#main-nav {
                 align-items: center;
                 margin-top: 2rem;
                 transition: .2s;
-                &:hover {
+                &.hovered {
                     transform: translateX(-50px);
                 }
                 .card {
@@ -300,7 +301,7 @@ nav#main-nav {
                     z-index: 5;
                     transition: .3s;
                     &:not(:first-child) {
-                        margin-left: -105px;
+                        margin-left: -103px;
                     }
                     &:hover {
                         transform: translateY(.5rem);
@@ -329,12 +330,12 @@ nav#main-nav {
                     z-index: 20;
                 }
                 @media (max-width: 1214px) {
-                    &:hover { transform: translateX(-70px); }
+                    &.hovered { transform: translateX(-70px); }
                     .card { &:not(:first-child) { margin-left: -150px; } }
                     .card:focus-within~.card, .card:hover~.card { transform: translateX(151px); }
                 }
                 @media (max-width: 980px) {
-                    &:hover { transform: translateX(-110px); }
+                    &.hovered { transform: translateX(-110px); }
                     .card { width: 280px;}
                     .card { &:not(:first-child) { margin-left: -200px; } }
                     .card:focus-within~.card, .card:hover~.card { transform: translateX(201px); }
@@ -363,8 +364,8 @@ nav#main-nav {
                         .icon-svg {
                             height: 30px;
                             margin-left: .5rem;
-                            &.graduated svg { fill: #ffe05d; }
-                            &.pro svg { fill: #734046; }
+                            &.graduated svg { fill: #ee6f57; }
+                            &.pro svg { fill: #ad4747; }
                         }
                         
                     }
