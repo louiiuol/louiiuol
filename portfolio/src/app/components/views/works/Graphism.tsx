@@ -19,29 +19,31 @@ export const Graphism = () => {
         setIndex(currentIndex);
         setSelected(works[currentIndex]);
         if (!isSelected) { setIsSelected(true) }
-        console.log(selected)
     }
 
     const hide = () => setIsSelected(false)
 
-    return (<section id='graphism' className='container evenly'>
-        {works.map((graphic, current) =>
-            <article key={graphic.id} className="graphic shadowed" onClick={() => select(current)}>
-                <Img src='works/graphism' name={graphic.src} alt={graphic.name}/>
-                <h2>{graphic.name}</h2>
-                <p>{graphic.description}</p>
-            </article>
-        )}
-        {isSelected && (<section id="gallery-fullscreen">
-            <ImgExpanded selected={selected} />
-            <nav>
-                <Svg src='ui' name='close' size='xs' styles='close is-white' onClick={() => hide()} />
-                <Svg src='ui' name='left' size='sm' styles='nav prev is-white' onClick={() => select(index - 1)} />
-                <Svg src='ui' name='left' size='sm' styles='nav next is-white' onClick={() => select(index + 1)}/>
-            </nav>
-        </section> )}
+    return (
+        <div id="graphism-wrapper" className='content'>
+            <section id='graphism' className='container evenly'>
+                {works.map((graphic, current) =>
+                    <article key={graphic.id} className="graphic shadowed" onClick={() => select(current)}>
+                        <Img src='works/graphism' name={graphic.src} alt={graphic.name}/>
+                        <h2>{graphic.name}</h2>
+                        <p>{graphic.description}</p>
+                    </article>
+                )}
+            </section>
+            {isSelected && (<section id="gallery-fullscreen">
+                <ImgExpanded selected={selected} />
+                <nav>
+                    <Svg src='ui' name='close' size='xs' styles='close is-white' onClick={() => hide()} />
+                    <Svg src='ui' name='left' size='sm' styles='nav prev is-white' onClick={() => select(index - 1)} />
+                    <Svg src='ui' name='left' size='sm' styles='nav next is-white' onClick={() => select(index + 1)}/>
+                </nav>
+            </section> )}
+        </div>)
 
-    </section>)
 }
 
 export const ImgExpanded = (props: {selected: any}) =>

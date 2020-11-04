@@ -1,14 +1,13 @@
 @keyframes entrance {
     0% {
-        overflow: hidden;
+        overflow-y: hidden;
         height: 0;
         width: 100px;
     } 50% {
         height: 75vh;
         width: 100px;
-        overflow: hidden;
     } 99% {
-        overflow: hidden;
+        overflow-y: hidden;
     } 100% {
         width: 100%;
     }
