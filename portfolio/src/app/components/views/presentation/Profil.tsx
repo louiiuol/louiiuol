@@ -10,14 +10,14 @@ export const Profil = () => {
                 Développeur Fullstack Javascript
             </Typist>
             <section className="container evenly reverse">
-                <div className="is-flex cols animate__animated animate__zoomInDown">
+                <div id='intro' className="is-flex cols animate__animated animate__zoomInDown">
                     <Img alt="Louis Godlewski's avatar" styles='shadowed rounded colorless' size='lg'
                         src='intro' name='portrait' type='png'/>
                     <Socials />
                 </div>
                 <div className="is-white spaced-lg halfwidth-md no-overflow">
                     <p className='animate__animated animate__flipInX animate__delay-1s legend spaced-xs'>
-                        Passionné d'UX design et de structure de données, je suis un développeur web capable de contribuer à l'ensemble des étapes de construction d'un projet web.
+                        Passionné d'UX design et de structure de données, je suis un développeur web souhaitant contribuer à l'ensemble des étapes de construction d'un projet web, en fonction de vos besoins.
                     </p>
                     <ul className='list circle bolded'>
                         <li className='animate__animated animate__fadeInLeft animate__delay-2s'>Création de composants graphiques comportant une logique d'affichage dédiée et réutilisable.</li>

@@ -30,7 +30,7 @@ export const Graphism = () => {
                     <article key={graphic.id} className="graphic shadowed" onClick={() => select(current)}>
                         <Img src='works/graphism' name={graphic.src} alt={graphic.name}/>
                         <h2>{graphic.name}</h2>
-                        <p>{graphic.description}</p>
+                        <p className='description'>{graphic.description}</p>
                     </article>
                 )}
             </section>

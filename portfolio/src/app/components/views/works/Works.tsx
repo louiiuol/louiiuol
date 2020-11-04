@@ -5,7 +5,7 @@ import {Svg} from '../../shared';
 
 export const Works = () => {
 
-    const worksCategories = [{name:'Audiovisuel', img:'motion'},{name:'Graphisme', img:'graphic'}, {name:'Web', img:'wireframe'}, {name: 'Algorithmes', 'img': 'algos'}];
+    const worksCategories = [{name:'Audiovisuel', img:'motion'},{name:'Graphisme', img:'graphic'}, {name:'Web UI', img:'wireframe'}, {name: 'Algorithmes', 'img': 'algos'}];
 
     const setFullScreen = (quarter: Element) => () => {
         quarter.classList.add('full');
