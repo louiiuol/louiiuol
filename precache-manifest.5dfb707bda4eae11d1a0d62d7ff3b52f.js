@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1a6516acb38d8583c65708235f471a6",
+    "revision": "5393cc111f81574aa772c692d2581d2b",
     "url": "/louiiuol/index.html"
   },
   {
-    "revision": "a739e0da73a5a58c18e3",
-    "url": "/louiiuol/static/css/main.1f285d7d.chunk.css"
+    "revision": "da189177da7f5ab47b94",
+    "url": "/louiiuol/static/css/main.91044c52.chunk.css"
   },
   {
     "revision": "f0a374ac07f7c4106e07",
@@ -48,12 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/louiiuol/static/js/19.baefb19c.chunk.js"
   },
   {
-    "revision": "7f0496a63f099a66274b",
-    "url": "/louiiuol/static/js/2.31abd11d.chunk.js"
+    "revision": "14728f07bca546f25b8c",
+    "url": "/louiiuol/static/js/2.364e5600.chunk.js"
   },
   {
     "revision": "b28efdd56deb90065a6ed9c886c45c8b",
-    "url": "/louiiuol/static/js/2.31abd11d.chunk.js.LICENSE.txt"
+    "url": "/louiiuol/static/js/2.364e5600.chunk.js.LICENSE.txt"
   },
   {
     "revision": "2f48416e29886491d38d",
@@ -120,8 +120,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/louiiuol/static/js/34.b083e9c2.chunk.js"
   },
   {
-    "revision": "ac19090c83705960bb38",
-    "url": "/louiiuol/static/js/35.1e905e46.chunk.js"
+    "revision": "c1b081c31b1fdcd9c537",
+    "url": "/louiiuol/static/js/35.a660a5ab.chunk.js"
+  },
+  {
+    "revision": "e98152ae6eb77be67bb2",
+    "url": "/louiiuol/static/js/36.b5c15c9d.chunk.js"
   },
   {
     "revision": "35f5f33635db5d3dfb66",
@@ -148,12 +152,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/louiiuol/static/js/9.71c08812.chunk.js"
   },
   {
-    "revision": "a739e0da73a5a58c18e3",
-    "url": "/louiiuol/static/js/main.de0e3c66.chunk.js"
+    "revision": "da189177da7f5ab47b94",
+    "url": "/louiiuol/static/js/main.2f58e142.chunk.js"
   },
   {
-    "revision": "005efac63fec6893280d",
-    "url": "/louiiuol/static/js/runtime-main.c0b7416a.js"
+    "revision": "49177cda980dcc5fa64e",
+    "url": "/louiiuol/static/js/runtime-main.c47e2f33.js"
   },
   {
     "revision": "0fc816cbaaddf3d5b8c6b00c4acddf58",
@@ -246,6 +250,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "939e827264342615cb9d8471cbf86216",
     "url": "/louiiuol/static/media/javascript.939e8272.svg"
+  },
+  {
+    "revision": "e0cf8c8b302085e719400b6291b8a9fc",
+    "url": "/louiiuol/static/media/left.e0cf8c8b.svg"
   },
   {
     "revision": "10b183f35c76fa7d3c8b4a9b86765b7b",
