@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/louiiuol/static/css/main.766a3f29.chunk.css",
-    "main.js": "/louiiuol/static/js/main.66148f25.chunk.js",
-    "main.js.map": "/louiiuol/static/js/main.66148f25.chunk.js.map",
+    "main.css": "/louiiuol/static/css/main.105bf3bb.chunk.css",
+    "main.js": "/louiiuol/static/js/main.f8aa2e17.chunk.js",
+    "main.js.map": "/louiiuol/static/js/main.f8aa2e17.chunk.js.map",
     "runtime-main.js": "/louiiuol/static/js/runtime-main.1129f1a5.js",
     "runtime-main.js.map": "/louiiuol/static/js/runtime-main.1129f1a5.js.map",
-    "static/js/2.7886cbfe.chunk.js": "/louiiuol/static/js/2.7886cbfe.chunk.js",
-    "static/js/2.7886cbfe.chunk.js.map": "/louiiuol/static/js/2.7886cbfe.chunk.js.map",
+    "static/js/2.1299dfa4.chunk.js": "/louiiuol/static/js/2.1299dfa4.chunk.js",
+    "static/js/2.1299dfa4.chunk.js.map": "/louiiuol/static/js/2.1299dfa4.chunk.js.map",
     "static/js/3.ed7fee96.chunk.js": "/louiiuol/static/js/3.ed7fee96.chunk.js",
     "static/js/3.ed7fee96.chunk.js.map": "/louiiuol/static/js/3.ed7fee96.chunk.js.map",
     "static/js/4.38964292.chunk.js": "/louiiuol/static/js/4.38964292.chunk.js",
@@ -78,10 +78,10 @@
     "static/js/37.e46fdda0.chunk.js": "/louiiuol/static/js/37.e46fdda0.chunk.js",
     "static/js/37.e46fdda0.chunk.js.map": "/louiiuol/static/js/37.e46fdda0.chunk.js.map",
     "index.html": "/louiiuol/index.html",
-    "precache-manifest.abc356f92b45dfd219fe5eb7e57d6691.js": "/louiiuol/precache-manifest.abc356f92b45dfd219fe5eb7e57d6691.js",
+    "precache-manifest.c35045de79d36abd137eb93e86d1f3d0.js": "/louiiuol/precache-manifest.c35045de79d36abd137eb93e86d1f3d0.js",
     "service-worker.js": "/louiiuol/service-worker.js",
-    "static/css/main.766a3f29.chunk.css.map": "/louiiuol/static/css/main.766a3f29.chunk.css.map",
-    "static/js/2.7886cbfe.chunk.js.LICENSE.txt": "/louiiuol/static/js/2.7886cbfe.chunk.js.LICENSE.txt",
+    "static/css/main.105bf3bb.chunk.css.map": "/louiiuol/static/css/main.105bf3bb.chunk.css.map",
+    "static/js/2.1299dfa4.chunk.js.LICENSE.txt": "/louiiuol/static/js/2.1299dfa4.chunk.js.LICENSE.txt",
     "static/media/index.css": "/louiiuol/static/media/Regular.41e8dead.ttf",
     "static/media/adobe.svg": "/louiiuol/static/media/adobe.f91e95f0.svg",
     "static/media/agilite.svg": "/louiiuol/static/media/agilite.084eb9ee.svg",
@@ -120,8 +120,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1129f1a5.js",
-    "static/js/2.7886cbfe.chunk.js",
-    "static/css/main.766a3f29.chunk.css",
-    "static/js/main.66148f25.chunk.js"
+    "static/js/2.1299dfa4.chunk.js",
+    "static/css/main.105bf3bb.chunk.css",
+    "static/js/main.f8aa2e17.chunk.js"
   ]
 }
