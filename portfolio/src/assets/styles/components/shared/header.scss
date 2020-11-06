@@ -1,0 +1,77 @@
+@import '../../mixins.scss';
+@import '../../variables.scss';
+
+nav#main-nav {
+    position: fixed;
+    top: 0;
+    height: $nav-height;
+    width: 100%;
+    background: $white;
+    color: $primary;
+    padding: $pad-sides-md;
+    z-index: $z-main-nav;
+    @include flex(row nowrap, space-between);
+    @include shadowed;
+    h3 {
+        font-size: 2rem;
+        span {
+            max-width: 0;
+            transition: all .6s ease;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+            opacity: 0;
+            margin-right: 5px;
+        }
+        &:hover span{
+            max-width: 250px;
+            opacity: 1;
+        }
+    }
+    ul.links { @include flex; }
+    .hamburger { display: none; }
+    @media (max-width: 842px) {
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            svg #hamburger .dash {
+                &.top, &.center, &.bottom { transition: all .6s ease; }
+                &.center { opacity: 1; }
+                &.top, &.bottom { transform: rotate(0deg) translate(0%, 0%);}
+            }
+            &.toggled svg #hamburger .dash {
+                &.top { transform: rotate(45deg) translate(25%, -25%);}
+                &.center { opacity: 0;}
+                &.bottom { transform: rotate(-45deg) translate(-50%, 3%);}
+            }
+        }
+        ul.links {
+            position: fixed;
+            width: 100%;
+            height: $main-container-height;
+            left: -150vw;
+            top: 50px;
+            text-align: center;
+            flex-direction: column;
+            background: $primary-light;
+            transition: .6s ease;
+            li {
+                display: block;
+                height: 100px;
+                a:hover { color: $white !important; }
+            }
+        }
+        ul.expanded {
+            left: 0
+        }
+    }
+    .links {
+        a.selected { font-weight: bold; }
+        li {
+            margin: 0 1rem;
+            font-size: 1.25rem;
+        }
+    }
+}

@@ -1,12 +1,7 @@
+@import './mixins.scss';
+@import './variables.scss';
+
 /* FONTS IMPORT */
-@mixin font-face($name, $url, $weight, $style) {
-    @font-face {
-        font-family: $name;
-        src: url($url) format('truetype');
-        font-weight: $weight;
-        font-style: $style;
-    }
-}
 @include font-face('open24', '../fonts/Open-24.ttf', normal, normal );
 @include font-face('poppins', '../fonts/poppins/Regular.ttf', normal, normal );
 @include font-face('poppins', '../fonts/poppins/Regular-Italic.ttf', normal, italic );
@@ -15,23 +10,48 @@
 
 /* GLOBAL FONT STYLES */
 p, .is-bold, strong, .is-italic, em, .content, h1, h2, h3, h4, h5 { font-family: poppins, sans-serif !important; }
+p.legend { font-style: italic; color: $legend; }
 .is-bold, strong { font-weight: bold !important; }
 .is-italic, em { font-style: italic !important; }
+.centered, em { text-align: center; }
 
-a { text-decoration: none; color: currentColor;}
+a, h1, h2, h3, h4, h5 { color: $primary; transition: color .3s; &:hover { color: $primary-light; }}
+a { text-decoration: none;}
+ul li a {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: $primary-light;
+        transition: .3s ease;
+    }
+    &:hover::before {
+        width: 80%;
+    }
+}
+
 li { list-style-type: none; font-family: poppins, sans-serif !important; }
 code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
 
 .Typist {
     font-size: 2.5rem;
-    color: white;
+    color: $white;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rbga(0,0,0, .7);
+    text-shadow: 2px 2px 4px rgba(0,0,0, .7);
     text-align: center;
     font-family: open24 !important;
+    @include for-phone-only { font-size: 1.5rem; margin: 0;}
+    .Cursor {
+        padding-left: 1rem;
+        vertical-align: middle;
+        color: $white;
+        font-family: Helvetica, sans-serif;
+        animation-name: blinker .7s linear infinite;
+    }
 }
-p, li, a, em, strong {
-    &.centered { text-align: center; }
-    &.bolded { font-weight: bold; }
-}
-p.legend { font-style: italic; }

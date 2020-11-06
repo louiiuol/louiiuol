@@ -1,20 +1,25 @@
 import React from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {Profil, Experiences, Skills } from '.';
+import { Link, Route, Switch } from 'react-router-dom';
+
+import '../../../../assets/styles/components/views/presentation/presentation.css';
 
 export const Presentation = () => {
 
+    const sections = [
+        { name: 'Profil', url: 'profil', component: Profil },
+        { name: 'Expériences', url: 'experiences', component: Experiences },
+        { name: 'Compétences', url: 'competences', component: Skills }
+    ]
+
     return (
-        <Tabs id='presentation' className='container'>
-            <TabList className='react-tabs__tab-list animate__animated animate__fadeInDown'>
-                <Tab className='is-primary'>Profil</Tab>
-                <Tab className='is-primary'>Expériences</Tab>
-                <Tab className='is-primary'>Compétences</Tab>
-            </TabList>
-            <TabPanel> <Profil /> </TabPanel>
-            <TabPanel> <Experiences /> </TabPanel>
-            <TabPanel> <Skills /> </TabPanel>
-        </Tabs>
-    );
+        <section id='presentation' className='main-container'>
+            <ul className='sub-nav'>
+                {sections.map(({ name, url }) => <li key={url}><Link to={`/presentation/${url}`}>{name}</Link></li> )}
+            </ul>
+            <Switch>
+                {sections.map(({component, url}) => <Route key={url + '-content'} exact path={`/presentation/${url}`} component={component} />)}
+            </Switch>
+        </section>);
 
 }

@@ -2,23 +2,28 @@ import React from 'react';
 import {Svg} from '../../shared/Svg';
 import Typist from 'react-typist';
 
+import '../../../../assets/styles/components/views/home/home.css';
+
 export const Home = () =>
-    <section id='home' className='container cols'>
-        <Svg styles="app-logo" src='socials' name='logo'/>
-        <IntroWriter />
+    <section id='home' className='main-container'>
+        <div className="content">
+            <Svg id='app-logo' src='socials' name='logo'/>
+            <IntroWriter />
+        </div>
     </section>
 
-const IntroWriter = () =>
-    (<h1 id='intro-typer'>
-        <Typist avgTypingDelay={75} startDelay={0}>
-            Bienvenue !
-            <Typist.Backspace count={28} delay={1250} /><Typist.Delay ms={200} />
-            Je suis un UI / UX Designer
-            <Typist.Backspace count={16} delay={1250} /><Typist.Delay ms={200} />
-            concepteur d'application
-            <Typist.Backspace count={24} delay={1250} /><Typist.Delay ms={200} />
-            Développeur web fullstack Javascript & JAVA
-            <Typist.Backspace count={46} delay={1250} /><Typist.Delay ms={200} />
-            disponible pour échanger sur vos projets et besoins
+const IntroWriter = () => {
+    const texts = ["Bienvenue",
+        "Je suis un UI / UX Designer",
+        "un concepteur d'application",
+        "un développeur web fullstack Javascript, Java et MySQL",
+    ]
+    const final = "je suis disponible pour échanger sur vos projets et besoins";
+    return (<h1 id='intro-typer'>
+        <Typist avgTypingDelay={75} startDelay={100}>
+            {texts.map(text =>
+                <span>{text} <Typist.Backspace count={text.length + 1} delay={1250} /></span> )}
+            {final}
         </Typist>
-    </h1>);
+    </h1>)
+};
