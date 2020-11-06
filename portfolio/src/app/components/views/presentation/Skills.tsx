@@ -1,62 +1,62 @@
 import React, { useEffect } from 'react';
-import Typist from 'react-typist';
-import { Svg } from '../../shared';
+import { Svg, Tab } from '../../shared';
 
 import categories from '../../../../assets/json/skills.json';
 
+import '../../../../assets/styles/components/views/presentation/skills.css';
+
 export const Skills = () => {
 
-  const addHoverEffect = (cards: Element | null) => {
+  /**
+   * Attach 'mouseenter' & 'mouseleave' events on given (DOM) Element's childrens,
+   * that will toggle their classList with property 'hovered'
+   * @param card
+   */
+  const toggleHoverEffect = (cards: Element | null) => {
+    const mobile = window.innerWidth <= 625;
     if (cards) {
       const childs = cards.children;
-      for (let i = 0; i < childs.length - 1; i++) {
+      const size = mobile ? childs.length : childs.length - 1;
+      for (let i = 0; i < size; i++) {
         childs[i].addEventListener('mouseenter', () => childs[i].parentElement?.classList.add('hovered'))
         childs[i].addEventListener('mouseleave', () => childs[i].parentElement?.classList.remove('hovered'))
       }
     }
   }
 
-  const feed = [...categories].reverse();
-  useEffect(() => addHoverEffect(document.querySelector('.card-list')))
+  useEffect(() => toggleHoverEffect(document.querySelector('#skills > #skills-wrapper')))
+
   return (
-    <section id='skills' className="container cols start tabs animate__animated animate__bounceInRight">
-      <Typist avgTypingDelay={50} startDelay={0}>
-        Domaines de compétences
-        </Typist>
-      <section className="card-list">
-        {feed.map((category, index) =>
-          <article key={index} className='card'>
-            <header className="header">
-              <h2>{category.title}</h2>
-            </header>
-            <section className="content">
-              {category.skills.map((skill, i) => <Skill key={i} value={skill} className="card-skill" />)}
-            </section>
-          </article>)}
-      </section>
-    </section>
-  );
+    <Tab id='skills' title='Domaines de compétences'>
+      <div id="skills-wrapper">
+        {[...categories].reverse().map(({ title, skills }, index) => <Category key={index} title={title} skills={skills} />)}
+      </div>
+      
+    </Tab>);
 
 }
 
-const Skill = (props: any) => {
-
-  const skill = props.value;
-
-  return (
-      <section className="skill">
-          <aside className='is-primary'>
-              <Svg size='xs' styles='skill-icon' src='skills' name={skill.icon} />
-          </aside>
-          <div className="content">
-              <h3 className="name">{skill.name}</h3>
-              <div className="infos container start">
-                  <p>{skill.level}</p>
-                  {skill.certified ? <Svg size='xxs' styles='graduated hoverable' src='ui' name='certified' /> : null}
-                  {skill.pro ? <Svg size='xxs' styles='pro hoverable' src='ui' name='pro' /> : null}
-              </div>
-          </div>
+const Category = (category: {title: string, skills: any[]}) => 
+    (<article className='card'>
+      <header className="header">
+        <h2>{category.title}</h2>
+      </header>
+      <section className="card-content">
+        {category.skills.map((skill, i) => <Skill key={i} value={skill} className="card-skill" />)}
       </section>
-  );
+      </article>)
 
-}
+const Skill = (skill: any) =>
+  (<section className="skill">
+    <aside className='is-primary'>
+        <Svg styles='skill-icon' src='skills' name={skill.value.icon} />
+    </aside>
+    <div className="skill-content">
+        <h3 className="name">{skill.value.name}</h3>
+        <div className="infos">
+            <p>{skill.value.level}</p>
+            {skill.value.certified ? <Svg styles='graduated hoverable' src='ui' name='certified' /> : null}
+            {skill.value.pro ? <Svg styles='pro hoverable' src='ui' name='pro' /> : null}
+        </div>
+    </div>
+  </section>)

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ReactSVG } from 'react-svg';
 
-export const Svg = (props: {src: string, name: string, styles?: string, size?: string, onClick?: any}) => {
+export const Svg = (props: {src: string, name: string, styles?: string, onClick?: any, id?: string}) => {
 
-    const IconWrapper = (icon: any) => (<ReactSVG className={`icon-svg ${icon.size} ${icon?.extra ? icon.extra : ''}`} src={icon.file} onClick={icon.onClick} />);
+    const IconWrapper = (icon: any) => (<ReactSVG id={icon.id ? icon.id : ''} className={`icon-svg ${icon?.extra ? icon.extra : ''}`} src={icon.file} onClick={icon.onClick} />);
     const ImportedIconRef = useRef(null);
     const [loading, setLoading] = useState(false);
         useEffect(() => {
@@ -22,6 +22,6 @@ export const Svg = (props: {src: string, name: string, styles?: string, size?: s
         importIcon();
         }, [props.name, props.src]);
         const { current: ImportedIcon } = ImportedIconRef;
-        return !loading && ImportedIconRef.current ? <IconWrapper size={props.size} file={ImportedIcon} extra={props.styles} onClick={props.onClick} /> : null;
+    return !loading && ImportedIconRef.current ? <IconWrapper id={props.id} file={ImportedIcon} extra={props.styles} onClick={props.onClick} /> : null;
 
 };

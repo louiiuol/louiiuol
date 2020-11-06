@@ -10,19 +10,9 @@
         "src": "skin.jpg"
     },
     {
-        "name": "moodboard 70'S",
-        "description": "lorem ipsum dolor esit amet. Verba volanteris amente dolarites.",
-        "src": "moodboard.jpg"
-    },
-    {
         "name": "Plan de métro",
         "description": "lorem ipsum dolor esit amet. Verba volanteris amente dolarites.",
         "src": "metro.png"
-    },
-    {
-        "name": "Maquette KODACHRO MANIA",
-        "description": "lorem ipsum dolor esit amet. Verba volanteris amente dolarites.",
-        "src": "maquette.jpg"
     },
     {
         "name": "Montage Photoshop",
@@ -43,11 +33,6 @@
         "name": "soirée débat",
         "description": "lorem ipsum dolor esit amet. Verba volanteris amente dolarites.",
         "src": "debat.jpg"
-    },
-    {
-        "name": "24h du mans",
-        "description": "lorem ipsum dolor esit amet. Verba volanteris amente dolarites.",
-        "src": "24h.jpg"
     },
     {
         "name": "WWDC apple",

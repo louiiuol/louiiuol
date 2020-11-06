@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Img } from '../../shared';
 
 import videos from '../../../../assets/json/works/videos.json';
-import { Img } from '../../shared';
+import '../../../../assets/styles/components/views/works/videos.css';
 
 export const Videos = () => {
 
