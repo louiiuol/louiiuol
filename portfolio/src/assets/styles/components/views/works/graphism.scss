@@ -1,4 +1,5 @@
 @import '../../../variables.scss';
+@import '../../../mixins.scss';
 
 #graphism-wrapper {
     height: 100%;
@@ -9,6 +10,7 @@
         height: 90vh;
         width: 93vw;
         margin: 0 auto;
+        @include flex(row wrap, space-evenly);
         justify-content: space-evenly;
         z-index: 5;
         article.graphic {
@@ -20,6 +22,7 @@
             border-radius: 5px;
             background: $primary;
             position: relative;
+            cursor: pointer;
             h2{
                 font-size: 2em;
                 padding: 1rem;
@@ -98,6 +101,8 @@
                 top: 50%;
                 transform: translateY(-50%) translateZ(100px);
                 cursor: pointer;
+                .close svg { fill: $white; }
+                &.prev, &.next { color: $white; width: 46px; height: 48px; }
                 &.prev { left: 0 }
                 &.next { right: 0; transform: translateY(-50%) rotateY(180deg); }
             }

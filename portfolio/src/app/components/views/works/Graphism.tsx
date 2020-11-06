@@ -33,9 +33,9 @@ export const Graphism = () => {
             {isSelected && (<section id="gallery-fullscreen">
                 <ImgExpanded selected={selected} />
                 <nav>
-                    <Svg src='ui' name='close' styles='close is-white' onClick={() => setIsSelected(false)} />
-                    <Svg src='ui' name='left' styles='nav prev is-white' onClick={() => select(index - 1)} />
-                    <Svg src='ui' name='left' styles='nav next is-white' onClick={() => select(index + 1)}/>
+                    <Svg src='ui' name='close' styles='close white' onClick={() => setIsSelected(false)} />
+                    <Svg src='ui' name='left' styles='nav prev' onClick={() => select(index - 1)} />
+                    <Svg src='ui' name='left' styles='nav next' onClick={() => select(index + 1)}/>
                 </nav>
             </section> )}
         </div>)

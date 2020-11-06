@@ -68,6 +68,7 @@
             width: 32px;
             height: 32px;
             color: $primary;
+            &.white { color: $white; }
         }
         &.full {
             width: 100%;
