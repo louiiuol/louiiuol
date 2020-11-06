@@ -1,1 +1,0 @@
-{"version":3,"sources":["assets/icons/skills/springboot.svg"],"names":["module","exports"],"mappings":"2FAAAA,EAAOC,QAAU,IAA0B","file":"static/js/24.081a1171.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/springboot.448caa8f.svg\";"],"sourceRoot":""}
