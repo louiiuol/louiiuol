@@ -1,6 +1,6 @@
 # Louis Godlewski | Portfolio
 
-## ![Website homepage](./intro.gif)
+## ![Website homepage](../resources/intro.gif)
 
 ## Presentation 🎙
 
