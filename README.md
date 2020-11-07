@@ -1,4 +1,4 @@
-# ![Website homepage](./portfolio/intro.gif)
+<p align='center'> <img src='./portfolio/intro.gif' /> </p>
 
 🚀 **Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! 🕊
 
@@ -25,4 +25,4 @@
   <img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
 </p>
 
-⬇️ *Check my repositories below* ⬇️
+<p align='center'>⬇️ *Check my repositories below* ⬇️</p>
