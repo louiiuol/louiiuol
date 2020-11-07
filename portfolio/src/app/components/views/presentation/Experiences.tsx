@@ -30,7 +30,7 @@ const Experience = (props: any) => {
                         <h5>{props.xp.title}</h5>
                         <p className="location">{props.xp.location.establishment} <br /> <span>{props.xp.location.city}</span></p>
                     </header>
-                    <div className="description">
+                    <div className="description animated">
                         <p className='legend' >{props.xp.description}</p>
                         <ul className='list'> {props.xp.actions.map((action: string, index: number) => <li key={index} className='action'>{action}</li>)} </ul>
                     </div>

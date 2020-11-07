@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Typist from 'react-typist';
 import { Graphism, Apps, Algos, Videos } from '.';
 import {Svg} from '../../shared';
-import { Switch, Route, Link, Redirect } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 
 import '../../../../assets/styles/components/views/works/works.css';
 
@@ -15,30 +15,23 @@ export const Works = () => {
         { name: 'Algorithmie', img:'algos', url: 'algorithmie', component: Algos },
     ]
 
-    const onClose = () => {
-        document.querySelector('.full')?.classList.remove('full');
-        return <Redirect to="/projets" />
-    }
-
     useEffect(() =>
         document.querySelectorAll('.quarter').forEach(quarter =>
-            quarter.querySelector('header')?.addEventListener('click', () => quarter.classList.add('full'))))
+            quarter.querySelector('header')?.addEventListener('click', () =>
+                quarter.classList.add('full'))))
 
     return (
-        <section id='works'>
+        <section id='works' className='main-container'>
             {sections.map(({name, img, url, component}) =>
                 <article key={url} className="quarter">
-                    <Link to={`/projets/${url}`} >
+                    <Link className='quarter-link' to={`/projets/${url}`} >
                         <header>
                             <Typist avgTypingDelay={50} startDelay={0}>{name}</Typist>
                             <Svg src='skills' name={img} styles='category-icon is-white' />
                         </header>
                     </Link>
                     <Switch>
-                        <section className="content">
-                            <Svg src='ui' name='close' styles='close is-primary' onClick={() =>onClose()}/>
-                            <Route key={url + '-content'} exact path={`/projets/${url}`} component={component} />
-                        </section>
+                        <Route key={url + '-content'} exact path={`/projets/${url}`} component={component} />
                     </Switch>
                 </article> )}
         </section> );

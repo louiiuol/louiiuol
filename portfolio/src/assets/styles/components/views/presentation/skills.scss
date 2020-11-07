@@ -6,52 +6,48 @@
     opacity: 0;
     #skills-wrapper {
         @include flex;
-        transition: transform .2s;
-        width: 100vw;
-        height: 100%;
+        @include sized(100vw, 100%);
+        transition: transform $transition-fastest;
         .card {
-            width: 300px;
-            height: 400px;
-            border-radius: 8px;
-            background: #FFF;
-            transition: .2s;
+            @include sized(300px, 400px);
+            @include shadowed;
+            border-radius: $radius-md;
+            background: $white;
+            transition: $transition-fastest;
             overflow: hidden;
-            box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.4);
             z-index: 5;
-            transition: .3s;
+            transition: $transition-fastest;
             &:hover {
                 transform: translateY(.5rem);
                 z-index: 10;
-                box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.8);
+                box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.9);
             }
             header.header {
-                padding: 1rem;
+                padding: 1rem 0;
                 h2 {
                     font-size: 1rem !important;
                     color: $primary;
                     text-align: center;
                     text-transform: uppercase;
                     font-weight: bold;
-                    transition: .4s;
+                    transition: $transition-fastest;
                 }
             }
             section.card-content {
-                transition: .6s;
-                height: 325px;
+                @include overflow-y;
+                transition: $transition-fast;
+                height: 350px;
+                box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.4);
                 .skill {
                     color: $primary;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
+                    @include flex(row, space-around);
                     padding: 1.5rem 1rem;
-                    .skill-icon { transition: .4s; }
+                    .skill-icon { transition: $transition-fastest; }
                     .skill-content {
-                        align-items: flex-start;
-                        display: flex;
-                        flex-flow: column nowrap;
+                        @include flex(column nowrap, center, flex-start);
                         width: 70%;
                         h3 {
-                            font-size: .85rem;
+                            font-size: .8rem;
                             font-weight: 100;
                             color: $primary;
                             border-bottom: 1px solid $primary;
@@ -59,71 +55,60 @@
                         .infos {
                             margin-top: .5rem;
                             @include flex(row, flex-start);
-                            p { font-size: .8rem; color: #444}
+                            p { font-size: .8rem; color: $legend; }
                             .icon-svg, svg {
-                                height: 28px;
-                                width: 28px;
+                                @include sized(28px, 28px);
                                 margin-left: .5rem;
                                 &.graduated svg { fill: $accent; }
-                                &.pro svg { fill: #ad4747; }
+                                &.pro svg { fill: #a15b32; }
                             }
-                            
                         }
                     }
                 }
-                aside, .icon-svg, svg {
-                    width: 48px;
-                    height: 48px;
-                }
-            }
-            &:hover .card-content {
-                overflow-y: scroll;
+                aside, .icon-svg, svg { @include sized(48px, 48px) }
             }
         }
         .card:focus-within~.card, .card:hover~.card { z-index: 20; }
-        @media (min-width: 1581px) {
-            &.hovered { transform: translateX(-50px); }
-            .card { &:not(:first-child) { margin-left: -100px; } }
-            .card:focus-within~.card, .card:hover~.card { transform: translateX(105px); }
-        }
-        @media (min-width: 1225px) and (max-width: 1580px) {
-            &.hovered { transform: translateX(-125px); }
-            .card { &:not(:first-child) { margin-left: -200px; } }
-            .card:focus-within~.card, .card:hover~.card { transform: translateX(200px); }
-        }
-        @media (min-width: 981px) and (max-width: 1224px) {
-            &.hovered { transform: translateX(-125px); }
-            .card { &:not(:first-child) { margin-left: -200px; } }
-            .card:focus-within~.card, .card:hover~.card { transform: translateX(205px); }
-        }
-        @media (min-width: 781px) and (max-width: 980px) {
+        @include from-tablet-portrait {
             &.hovered { transform: translateX(-100px); }
             .card { width: 280px;}
             .card { &:not(:first-child) { margin-left: -200px; } }
             .card:focus-within~.card, .card:hover~.card { transform: translateX(201px); }
         }
+        @include from-tablet-landscape {
+            &.hovered { transform: translateX(-125px); }
+            .card { &:not(:first-child) { margin-left: -200px; } }
+            .card:focus-within~.card, .card:hover~.card { transform: translateX(205px); }
+        }
+        @include from-desktop {
+            &.hovered { transform: translateX(-125px); }
+            .card { &:not(:first-child) { margin-left: -200px; } }
+            .card:focus-within~.card, .card:hover~.card { transform: translateX(200px); }
+        }
+        @include from-big-desktop {
+            &.hovered { transform: translateX(-50px); }
+            .card { &:not(:first-child) { margin-left: -100px; } }
+            .card:focus-within~.card, .card:hover~.card { transform: translateX(105px); }
+        }
     }
-    @media (max-width: 780px) {
+    @include for-phone-and-tablet {
         padding-top: 2rem;
         align-items: flex-start;
         overflow: hidden;
-        border-radius: 8px;
+        border-radius: $radius-md;
         #skills-wrapper {
+            @include sized(90%, calc(100vh - 150px) !important);
             align-items: flex-start;
-            height: calc(100vh - 150px) !important;
-            width: 90%;
             max-width: 500px;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: $radius-md;
             &.hovered { transform: translateY(-30px); }
-            .card { 
-                width: 100%; 
-                height: 150px;
+            .card {
+                @include sized(100%, 150px);
                 &:hover { height: 400px;}
-                &:not(:first-child) { margin-left: 0;  margin-top: -175px; }
+                &:not(:first-child) { margin-left: 0; margin-top: -175px; }
             }
             .card:focus-within~.card, .card:hover~.card { transform: translateY(140px); }
         }
-        
     }
 }

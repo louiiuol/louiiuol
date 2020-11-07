@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Img, Svg } from '../../shared'
+import { Img, Svg, QuarterContent } from '../../shared'
 
 import works from '../../../../assets/json/works/graphism.json'
 import '../../../../assets/styles/components/views/works/graphism.css';
@@ -20,16 +20,14 @@ export const Graphism = () => {
     }
 
     return (
-        <div id="graphism-wrapper" className='content'>
-            <section id='graphism' className='container evenly'>
-                {feed.map((graphic, current) =>
-                    <article key={current} className="graphic shadowed" onClick={() => select(current)}>
-                        <Img src='works/graphism' name={graphic.src} alt={graphic.name}/>
-                        <h2>{graphic.name}</h2>
-                        <p className='description'>{graphic.description}</p>
-                    </article>
-                )}
-            </section>
+        <QuarterContent id='graphism'>
+            {feed.map((graphic, current) =>
+                <article key={current} className="graphic shadowed" onClick={() => select(current)}>
+                    <Img src='works/graphism' name={graphic.src} alt={graphic.name}/>
+                    <h2>{graphic.name}</h2>
+                    <p className='description'>{graphic.description}</p>
+                </article>
+            )}
             {isSelected && (<section id="gallery-fullscreen">
                 <ImgExpanded selected={selected} />
                 <nav>
@@ -38,7 +36,7 @@ export const Graphism = () => {
                     <Svg src='ui' name='left' styles='nav next' onClick={() => select(index + 1)}/>
                 </nav>
             </section> )}
-        </div>)
+        </QuarterContent>)
 
 }
 
