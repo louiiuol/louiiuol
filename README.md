@@ -1,16 +1,12 @@
-<p align='center'><img width=400 src='https://raw.githubusercontent.com/louiiuol/louiiuol/main/logo.svg'/></p>
+# ![Website homepage](./portfolio/intro.gif)
 
 🚀 **Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! 🕊
 
-> 🌍 I've just deployed my **<a target="blank" href='https://louiiuol.github.io/louiiuol/'>portfolio</a> with React & Github Pages** !
->
-> 📚 I’m currently **learning in depth JS frameworks** (React) and Node.js ..
->
-> 🎨 I'm probably **solving problems** on <a target="blank" href='https://www.codewars.com/users/louiiuol/completed'>codewars</a> or designing various UI on <a target="blank" href="https://codepen.io/louiiuol">codepen</a> ..
->
-> 💡 I’m looking to **collaborate with other project creators** .. Feel free to share your ideas !
->
-> 🤔 I Loves to **chat and explore new concepts**, even the weird ones ..
+> - 🌍 I've just deployed my *[portfolio](https://louiiuol.github.io/louiiuol/)* with React & Github Pages !
+> - 📚 I’m currently **learning in depth JS frameworks** (React) and Node.js ..
+> - 🎨 I'm probably **solving problems** on [codewars](https://www.codewars.com/users/louiiuol/completed) or designing various UI on [codepen](https://codepen.io/louiiuol) ..
+> - 💡 I’m looking to **collaborate with other project creators** .. Feel free to share your ideas !
+> - 🤔 I Loves to **chat and explore new concepts**, even the weird ones ..
 
 <p align='center'>
   <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord' />
@@ -29,4 +25,4 @@
   <img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
 </p>
 
-<p align='center'>Feel free to check my repositories below ⬇️</p>
+⬇️ *Check my repositories below* ⬇️

@@ -1,10 +1,10 @@
 # Louis Godlewski | Portfolio
 
-## ![Website homepage](./home.gif)
+## ![Website homepage](./intro.gif)
 
 ## Presentation 🎙
 
-<strong>Padawan Web developer</strong> that loves to <strong> design </strong> and <strong> develop </strong> all sort of web projects ! Mainly working on a weird language that is <strong>Javascript</strong>, and  more recently discovering peace with <strong>Typescript</strong>.
+**Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is **Javascript**, and more recently discovering peace with **Typescript**.
 
 > *Find hosted project [here](https://louiiuol.github.io/louiiuol/) !*
 
