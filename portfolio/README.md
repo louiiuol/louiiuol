@@ -1,8 +1,6 @@
 # Louis Godlewski | Portfolio
 
-![React CI](https://github.com/louiiuol/jar-it/workflows/Spring%20CI/badge.svg)
-
-## ![Louis Godlewski's banner](../logo.svg)
+## ![Website homepage](./home.gif)
 
 ## Presentation 🎙
 
