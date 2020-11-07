@@ -1,15 +1,5 @@
 [
     {
-        "name": "Retouche Photoshop",
-        "description": "lorem ipsum dolor esit amet. Verba volanteris amente dolarites.",
-        "src": "tag.jpg"
-    },
-    {
-        "name": "Retouche Photoshop",
-        "description": "lorem ipsum dolor esit amet. Verba volanteris amente dolarites.",
-        "src": "skin.jpg"
-    },
-    {
         "name": "Plan de métro",
         "description": "lorem ipsum dolor esit amet. Verba volanteris amente dolarites.",
         "src": "metro.png"

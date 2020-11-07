@@ -15,6 +15,7 @@
 			stroke: white;
 			stroke-dasharray: 850; stroke-dashoffset: 850;
 			animation: drawing 2s ease forwards;
+			filter: drop-shadow(1px 2px 4px rgba(0,0,0, .6));
 		}
 
 		.name path:nth-child(2) { animation-delay: .25s; }

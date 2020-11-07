@@ -3,6 +3,7 @@ import { Img } from '../../shared';
 
 import videos from '../../../../assets/json/works/videos.json';
 import '../../../../assets/styles/components/views/works/videos.css';
+import { QuarterContent } from '../../shared/QuarterContent';
 
 export const Videos = () => {
 
@@ -10,7 +11,7 @@ export const Videos = () => {
     const [selected, setSelected] = useState(feed[0]);
 
     return (
-        <section id='videos-container' className='fullsize'>
+        <QuarterContent id='videos-container'>
             <Player selected={selected} />
                 <section className="next">
                     { feed.map((video, index) =>
@@ -21,8 +22,7 @@ export const Videos = () => {
                             <h4 className='is-primary'>{video.name}</h4>
                         </article> )}
                 </section>
-        </section>
-    );
+        </QuarterContent>);
 
 };
 

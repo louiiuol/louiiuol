@@ -2,21 +2,12 @@
 @import '../../../mixins.scss';
 
 #presentation ul.sub-nav {
-    position: fixed;
-    width: 100%;
-    height: $sub-nav-height;
-    background: white;
-    padding: $pad-sides-xs;
-    top: 50px;
     @include flex(row nowrap, flex-start);
+    @include for-phone-and-tablet { justify-content: center;}
+    @include sized(100%, $sub-nav-height);
+    position: fixed;
+    background: $white;
     z-index: $z-nav;
-    animation: slideDown .6s ease;
-    li {
-        font-size: .85rem;
-        line-height: 1.5rem;
-        text-transform: uppercase;
-        margin: 0 1rem;
-        cursor: pointer;
-        color: $primary;
-    }
+    animation: slideDown $transition-fast;
+    li { font-size: .85rem; }
 }

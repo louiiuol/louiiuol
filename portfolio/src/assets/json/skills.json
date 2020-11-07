@@ -1,6 +1,6 @@
 [
     {
-        "title": "Création d'interfaces utilisateur",
+        "title": "Interfaces utilisateur",
         "skills": [{
             "name":"Suite adobe",
             "icon": "adobe",
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "title": "Intégration de composants web",
+        "title": "Intégration web",
         "skills": [{
             "name":"HTML5 | CSS3 | SCSS",
             "icon": "html",
@@ -71,7 +71,7 @@
         ]
     },
     {
-        "title": "Développement de besoins fonctionnels",
+        "title": "Serveurs Applicatifs",
         "skills": [{
             "name":"JAVA 8 - 13",
             "icon": "java",

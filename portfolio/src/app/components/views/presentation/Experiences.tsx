@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import experiences from '../../../../assets/json/experiences.json';
 
@@ -7,6 +7,7 @@ import { Tab } from '../../shared';
 
 export const Experiences = () => {
 
+    
     const feed = [...experiences].reverse();
     useEffect(() => {window.setTimeout(() => document.querySelector('#experiences')?.classList.add('scrollable'), 4000)});
 
@@ -19,6 +20,9 @@ export const Experiences = () => {
 
 const Experience = (props: any) => {
 
+    const [mobile, setMobile] = useState(false);
+    window.addEventListener("resize", () => setMobile(window.innerWidth <= 650));
+
     return (
         <li className="card-wrapper">
             <article key={props.xp.id} className={`card shadowed ${props.xp.type === 'FORMATION' ? 'accent' : ''}`}>
@@ -28,9 +32,13 @@ const Experience = (props: any) => {
                 <section className="card-content">
                     <header className="header">
                         <h5>{props.xp.title}</h5>
-                        <p className="location">{props.xp.location.establishment} <br /> <span>{props.xp.location.city}</span></p>
+                        <p className="location">
+                            <span>{props.xp.location.establishment}</span>
+                            <span>{props.xp.location.city}</span>
+                            {mobile ? <span>{props.xp.date}</span> : null }
+                        </p>
                     </header>
-                    <div className="description">
+                    <div className="description animated">
                         <p className='legend' >{props.xp.description}</p>
                         <ul className='list'> {props.xp.actions.map((action: string, index: number) => <li key={index} className='action'>{action}</li>)} </ul>
                     </div>
@@ -41,3 +49,14 @@ const Experience = (props: any) => {
     );
 
 }
+
+// function debounce(fn: any, ms: number) {
+//     let timer: any;
+//     return (_: any) => {
+//         clearTimeout(timer);
+//         timer = setTimeout((_: any) => {
+//             timer = null;
+//             fn.apply(this, arguments);
+//         }, ms);
+//     };
+// }
