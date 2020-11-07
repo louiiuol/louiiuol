@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/louiiuol/static/css/main.38864a52.chunk.css",
-    "main.js": "/louiiuol/static/js/main.80d1ba9c.chunk.js",
-    "main.js.map": "/louiiuol/static/js/main.80d1ba9c.chunk.js.map",
-    "runtime-main.js": "/louiiuol/static/js/runtime-main.8f1d2450.js",
-    "runtime-main.js.map": "/louiiuol/static/js/runtime-main.8f1d2450.js.map",
-    "static/js/2.bfb38667.chunk.js": "/louiiuol/static/js/2.bfb38667.chunk.js",
-    "static/js/2.bfb38667.chunk.js.map": "/louiiuol/static/js/2.bfb38667.chunk.js.map",
+    "main.css": "/louiiuol/static/css/main.0e30ed5d.chunk.css",
+    "main.js": "/louiiuol/static/js/main.b27ca81f.chunk.js",
+    "main.js.map": "/louiiuol/static/js/main.b27ca81f.chunk.js.map",
+    "runtime-main.js": "/louiiuol/static/js/runtime-main.7ce80a66.js",
+    "runtime-main.js.map": "/louiiuol/static/js/runtime-main.7ce80a66.js.map",
+    "static/js/2.d0c7547b.chunk.js": "/louiiuol/static/js/2.d0c7547b.chunk.js",
+    "static/js/2.d0c7547b.chunk.js.map": "/louiiuol/static/js/2.d0c7547b.chunk.js.map",
     "static/js/3.38eacb4c.chunk.js": "/louiiuol/static/js/3.38eacb4c.chunk.js",
     "static/js/3.38eacb4c.chunk.js.map": "/louiiuol/static/js/3.38eacb4c.chunk.js.map",
     "static/js/4.d698f1ee.chunk.js": "/louiiuol/static/js/4.d698f1ee.chunk.js",
@@ -63,8 +63,8 @@
     "static/js/29.17f36919.chunk.js.map": "/louiiuol/static/js/29.17f36919.chunk.js.map",
     "static/js/30.4e408f9d.chunk.js": "/louiiuol/static/js/30.4e408f9d.chunk.js",
     "static/js/30.4e408f9d.chunk.js.map": "/louiiuol/static/js/30.4e408f9d.chunk.js.map",
-    "static/js/31.875f7a46.chunk.js": "/louiiuol/static/js/31.875f7a46.chunk.js",
-    "static/js/31.875f7a46.chunk.js.map": "/louiiuol/static/js/31.875f7a46.chunk.js.map",
+    "static/js/31.32064798.chunk.js": "/louiiuol/static/js/31.32064798.chunk.js",
+    "static/js/31.32064798.chunk.js.map": "/louiiuol/static/js/31.32064798.chunk.js.map",
     "static/js/32.d4a7e532.chunk.js": "/louiiuol/static/js/32.d4a7e532.chunk.js",
     "static/js/32.d4a7e532.chunk.js.map": "/louiiuol/static/js/32.d4a7e532.chunk.js.map",
     "static/js/33.e5fe2fec.chunk.js": "/louiiuol/static/js/33.e5fe2fec.chunk.js",
@@ -78,10 +78,10 @@
     "static/js/37.ef2a333c.chunk.js": "/louiiuol/static/js/37.ef2a333c.chunk.js",
     "static/js/37.ef2a333c.chunk.js.map": "/louiiuol/static/js/37.ef2a333c.chunk.js.map",
     "index.html": "/louiiuol/index.html",
-    "precache-manifest.4e497c23f8ff9b9bd834eec54cd6da40.js": "/louiiuol/precache-manifest.4e497c23f8ff9b9bd834eec54cd6da40.js",
+    "precache-manifest.7c000c88937af2e4ad250729f3de461e.js": "/louiiuol/precache-manifest.7c000c88937af2e4ad250729f3de461e.js",
     "service-worker.js": "/louiiuol/service-worker.js",
-    "static/css/main.38864a52.chunk.css.map": "/louiiuol/static/css/main.38864a52.chunk.css.map",
-    "static/js/2.bfb38667.chunk.js.LICENSE.txt": "/louiiuol/static/js/2.bfb38667.chunk.js.LICENSE.txt",
+    "static/css/main.0e30ed5d.chunk.css.map": "/louiiuol/static/css/main.0e30ed5d.chunk.css.map",
+    "static/js/2.d0c7547b.chunk.js.LICENSE.txt": "/louiiuol/static/js/2.d0c7547b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/louiiuol/static/media/Regular.41e8dead.ttf",
     "static/media/adobe.svg": "/louiiuol/static/media/adobe.f91e95f0.svg",
     "static/media/agilite.svg": "/louiiuol/static/media/agilite.084eb9ee.svg",
@@ -103,7 +103,7 @@
     "static/media/javascript.svg": "/louiiuol/static/media/javascript.939e8272.svg",
     "static/media/left.svg": "/louiiuol/static/media/left.e0cf8c8b.svg",
     "static/media/linkedin.svg": "/louiiuol/static/media/linkedin.10b183f3.svg",
-    "static/media/logo.svg": "/louiiuol/static/media/logo.455a6618.svg",
+    "static/media/logo.svg": "/louiiuol/static/media/logo.39fa52b2.svg",
     "static/media/motion.svg": "/louiiuol/static/media/motion.1bb283f9.svg",
     "static/media/nodejs.svg": "/louiiuol/static/media/nodejs.797ff048.svg",
     "static/media/npm.svg": "/louiiuol/static/media/npm.1d31139f.svg",
@@ -119,9 +119,9 @@
     "static/media/wireframe.svg": "/louiiuol/static/media/wireframe.29974369.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8f1d2450.js",
-    "static/js/2.bfb38667.chunk.js",
-    "static/css/main.38864a52.chunk.css",
-    "static/js/main.80d1ba9c.chunk.js"
+    "static/js/runtime-main.7ce80a66.js",
+    "static/js/2.d0c7547b.chunk.js",
+    "static/css/main.0e30ed5d.chunk.css",
+    "static/js/main.b27ca81f.chunk.js"
   ]
 }
