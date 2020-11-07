@@ -57,7 +57,10 @@
                     font-size: 1rem;
                     text-align: right;
                     @include flex(column wrap, center, flex-end);
-                    span { font-style: italic; }
+                    span {
+                        font-style: italic;
+                        &.phone-only { display: none; }
+                    }
                 }
                 .description {
                     max-height: 0;
@@ -71,7 +74,7 @@
                 }
                 footer {
                     @include from-tablet-landscape { top: -10px; }
-                    @include flex(null, flex-start);
+                    @include flex(row wrap, flex-start);
                     position: relative;
                     transition: $transition-fast;
                     .keyword {
@@ -95,6 +98,28 @@
                 border: 2px solid $beige;
                 .description { border-color: $beige !important; }
                 h5, p, span, li, strong, em { color: $beige !important; }
+            }
+        }
+    }
+    @include for-phone-only {
+        padding-left: 0;
+        .card-wrapper {
+            &::before, &::after { display: none; }
+            article.card {
+                margin: .85rem 1rem;
+                aside.aside { display: none; }
+                header {
+                    h5 { text-align: center !important; }
+                    .location {
+                        width: 100%;
+                        flex-direction: row !important;
+                        justify-content: space-evenly !important;
+                    }
+                }
+                footer {
+                    margin-top: 1rem;
+                    justify-content: space-evenly !important;
+                }
             }
         }
     }
