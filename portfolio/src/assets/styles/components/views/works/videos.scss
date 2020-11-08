@@ -67,9 +67,9 @@
             padding: .5rem;
             max-width: 375px;
             margin-bottom: 1rem;
-            background: $primary;
+            background: $white;
             border-radius: 4px;
-            h3 { font-size: 1.25rem; color: $beige; text-align: center; text-transform: uppercase; }
+            h3 { font-size: 1.25rem; color: $primary; text-align: center; text-transform: uppercase; }
             .covers {
                 width: 100%;
                 @include flex(row wrap, space-evenly);

@@ -44,7 +44,7 @@
             animation: slideRight $transition-slow;
             &.full { top: 0; left: 0; }
         }
-        header {
+        & .quarter-link > header {
             @include sized(100%, 100%);
             position: relative;
             cursor: pointer;
@@ -86,6 +86,7 @@
             color: $primary;
             display: none;
             &.white { color: $white; }
+            &:hover::before { width: 0;}
         }
         &.full {
             @include sized(100%, 100%);
@@ -93,8 +94,8 @@
             background: rgb(245, 245, 245);
             z-index: 10;
             & > a { width: 100%; }
-            header {
-                height: 65px;
+            & .quarter-link > header {
+                display: none;
                 .Typist {
                     top: 30px;
                     text-align: right;
@@ -109,7 +110,8 @@
             .quarter-container {
                 @include flex;
                 @include overflow-y;
-                @include sized(100vw, calc(100vh - 110px));
+                @include sized(100vw, $main-container-height);
+                padding-top: 50px;
             }
         }
     }
