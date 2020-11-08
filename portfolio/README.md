@@ -1,6 +1,6 @@
 # Louis Godlewski | Portfolio
 
-## ![Website homepage](../resources/intro.gif)
+<p align='center'> <a target='blank' href='https://louiiuol.github.io/louiiuol/' ><img src='../resources/intro.gif' /></a> </p>
 
 ## Presentation 🎙
 
