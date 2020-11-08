@@ -21,10 +21,10 @@ export const Graphism = () => {
 
     return (
         <QuarterContent id='graphism'>
-            {feed.map((graphic, current) =>
+            {feed.map((collection, current) =>
                 <article key={current} className="graphic shadowed" onClick={() => select(current)}>
-                    <Img src='works/graphism' name={graphic.content[0].src} alt={graphic.name}/>
-                    <h2>{graphic.name}</h2>
+                    <Img src={`works/graphism/${collection.src}`} name={collection.content[0].src} alt={collection.name}/>
+                    <h2>{collection.name}</h2>
                 </article>
             )}
             {isSelected && (<section id="gallery-fullscreen">
@@ -63,7 +63,7 @@ export const ImgExpanded = (props: { collection: any }) => {
                     <Svg src='ui' name='left' styles='nav next' onClick={() => select(index + 1)} />
                 </div> : null }
             </div>
-            <Img src='works/graphism' name={props.collection?.content[index].src} alt={props.collection?.content[index].name} />
+            <Img src={`works/graphism/${props.collection.src}`} name={props.collection?.content[index].src} alt={props.collection?.content[index].name} />
         </div>
     </section>) : null;
 }

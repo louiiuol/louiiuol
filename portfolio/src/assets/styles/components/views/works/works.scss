@@ -79,8 +79,8 @@
         .close {
             position: absolute;
             @include sized(32px, 32px);
-            top: 15px;
-            right: 15px;
+            top: 5px;
+            right: 10px;
             cursor: pointer;
             z-index: 5;
             color: $primary;
