@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
-import Typist from 'react-typist';
 import { Graphism, Apps, Algos, Videos } from '.';
-import {Svg} from '../../shared';
+import {Svg, Typer} from '../../shared';
 import { Switch, Route, Link } from 'react-router-dom';
 
 import '../../../../assets/styles/components/views/works/works.css';
@@ -26,7 +25,7 @@ export const Works = () => {
                 <article key={url} className="quarter">
                     <Link className='quarter-link' to={`/projets/${url}`} >
                         <header>
-                            <Typist avgTypingDelay={50} startDelay={0}>{name}</Typist>
+                            <Typer title={name} />
                             <Svg src='skills' name={img} styles='category-icon is-white' />
                         </header>
                     </Link>

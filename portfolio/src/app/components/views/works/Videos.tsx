@@ -8,18 +8,22 @@ import { QuarterContent } from '../../shared/QuarterContent';
 export const Videos = () => {
 
     const feed = [...videos];
-    const [selected, setSelected] = useState(feed[0]);
+    const [selected, setSelected] = useState(feed[0].content[0]);
 
     return (
         <QuarterContent id='videos-container'>
             <Player selected={selected} />
-                <section className="next">
-                    { feed.map((video, index) =>
-                        <article key={index} className="video-preview" onClick={() => setSelected(feed[index])}>
-                            <div className="cover">
-                                <Img src='works/videos-covers' name={video.cover} alt={video.name}/>
+            <section className="next">
+                    { feed.map((collection, index) =>
+                        <article key={index} className="collection-preview">
+                            <h3>{collection.name}</h3>
+                            <div className="covers">
+                                {collection.content.map((video, id) =>
+                                    <div key={id} className="cover" onClick={() => setSelected(video)} >
+                                        <Img src='works/videos-covers' name={video.cover} alt={video.name} />
+                                        <p className='is-primary'>{video.name}</p>
+                                    </div>)}
                             </div>
-                            <h4 className='is-primary'>{video.name}</h4>
                         </article> )}
                 </section>
         </QuarterContent>);

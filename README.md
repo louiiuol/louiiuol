@@ -1,6 +1,6 @@
 # Hi there, glad you made it ! 🖖
 
-<p align='center'> <img src='./resources/intro.gif' /> </p>
+<p align='center'> <a target='blank' href='https://louiiuol.github.io/louiiuol/' ><img src='./resources/intro.gif' /></a> </p>
 
 ## Presentation 🎙
 
@@ -19,4 +19,4 @@
 
 ***
 
-<p align='center'>⬇️ *Check my repositories below* ⬇️</p>
+<p align='center'>⬇️ Check my repositories below ⬇️</p>

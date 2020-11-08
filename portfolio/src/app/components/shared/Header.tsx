@@ -22,7 +22,7 @@ export const Header = () => {
         <ul className={`links ${toggle ? 'expanded' : ''}`}>
             {sections.map(({ name, url, exact }) =>
                 <li onClick={() => setToggle(false)}>
-                    <NavLink exact={exact} to={url} activeClassName="selected">{name}</NavLink></li>)}
+                    <NavLink key={url + '-content' }exact={exact} to={url} activeClassName="selected">{name}</NavLink></li>)}
             <li><a href="mailto:louis.godlewski@gmail.com">Contact</a></li>
         </ul>
     </nav>);
