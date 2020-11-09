@@ -2,18 +2,17 @@
 @import '../../../mixins.scss';
 
 #graphism {
-    width: 100vw;
+    @include sized(100vw, calc(100vh - 130px));
+    @include overflow-y;
     max-width: 1280px;
     margin: 0 auto;
-    height: calc(100vh - 130px);
+    padding: 0 2rem;
     box-sizing: content-box;
-    @include overflow-y;
     z-index: 5;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 5vw);
     gap: 1rem .5rem;
-    padding: 0 2rem;
     article.graphic {
         width: 100%;
         display: inline-block;
@@ -37,8 +36,7 @@
         }
         p.description { display: none; }
         img {
-            width: 100%;
-            height: 100%;
+            @include sized(100%, 100%);
             object-fit: cover;
             transition: $transition-fastest;
             opacity: 1;
@@ -66,97 +64,90 @@
             &:nth-child(5) { grid-column: 2 / span 6; grid-row: 5 / span 4; }
         }
         &:hover {
-            h2 {
-                top: 50%;
-            }
+            h2 { top: 50%; }
             img {
                 filter: blur(2px) brightness(.4);
                 opacity: .6;
             }
         }
     }
-    
-}
-#gallery-fullscreen {
-    position: fixed;
-    height: calc(100% - 50px);
-    width: 100%;
-    overflow: hidden;
-    background: rgba(15,48,87, .95);
-    z-index: 10;
-    top: 50px;
-    left: 0;
-    section.collection {
-        width: 65vw;
-        height: 85vh;
-        background: $beige;
-        border-radius: $radius-lg;
-        @include positioned(relative, 50%, 50%);
-        header h3, p.legend {
-            color: $primary;
-            font-size: 2rem;
-            text-transform: uppercase;
-            text-align: center;
-            width: 100%;
-            position: absolute;
-            top: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        header h3 {
-            border-bottom: 2px solid currentColor;
-            width: 70% !important;
-            margin: 0 auto;
-        }
-        p.legend { top: 5rem; font-size: 1rem; color: $legend }
-        .selected {
-            height: 75vh;
-            padding-top: 12vh;
-            @include flex(row wrap-reverse, space-evenly, center);
-            img {
-                max-width: 25vw;
-                max-height: 70vh;
-                box-shadow: 1px 2px 4px rgba($color: #000, $alpha: .8);
-            }
-            .wrapper {
-                max-width: 400px;
+    #gallery-fullscreen {
+        position: fixed;
+        @include sized(100%, calc(100% - 50px));
+        overflow: hidden;
+        background: $primary;
+        z-index: 10;
+        top: 50px;
+        left: 0;
+        section.collection {
+            @include sized(65vw, 85vh);
+            @include positioned(relative, 50%, 50%);
+            background: $beige;
+            border-radius: $radius-lg;
+            header h3, p.legend {
+                color: $primary;
+                font-size: 2rem;
+                text-transform: uppercase;
                 text-align: center;
-                h4 {
-                    color: $primary;
-                    font-weight: bold;
-                    font-size: 1.5rem;
-                    line-height: 1.7rem;
-                    margin-bottom: 1rem;
+                width: 100%;
+                position: absolute;
+                top: 1rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            header h3 {
+                border-bottom: 2px solid currentColor;
+                width: 70% !important;
+                margin: 0 auto;
+            }
+            p.legend { top: 5rem; font-size: 1rem; color: $legend }
+            .selected {
+                height: 75vh;
+                padding-top: 12vh;
+                @include flex(row wrap-reverse, space-evenly, center);
+                img {
+                    max-width: 25vw;
+                    max-height: 70vh;
+                    box-shadow: 1px 2px 4px rgba($color: #000, $alpha: .8);
                 }
-                p.description {
-                    font-size: 1rem;
-                }
-                .navbar {
-                    @include flex(row, space-evenly);
-                    margin: $pad-bottop-md;
-                    .nav {
-                        @include sized(32px, 32px);
+                .wrapper {
+                    max-width: 400px;
+                    text-align: center;
+                    h4 {
                         color: $primary;
-                        border: 2px solid currentColor;
-                        border-radius: 50%;
-                        &.next {
-                            transform: rotateY(180deg);
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                        line-height: 1.7rem;
+                        margin-bottom: 1rem;
+                    }
+                    p.description {
+                        font-size: 1rem;
+                    }
+                    .navbar {
+                        @include flex(row, space-evenly);
+                        margin: $pad-bottop-md;
+                        .nav {
+                            @include sized(32px, 32px);
+                            color: $primary;
+                            border: 2px solid currentColor;
+                            border-radius: 50%;
+                            &.next { transform: rotateY(180deg); }
                         }
                     }
                 }
             }
         }
-    }
-    nav {
-        .nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%) translateZ(100px);
-            cursor: pointer;
-            .close svg { fill: $white; }
-            &.prev, &.next { color: $white; width: 46px; height: 48px; }
-            &.prev { left: 0 }
-            &.next { right: 0; transform: translateY(-50%) rotateY(180deg); }
+        nav {
+            .nav {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%) translateZ(100px);
+                cursor: pointer;
+                .close svg { fill: $white; }
+                &.prev, &.next { color: $white; width: 46px; height: 48px; }
+                &.prev { left: 0 }
+                &.next { right: 0; transform: translateY(-50%) rotateY(180deg); }
+            }
         }
     }
 }

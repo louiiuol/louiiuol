@@ -15,10 +15,12 @@ export const Presentation = () => {
     return (
         <section id='presentation' className='main-container'>
             <ul className='sub-nav links'>
-                {sections.map(({ name, url }) => <li key={url}><NavLink activeClassName="selected" to={`/presentation/${url}`}>{name}</NavLink></li> )}
+                {sections.map(({ name, url }) =>
+                    <li key={url}><NavLink activeClassName="selected" to={`/presentation/${url}`}>{name}</NavLink></li>)}
             </ul>
             <Switch>
-                {sections.map(({component, url}) => <Route key={url + '-content'} exact path={`/presentation/${url}`} component={component} />)}
+                {sections.map(({ component, url }) =>
+                    <Route key={url + '-content'} exact path={`/presentation/${url}`} component={component} />)}
             </Switch>
         </section>);
 

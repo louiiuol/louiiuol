@@ -86,7 +86,7 @@
             color: $primary;
             display: none;
             &.white { color: $white; }
-            &:hover::before { width: 0;}
+            &:hover::before { width: 0; }
         }
         &.full {
             @include sized(100%, 100%);
