@@ -1,1 +1,0 @@
-{"version":3,"sources":["assets/icons/skills/github.svg"],"names":["module","exports"],"mappings":"2FAAAA,EAAOC,QAAU,IAA0B","file":"static/js/10.d05a943e.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/github.0ff1a6f0.svg\";"],"sourceRoot":""}

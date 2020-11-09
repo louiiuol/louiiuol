@@ -1,1 +1,0 @@
-{"version":3,"sources":["assets/icons/ui/hamburger.svg"],"names":["module","exports"],"mappings":"2FAAAA,EAAOC,QAAU,IAA0B","file":"static/js/35.c14d806e.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/hamburger.ead986b4.svg\";"],"sourceRoot":""}
