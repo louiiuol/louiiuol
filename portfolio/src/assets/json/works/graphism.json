@@ -4,6 +4,12 @@
         "src": "affiches-photoshop",
         "content": [
             {
+                "name": "soirée débat",
+                "description": "Affiche (fictive) pour une soirée débat \"white in the back ?\" ",
+                "src": "debat.jpg",
+                "location": "IUT MMI"
+            },
+            {
                 "name": "AFC - Acheter neuf",
                 "description": "Contenu facebook réalisé pour le compte d'AFC, lors d'un stage en tant qu'assitant de production.",
                 "src": "afc.jpg",
@@ -19,12 +25,6 @@
                 "name": "WWDC apple",
                 "description": "Affiche (fictive) pour l'évènement d'Apple, la WWDC. Réalisé via Photoshop",
                 "src": "wwdc_apple.jpg",
-                "location": "IUT MMI"
-            },
-            {
-                "name": "soirée débat",
-                "description": "Affiche (fictive) pour une soirée débat \"white in the back ?\" ",
-                "src": "debat.jpg",
                 "location": "IUT MMI"
             }
         ]
@@ -98,37 +98,6 @@
         ]
     },
     {
-        "name": "enchères VO",
-        "location": "Stage Trajectoires",
-        "src": "encheres-vo",
-        "content": [
-            {
-                "name": "Vente aux enchères",
-                "description": "Contenu facebook réalisé pour le compte d'enchères VO, lors d'un stage en tant qu'assitant de production. ",
-                "src": "evenement.jpg",
-                "location": "Agence Trajectoires"
-            },
-            {
-                "name": "Post comparatif de voitures",
-                "description": "Contenu facebook réalisé pour le compte d'enchères VO, lors d'un stage en tant qu'assitant de production. ",
-                "src": "comparatif.jpg",
-                "location": "Agence Trajectoires"
-            },
-            {
-                "name": "Post citation",
-                "description": "Contenu facebook réalisé pour le compte d'enchères VO, lors d'un stage en tant qu'assitant de production. ",
-                "src": "citation.jpg",
-                "location": "Agence Trajectoires"
-            },
-            {
-                "name": "Post 'avis client'",
-                "description": "Contenu facebook réalisé pour le compte d'enchères VO, lors d'un stage en tant qu'assitant de production. ",
-                "src": "avis_client.jpg",
-                "location": "Agence Trajectoires"
-            }
-        ]
-    },
-    {
         "name": "épargne éthique",
         "location": "Stage Trajectoires",
         "src": "epargne-ethique",
@@ -158,5 +127,37 @@
                 "location": "Agence Trajectoires"
             }
         ]
+    },
+    {
+        "name": "enchères VO",
+        "location": "Stage Trajectoires",
+        "src": "encheres-vo",
+        "content": [
+            {
+                "name": "Vente aux enchères",
+                "description": "Contenu facebook réalisé pour le compte d'enchères VO, lors d'un stage en tant qu'assitant de production. ",
+                "src": "evenement.jpg",
+                "location": "Agence Trajectoires"
+            },
+            {
+                "name": "Post comparatif de voitures",
+                "description": "Contenu facebook réalisé pour le compte d'enchères VO, lors d'un stage en tant qu'assitant de production. ",
+                "src": "comparatif.jpg",
+                "location": "Agence Trajectoires"
+            },
+            {
+                "name": "Post citation",
+                "description": "Contenu facebook réalisé pour le compte d'enchères VO, lors d'un stage en tant qu'assitant de production. ",
+                "src": "citation.jpg",
+                "location": "Agence Trajectoires"
+            },
+            {
+                "name": "Post 'avis client'",
+                "description": "Contenu facebook réalisé pour le compte d'enchères VO, lors d'un stage en tant qu'assitant de production. ",
+                "src": "avis_client.jpg",
+                "location": "Agence Trajectoires"
+            }
+        ]
     }
+    
 ]

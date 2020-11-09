@@ -86,7 +86,7 @@
             color: $primary;
             display: none;
             &.white { color: $white; }
-            &:hover::before { width: 0;}
+            &:hover::before { width: 0; }
         }
         &.full {
             @include sized(100%, 100%);
@@ -108,7 +108,7 @@
             }
             .close { display: block; }
             .quarter-container {
-                @include flex;
+                @include flex(row wrap, flex-start, center);
                 @include overflow-y;
                 @include sized(100vw, $main-container-height);
                 padding-top: 50px;
