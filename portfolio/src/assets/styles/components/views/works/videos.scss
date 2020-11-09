@@ -14,13 +14,12 @@
         width: calc(100vw - 25px);
         .screen {
             width: 100%;
-            // max-width: 1280px;
             display: flex;
             iframe {
                 border: none;
                 box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
                 @include sized(100%, 40vw);
-                // @include max-sized(1024px, 70vh);
+                cursor: zoom-in;
                 margin: 0 auto;
             }
         }
@@ -35,11 +34,9 @@
         width: 425px;
         .collection-preview {
             cursor: pointer;
-            //box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
             padding: .5rem;
             max-width: 375px;
             margin-bottom: 1rem;
-            //background: $white;
             border-radius: 4px;
             h3 {
                 font-size: 1.25rem;
@@ -77,7 +74,6 @@
                         }
                         em { font-size: .8rem; color: $legend; }
                     }
-                    
                     &:hover {
                         box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
                     }

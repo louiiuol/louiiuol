@@ -32,7 +32,7 @@
             text-transform: uppercase;
             text-shadow: 1px 1px rgba($color: #000, $alpha: .8);
             text-align: center;
-            transition: .3s ease;
+            transition: .4s ease;
         }
         p.description { display: none; }
         img {
@@ -66,7 +66,7 @@
         &:hover {
             h2 { top: 50%; }
             img {
-                filter: blur(2px) brightness(.4);
+                filter: brightness(.4);
                 opacity: .6;
             }
         }
@@ -80,8 +80,8 @@
         top: 50px;
         left: 0;
         section.collection {
-            @include sized(65vw, 85vh);
-            @include positioned(relative, 50%, 50%);
+            @include sized(95vw, 85vh);
+            @include positioned(relative, 75%, 50%);
             background: $beige;
             border-radius: $radius-lg;
             header h3, p.legend {
@@ -115,7 +115,7 @@
                 .wrapper {
                     max-width: 80%;
                     margin: 0 auto;
-                    height: 90%;
+                    height: 100%;
                     padding: 0 .5rem;
                     @include flex(column, flex-start, center);
                     text-align: center;
@@ -134,14 +134,31 @@
                         margin-bottom: 1rem;
                         color: $legend;
                     }
-                    img {
-                        max-width: 50vw;
-                        //max-height: 60vh;
-                        box-shadow: 1px 2px 4px rgba($color: #000, $alpha: .8);
+                    figure {
+                        position: relative;
+                        width: 90%;
+                        height: 100%;
+                        overflow: hidden;
+                        cursor: zoom-in;
+                        img {
+                            @include positioned(absolute, 50%, 50%);
+                            max-height: 95%;
+                            object-fit: scale-down;
+                            filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.6));
+                            pointer-events: none;
+                            &.zoomed {
+                                transform: translate(-50%, -50%), scale(2);
+                            }
+                        }
                     }
+                    
                     .navbar {
                         @include flex(row, space-evenly);
                         margin: $pad-bottop-md;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
                         .nav {
                             @include sized(32px, 32px);
                             position: absolute;
@@ -170,11 +187,12 @@
             }
         }
         @include for-phone-and-tablet {
-            .collection { width: 82vw !important; height: auto !important; }
-            .selected { height: auto !important; max-height: 70vh; overflow-y: auto; }
-            .nav { 
-                &.prev { left: 15px !important; }
-                &.next { right: 15px !important; }
+            .collection { width: 82vw !important; }
+            .selected { overflow-y: auto; }
+            .wrapper { height: 90% !important;}
+            .navbar{
+                position: relative;
+                width: 100%;
             }
         }
     }

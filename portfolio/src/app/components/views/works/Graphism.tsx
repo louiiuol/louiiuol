@@ -47,8 +47,28 @@ const ImgFullScreen = (props: any) => {
     const select = (currentIndex: number) =>
         setIndex(currentIndex === -1 ? props.collection?.content.length - 1
             : (currentIndex === props.collection?.content.length ? 0 : currentIndex));
+    
+    const zoom = () => {
+        const zoomSection = document.getElementById('zoom-section');
+        const image = document.getElementById('zoom-image');
+        
+        if (image) {
+            zoomSection?.addEventListener('mousemove', (event: any) => {
+                let clientX = event.clientX - zoomSection.offsetLeft;
+                let clientY = event.clientY - zoomSection.offsetTop;
+                clientX = clientX / (zoomSection.offsetWidth) * 100;
+                clientY = clientY / (zoomSection.offsetHeight) * 100;
+                image.style.transform = `translate(-${clientX}%, -${clientY}%) scale(2)`;
+            })
+            zoomSection?.addEventListener('mouseleave', () => 
+                image.style.transform = 'translate(-50%, -50%) scale(1)')
+        }
+    }
 
-    useEffect( () => { if (index > props.collection?.content.length - 1) { setIndex(0) } }, [props.collection, index])
+    useEffect(() => {
+        if (index > props.collection?.content.length - 1) { setIndex(0) }
+        zoom();
+    }, [props.collection, index])
 
     return props.collection?.content[index] ?
         (<section className="collection">
@@ -59,11 +79,14 @@ const ImgFullScreen = (props: any) => {
                         <h4>{props.collection?.content[index].name} (<em>{props.collection?.content[index].location}</em>)</h4>
                         <p className="description">{props.collection?.content[index].description}</p>
                     </div>
-                    <Img src={`works/graphism/${props.collection.src}`} name={props.collection?.content[index].src} alt={props.collection?.content[index].name} />
                     {props.collection?.content.length > 1 ? <div className="navbar">
                         <Svg src='ui' name='left' styles='nav prev' onClick={() => select(index - 1)} />
                         <Svg src='ui' name='left' styles='nav next' onClick={() => select(index + 1)} />
-                    </div> : null }
+                    </div> : null}
+                    <figure id='zoom-section'>
+                        <Img id='zoom-image' src={`works/graphism/${props.collection.src}`} name={props.collection?.content[index].src} alt={props.collection?.content[index].name} />
+                    </figure>
+                    
                 </div>
                 
             </div>
