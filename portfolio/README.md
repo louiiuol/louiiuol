@@ -16,7 +16,11 @@
 
 ## Built With 🚀
 
-- [React](https://spring.io/) - Java Framework
+- [React](https://reactjs.org/) - Javascript Framework
+- [Typescript](https://www.typescriptlang.org/) - static type definition for JS
+- [Jest](https://jestjs.io/) - Testing tools for Javascript
+- [Sass](https://sass-lang.com/) - Extension of feature for CSS
+- [Github Pages](https://pages.github.com/) - Host solution for static webapp
 
 ## Available Scripts
 
