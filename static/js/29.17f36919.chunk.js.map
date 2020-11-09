@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/icons/socials/github.svg"],"names":["module","exports"],"mappings":"2FAAAA,EAAOC,QAAU,IAA0B","file":"static/js/29.17f36919.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/github.78808471.svg\";"],"sourceRoot":""}
