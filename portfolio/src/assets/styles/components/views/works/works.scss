@@ -108,7 +108,7 @@
             }
             .close { display: block; }
             .quarter-container {
-                @include flex;
+                @include flex(row wrap, flex-start, center);
                 @include overflow-y;
                 @include sized(100vw, $main-container-height);
                 padding-top: 50px;

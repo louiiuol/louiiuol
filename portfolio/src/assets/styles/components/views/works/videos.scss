@@ -2,82 +2,84 @@
 @import '../../../mixins.scss';
 
 #videos-container {
-    @include flex(row wrap, space-around, flex-start);
+    @include flex(row nowrap, space-around, flex-start);
     padding: 0 1rem 0;
     width: 100%;
+    min-height: calc(100vh - 130px);
     .video-details, .next {
         padding: 1rem;
         padding-top: .5rem;
     }
     .video-details {
-        width: 70vw;
-        padding-left: 5vw;
+        width: calc(100vw - 25px);
         .screen {
-            width: 60vw;
-            max-width: 1280px;
+            width: 100%;
+            // max-width: 1280px;
             display: flex;
             iframe {
-                @include sized(70vw, 40vw);
-                @include max-sized(1024px, 70vh);
+                border: none;
+                box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+                @include sized(100%, 40vw);
+                // @include max-sized(1024px, 70vh);
                 margin: 0 auto;
             }
         }
         .infos {
             padding-top: 1rem;
-            max-width: 80vh;
-            margin: 0 auto;
-            h3 { font-size: 2rem; text-transform: uppercase; }
-            p { padding: 0 1rem 0 1rem; }
+            width: 100%;
+            h3 { font-size: 1.5rem; border-bottom: 1px solid currentColor; margin-bottom: 1rem; }
+            p { padding: 0 1rem 0 1rem; max-width: 95%; span {display: block; }}
         }
     }
     .next {
-        overflow-y: scroll;
-        padding-right: 5vw;
+        width: 425px;
         .collection-preview {
             cursor: pointer;
-            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+            //box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
             padding: .5rem;
             max-width: 375px;
             margin-bottom: 1rem;
-            background: $white;
+            //background: $white;
             border-radius: 4px;
-            h3 { 
+            h3 {
                 font-size: 1.25rem;
-                color: $primary;
-                text-align: center;
+                color: $legend-dark;
                 text-transform: uppercase;
+                border-bottom: 1px solid currentColor;
+                margin-bottom: .5rem;
             }
             .covers {
                 width: 100%;
-                @include flex(row wrap, space-evenly);
+                @include flex(column nowrap, flex-start);
                 .cover {
-                    @include sized(125px, 75px);
-                    position: relative;
+                    @include sized(325px, 105px);
+                    @include flex(row nowrap, flex-start, flex-start);
                     overflow: hidden;
-                    border-radius: $radius-md;
                     margin: $pad-sm;
-                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+                    transition: $transition-fastest;
                     img {
-                        @include sized(100%, 100%);
+                        @include sized(155px, 105px);
+                        @include min-sized(155px, 105px);
                         object-fit: cover;
                         transition: $transition-fast;
                         filter: blur(0) brightness(1);
+                        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
                     }
-                    p {
+                    .preview-infos {
                         width: 100%;
-                        color: $white;
-                        font-size: 1rem;
-                        position: absolute;
-                        top: -100px;
-                        transform: translateY(-50%);
-                        text-transform: uppercase;
-                        text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
-                        transition: $transition-fastest;
-                        text-align: center;
+                        height: 100%;
+                        padding-left: .85rem;
+                        p {
+                            width: 100%;
+                            color: $primary;
+                            font-weight: bold;
+                            transition: $transition-fastest;
+                        }
+                        em { font-size: .8rem; color: $legend; }
                     }
+                    
                     &:hover {
-                        p { top: 50%; }
-                        img { filter: blur(2px) brightness(0.4); }
+                        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
                     }
                 }
             }
@@ -92,7 +94,7 @@
         }
         .screen {
             width: 100vw;
-            iframe { @include sized(100vw, 80vw); }
+            iframe { @include sized(100vw !important, 80vw !important); }
         }
         .infos { 
             padding: .5rem; 
@@ -100,7 +102,7 @@
         }
         .next {
             padding: .5rem;
-            @include flex(row wrap, space-evenly);
+            @include flex(row wrap, space-evenly, flex-start);
         }
     }
 }

@@ -21,7 +21,10 @@ export const Videos = () => {
                                 {collection.content.map((video, id) =>
                                     <div key={id} className="cover" onClick={() => setSelected(video)} >
                                         <Img src='works/videos-covers' name={video.cover} alt={video.name} />
-                                        <p className='is-primary'>{video.name}</p>
+                                        <div className="preview-infos">
+                                            <p className='is-primary'>{video.name}</p>
+                                            <em>{video.date}</em>
+                                        </div>
                                     </div>)}
                             </div>
                         </article> )}
@@ -38,8 +41,12 @@ const Player = (props: any) => {
                 <iframe title={props.selected?.name} key={props?.src} src={`https://www.youtube.com/embed/${props.selected?.src}`}></iframe>
             </div>
             <div className="infos">
-                <h3 className='is-primary'>{props.selected?.name}</h3>
-                <p>{props.selected?.description}</p>
+                <h3 className='is-primary'>{props.selected?.name} - <strong>{props.selected?.date}</strong></h3>
+                
+                <p>
+                    {props.selected?.description.map((desc: string, id: number) => <span key={id}>{desc}</span>)}
+                </p>
+                
             </div>
         </section>
     );

@@ -1,5 +1,38 @@
 [
     {
+        "name": "Agence Trajectoires",
+        "content": [
+            {
+                "name": "Peuple Rohingya menacé",
+                "description": ["Motion Design réalisé lors d'un stage en tant qu'assitant de production pour l'agence digitale Trajectoires.", "Vidéo conçue et adaptée pour un client précis en respectant sa charte graphique et ses besoins spécifiques"],
+                "src": "q-UxCC0L4v8",
+                "cover": "birmanie.png",
+                "date": "mai 2018"
+            },
+            {
+                "name": "Investissement responsable",
+                "description": ["Motion Design réalisé lors d'un stage en tant qu'assitant de production pour l'agence digitale Trajectoires.", "Vidéo conçue et adaptée pour un client précis en respectant sa charte graphique et ses besoins spécifiques"],
+                "src": "IDh9fpwwrUM",
+                "cover": "isr.png",
+                "date": "mai 2018"
+            },
+            {
+                "name": "Valoriser les ressources naturelles",
+                "description": ["Motion Design réalisé lors d'un stage en tant qu'assitant de production pour l'agence digitale Trajectoires.", "Vidéo conçue et adaptée pour un client précis en respectant sa charte graphique et ses besoins spécifiques"],
+                "src": "fBjECqW8JcM",
+                "cover": "local.png",
+                "date": "mai 2018"
+            },
+            {
+                "name": "comparatif de voitures",
+                "description": ["Motion Design réalisé lors d'un stage en tant qu'assitant de production pour l'agence digitale Trajectoires.", "Vidéo conçue et adaptée pour un client précis en respectant sa charte graphique et ses besoins spécifiques"],
+                "src": "-bkLW7NJ-ro",
+                "cover": "vo.png",
+                "date": "mai 2018"
+            }
+        ]
+    },
+    {
         "name": "DUT MMI",
         "content": [
             {
@@ -22,39 +55,6 @@
                 "src": "Ceo3KQgePkI",
                 "cover": "mmi.png",
                 "date": "mai 2014"
-            }
-        ]
-    },
-    {
-        "name": "Agence Trajectoires",
-        "content": [
-            {
-                "name": "Peuple Rohingya menacé",
-                "description": ["Motion Design réalisé lors d'un stage en tant qu'assitant de production pour l'agence digitale Trajectoires.", "Vidéo conçue et adaptée pour un client précis en respectant sa charte graphique et ses besoins spécifiques"],
-                "src": "q-UxCC0L4v8",
-                "cover": "birmanie.png",
-                "date": "mai 2018"
-            },
-            {
-                "name": "Investissement Responsable",
-                "description": ["Motion Design réalisé lors d'un stage en tant qu'assitant de production pour l'agence digitale Trajectoires.", "Vidéo conçue et adaptée pour un client précis en respectant sa charte graphique et ses besoins spécifiques"],
-                "src": "IDh9fpwwrUM",
-                "cover": "isr.png",
-                "date": "mai 2018"
-            },
-            {
-                "name": "Ressources alternatives en Birmanie",
-                "description": ["Motion Design réalisé lors d'un stage en tant qu'assitant de production pour l'agence digitale Trajectoires.", "Vidéo conçue et adaptée pour un client précis en respectant sa charte graphique et ses besoins spécifiques"],
-                "src": "fBjECqW8JcM",
-                "cover": "local.png",
-                "date": "mai 2018"
-            },
-            {
-                "name": "comparatif de voitures",
-                "description": ["Motion Design réalisé lors d'un stage en tant qu'assitant de production pour l'agence digitale Trajectoires.", "Vidéo conçue et adaptée pour un client précis en respectant sa charte graphique et ses besoins spécifiques"],
-                "src": "-bkLW7NJ-ro",
-                "cover": "vo.png",
-                "date": "mai 2018"
             }
         ]
     }

@@ -6,7 +6,7 @@ import '../../../../assets/styles/components/views/works/graphism.css';
 
 export const Graphism = () => {
 
-    const feed = [...works].reverse();
+    const feed = [...works];
 
     const [index, setIndex] = useState(0);
     const [selected, setSelected] = useState(feed[0]);
@@ -28,12 +28,14 @@ export const Graphism = () => {
                 </article>
             )}
             {isSelected && (<section id="gallery-fullscreen">
-                <ImgFullScreen collection={selected} />
-                <nav>
-                    <Svg src='ui' name='close' styles='close white' onClick={() => setIsSelected(false)} />
-                    <Svg src='ui' name='left' styles='nav prev' onClick={() => select(index - 1)} />
-                    <Svg src='ui' name='left' styles='nav next' onClick={() => select(index + 1)}/>
-                </nav>
+                <ImgFullScreen collection={selected}>
+                    <header>
+                        <Svg src='ui' name='left' styles='nav prev' onClick={() => select(index - 1)} />
+                        <h3>{selected.name}</h3>
+                        <Svg src='ui' name='left' styles='nav next' onClick={() => select(index + 1)}/>
+                    </header>
+                </ImgFullScreen>
+                <Svg src='ui' name='close' styles='close white' onClick={() => setIsSelected(false)} />
             </section> )}
         </QuarterContent>)
 
@@ -50,20 +52,20 @@ const ImgFullScreen = (props: any) => {
 
     return props.collection?.content[index] ?
         (<section className="collection">
-            <header>
-                <h3>{props.collection?.name}</h3>
-                <p className="legend">{props.collection?.location}</p>
-            </header>
+            {props.children}
             <div className="selected">
                 <div className="wrapper">
-                    <h4>{props.collection?.content[index].name}</h4>
-                    <p className="description">{props.collection?.content[index].description}</p>
+                    <div className="header">
+                        <h4>{props.collection?.content[index].name} (<em>{props.collection?.content[index].location}</em>)</h4>
+                        <p className="description">{props.collection?.content[index].description}</p>
+                    </div>
+                    <Img src={`works/graphism/${props.collection.src}`} name={props.collection?.content[index].src} alt={props.collection?.content[index].name} />
                     {props.collection?.content.length > 1 ? <div className="navbar">
                         <Svg src='ui' name='left' styles='nav prev' onClick={() => select(index - 1)} />
                         <Svg src='ui' name='left' styles='nav next' onClick={() => select(index + 1)} />
                     </div> : null }
                 </div>
-                <Img src={`works/graphism/${props.collection.src}`} name={props.collection?.content[index].src} alt={props.collection?.content[index].name} />
+                
             </div>
         </section>) : null;
 
