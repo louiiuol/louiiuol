@@ -1,24 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import { Svg } from '.';
 
-const Header = () => {
+import '../../../assets/styles/components/shared/header.css';
 
-    return (
-        <nav id='main-nav' className="is-flex between shadowed">
-            <Link to='/'>
-                <h3 className='is-primary'>
-                    L<span>ouis </span>
-                    G<span>ODLEWSKI</span>
-                </h3>
-            </Link>
+export const Header = () => {
 
-            <ul className='links is-flex'>
-                <NavLink exact to='/' activeClassName="selected"><li className='is-primary'>Accueil</li></NavLink>
-                <NavLink to='/presentation' activeClassName="selected"><li className='is-primary'>Présentation</li></NavLink>
-                <NavLink to='/projets' activeClassName="selected"><li className='is-primary'>Projets</li></NavLink>
-                <NavLink to='/contact' activeClassName="selected"><li className='is-primary'>Contact</li></NavLink>
-            </ul>
-        </nav>
-    );
+    const [toggle, setToggle] = useState(false);
 
-}; export default Header;
+    const sections = [
+        {name: 'Accueil', url: '/', exact: true},
+        {name: 'Présentation', url: '/presentation/profil', exact: false},
+        {name: 'Projets', url: '/projets', exact: false}
+    ]
+
+    return (<nav id='main-nav'>
+        <Link to='/'>
+            <h3 onClick={() => setToggle(false)}>L<span>ouis </span>G<span>ODLEWSKI{toggle}</span></h3>
+        </Link>
+        <Svg src='ui' name='hamburger' styles={`hamburger is-primary ${toggle ? 'toggled' : ''}`} onClick={ () => setToggle(!toggle) }/>
+        <ul className={`links ${toggle ? 'expanded' : ''}`}>
+            {sections.map(({ name, url, exact }) =>
+                <li onClick={() => setToggle(false)}>
+                    <NavLink key={url + '-content' }exact={exact} to={url} activeClassName="selected">{name}</NavLink></li>)}
+            <li><a href="mailto:louis.godlewski@gmail.com">Contact</a></li>
+        </ul>
+    </nav>);
+}
