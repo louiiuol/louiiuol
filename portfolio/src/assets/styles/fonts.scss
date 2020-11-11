@@ -24,6 +24,7 @@ a, h1, h2, h3, h4, h5 { color: $primary; transition: color .3s; &:hover { color:
 code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
 h1, h2, h3, h4, h5 { letter-spacing: 1.5px; }
 /* Custom Links styles & hover */
+a:active { outline: none !important; border: none; }
 a:not(.quarter-link) {
     cursor: pointer;
     position: relative;
@@ -35,7 +36,7 @@ a:not(.quarter-link) {
         background: $primary-light;
         transition: $transition-fastest;
     }
-    &:hover::before, &.selected::before { width: 80%; }
+    &:hover::before, &.selected::before , &:active::before { width: 80%; }
     &.selected { color: $primary-light; }
 }
 

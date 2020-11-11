@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { Tab } from '../../shared';
 
 import experiences from '../../../../assets/json/experiences.json';
-
 import '../../../../assets/styles/components/views/presentation/experiences.css'
-import { Tab } from '../../shared';
 
 export const Experiences = () => {
 
-    
     const feed = [...experiences].reverse();
-    useEffect(() => {window.setTimeout(() => document.querySelector('#experiences')?.classList.add('scrollable'), 4000)});
+    useEffect(() => {
+        window.setTimeout(() =>
+            document.querySelector('#experiences')?.classList.add('scrollable'), 4000)
+    });
 
     return (
         <Tab id='experiences' title='Expériences professionnelles' styles='cols start'>
@@ -49,14 +50,3 @@ const Experience = (props: any) => {
     );
 
 }
-
-// function debounce(fn: any, ms: number) {
-//     let timer: any;
-//     return (_: any) => {
-//         clearTimeout(timer);
-//         timer = setTimeout((_: any) => {
-//             timer = null;
-//             fn.apply(this, arguments);
-//         }, ms);
-//     };
-// }

@@ -8,7 +8,7 @@
 
 /* Predefines display breakpoints */
 @mixin for-phone-only { @media (max-width: 628px) { @content; } }
-@mixin for-phone-and-tablet { @media (max-width: 899px) { @content; } }
+@mixin for-phone-and-tablet { @media (max-width: 1024px) { @content; } }
 @mixin from-tablet-portrait { @media (min-width: 629px) { @content; } }
 @mixin from-tablet-landscape { @media (min-width: 900px) { @content; } }
 @mixin from-desktop { @media (min-width: 1200px) { @content; } }

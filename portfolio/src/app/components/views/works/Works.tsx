@@ -1,36 +1,32 @@
 import React, { useEffect } from 'react';
-import { Graphism, Apps, Algos, Videos } from '.';
 import {Svg, Typer} from '../../shared';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, NavLink } from 'react-router-dom';
 
 import '../../../../assets/styles/components/views/works/works.css';
+import { Routes } from '../../Routes';
 
 export const Works = () => {
 
-    const sections = [
-        { name: 'Audiovisuel', img:'motion', url: 'audiovisuel', component: Videos },
-        { name: 'Graphisme', img:'graphic', url: 'graphisme', component: Graphism },
-        { name: 'Applications', img:'wireframe', url: 'apps', component: Apps },
-        { name: 'Algorithmie', img:'algos', url: 'algorithmie', component: Algos },
-    ]
+    const routes = Object.assign(Routes)?.works?.routes;
 
     useEffect(() =>
-        document.querySelectorAll('.quarter').forEach(quarter =>
-            quarter.querySelector('header')?.addEventListener('click', () =>
-                quarter.classList.add('full'))))
+        document.querySelectorAll('.quarter').forEach(quarter => {
+            if (quarter.children[0].classList.contains('expanded')) { quarter.classList.add('full') }
+            else if(quarter.classList.contains('full')) {quarter.classList.remove('full')}
+        }))
 
     return (
         <section id='works' className='main-container'>
-            {sections.map(({name, img, url, component}) =>
-                <article key={url} className="quarter">
-                    <Link className='quarter-link' to={`/projets/${url}`} >
+            {routes.map((route: any) =>
+                <article key={route.url} className="quarter">
+                    <NavLink exact={true} activeClassName='expanded' to={`/projets/${route.url}`} >
                         <header>
-                            <Typer title={name} />
-                            <Svg src='skills' name={img} styles='category-icon is-white' />
+                            <Typer title={route.name} />
+                            <Svg src='skills' name={route.img} styles='category-icon is-white' />
                         </header>
-                    </Link>
+                    </NavLink>
                     <Switch>
-                        <Route key={url + '-content'} exact path={`/projets/${url}`} component={component} />
+                        <Route key={route.url + '-content'} exact={route.exact} path={`/projets/${route.url}`} component={route.component} />
                     </Switch>
                 </article> )}
         </section> );

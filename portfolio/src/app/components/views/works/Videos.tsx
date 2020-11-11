@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Img } from '../../shared';
+import { Img, QuarterContent } from '../../shared';
 
 import videos from '../../../../assets/json/works/videos.json';
 import '../../../../assets/styles/components/views/works/videos.css';
-import { QuarterContent } from '../../shared/QuarterContent';
 
 export const Videos = () => {
 
@@ -30,25 +29,14 @@ export const Videos = () => {
                         </article> )}
                 </section>
         </QuarterContent>);
-
 };
 
-const Player = (props: any) => {
+const Player = (video: any) =>
+    (<section className="video-details">
+        <iframe title={video.selected?.name} key={video?.src} src={`https://www.youtube.com/embed/${video.selected?.src}`}></iframe>
+        <div className="infos">
+            <h3 className='is-primary'>{video.selected?.name} - <strong>{video.selected?.date}</strong></h3>
+            <p>{video.selected?.description.map((desc: string, id: number) => <span key={id}>{desc}</span>)}</p>
+        </div>
+    </section>);
 
-    return (
-        <section className="video-details">
-            <div className="screen">
-                <iframe title={props.selected?.name} key={props?.src} src={`https://www.youtube.com/embed/${props.selected?.src}`}></iframe>
-            </div>
-            <div className="infos">
-                <h3 className='is-primary'>{props.selected?.name} - <strong>{props.selected?.date}</strong></h3>
-                
-                <p>
-                    {props.selected?.description.map((desc: string, id: number) => <span key={id}>{desc}</span>)}
-                </p>
-                
-            </div>
-        </section>
-    );
-
-}

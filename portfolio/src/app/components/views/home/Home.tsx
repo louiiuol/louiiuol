@@ -21,8 +21,8 @@ const IntroWriter = () => {
     const final = "je suis disponible pour échanger sur vos projets et besoins";
     return (<h1 id='intro-typer'>
         <Typist avgTypingDelay={75} startDelay={100}>
-            {texts.map(text =>
-                <span>{text} <Typist.Backspace count={text.length + 1} delay={1250} /></span> )}
+            {texts.map((text, id) =>
+                <span key={id} >{text} <Typist.Backspace count={text.length + 1} delay={1250} /></span> )}
             {final}
         </Typist>
     </h1>)

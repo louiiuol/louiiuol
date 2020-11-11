@@ -44,7 +44,7 @@
             animation: slideRight $transition-slow;
             &.full { top: 0; left: 0; }
         }
-        & .quarter-link > header {
+        & a > header {
             @include sized(100%, 100%);
             position: relative;
             cursor: pointer;
@@ -93,15 +93,15 @@
             @include flex(column nowrap);
             background: rgb(245, 245, 245);
             z-index: 10;
-            & > a { width: 100%; }
-            & .quarter-link > header {
-                display: none;
+            & > a { width: 100%; &::before { width: 80%; background-color: $primary !important; } }
+            & > a > header {
                 .Typist {
                     top: 30px;
-                    text-align: right;
+                    text-align: cener;
                     width: 100%;
-                    padding-right: 60px;
+                    color: $primary;
                     text-shadow: none !important;
+                    
                     &, .span.Cursor { color: $primary !important; }
                 }
                 .category-icon { display: none; }
@@ -111,7 +111,6 @@
                 @include flex(row wrap, flex-start, center);
                 @include overflow-y;
                 @include sized(100vw, $main-container-height);
-                padding-top: 50px;
             }
         }
     }
