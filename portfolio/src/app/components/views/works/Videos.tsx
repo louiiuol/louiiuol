@@ -1,42 +1,46 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link, Route, useParams, Redirect } from 'react-router-dom';
 import { Img, QuarterContent } from '../../shared';
 
 import videos from '../../../../assets/json/works/videos.json';
 import '../../../../assets/styles/components/views/works/videos.css';
 
-export const Videos = () => {
+const feed = [...videos];
 
-    const feed = [...videos];
-    const [selected, setSelected] = useState(feed[0].content[0]);
+export const Videos = () =>
 
-    return (
-        <QuarterContent id='videos-container'>
-            <Player selected={selected} />
-            <section className="next">
-                    { feed.map((collection, index) =>
-                        <article key={index} className="collection-preview">
-                            <h3>{collection.name}</h3>
-                            <div className="covers">
-                                {collection.content.map((video, id) =>
-                                    <div key={id} className="cover" onClick={() => setSelected(video)} >
+    (<QuarterContent id='videos-container'>
+        <Route path={`/projets/audiovisuel/:id`} component={Player} />
+        <section className="next">
+                { feed.map((collection, index) =>
+                    <article key={index} className="collection-preview">
+                        <h3>{collection.name}</h3>
+                        <div className="covers">
+                            {collection.content.map((video, id) =>
+                                <Link to={`/projets/audiovisuel/${video.src}`}>
+                                    <div key={id} className="cover" >
                                         <Img src='works/videos-covers' name={video.cover} alt={video.name} />
                                         <div className="preview-infos">
                                             <p className='is-primary'>{video.name}</p>
                                             <em>{video.date}</em>
                                         </div>
-                                    </div>)}
-                            </div>
-                        </article> )}
-                </section>
-        </QuarterContent>);
-};
+                                    </div>
+                                </Link>)}
+                        </div>
+                    </article> )}
+        </section>
+        <Redirect to={'/projets/audiovisuel/' + feed[0].content[0].src}/>
+    </QuarterContent>);
 
-const Player = (video: any) =>
-    (<section className="video-details">
-        <iframe title={video.selected?.name} key={video?.src} src={`https://www.youtube.com/embed/${video.selected?.src}`}></iframe>
+const Player = () => {
+    const { id } = useParams();
+    const video = feed.map(col => col.content.find(vid => vid.src === id)).filter(table => !!table)[0];
+    return video ? (
+    <section className="video-details">
+        <iframe title={video.name} key={video?.src} src={`https://www.youtube.com/embed/${video.src}`}></iframe>
         <div className="infos">
-            <h3 className='is-primary'>{video.selected?.name} - <strong>{video.selected?.date}</strong></h3>
-            <p>{video.selected?.description.map((desc: string, id: number) => <span key={id}>{desc}</span>)}</p>
+            <h3 className='is-primary'>{video.name} - <strong>{video.date}</strong></h3>
+            <p>{video.description.map((desc: string, index: number) => <span key={index}>{desc}</span>)}</p>
         </div>
-    </section>);
-
+    </section>) : null;
+}

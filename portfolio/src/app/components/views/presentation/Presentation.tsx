@@ -12,7 +12,9 @@ export const Presentation = () => {
         <section id='presentation' className='main-container'>
             <ul className='sub-nav links'>
                 {routes.map((route: any) =>
-                    <li key={route?.url}><NavLink activeClassName="selected" to={`/presentation/${route?.url}`}>{route?.name}</NavLink></li>)}
+                    <li key={route?.url}>
+                        <NavLink activeClassName="selected" to={`/presentation/${route?.url}`}>{route?.name}</NavLink>
+                    </li>)}
             </ul>
             <Switch>
                 {routes.map((route: any) =>

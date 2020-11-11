@@ -19,7 +19,7 @@ export const Works = () => {
         <section id='works' className='main-container'>
             {routes.map((route: any) =>
                 <article key={route.url} className="quarter">
-                    <NavLink exact={true} activeClassName='expanded' to={`/projets/${route.url}`} >
+                    <NavLink exact={route.exact} activeClassName='expanded' to={`/projets/${route.url}`} >
                         <header>
                             <Typer title={route.name} />
                             <Svg src='skills' name={route.img} styles='category-icon is-white' />

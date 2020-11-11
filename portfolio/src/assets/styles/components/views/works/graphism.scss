@@ -139,7 +139,6 @@
                         position: relative;
                         width: 90%;
                         height: 100%;
-                        overflow: hidden;
                         img {
                             @include positioned(absolute, 50%, 50%);
                             max-height: 95%;

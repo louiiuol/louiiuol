@@ -12,9 +12,9 @@ export const Routes = {
     ]},
     works: {
         name: 'Projets', url: '/projets', component: Works, exact: false, routes: [
-            { name: 'Audiovisuel', img:'motion', url: 'audiovisuel', component: Videos },
-            { name: 'Graphisme', img:'graphic', url: 'graphisme', component: Graphism },
-            { name: 'Applications', img:'wireframe', url: 'apps', component: Apps },
-            { name: 'Algorithmie', img:'algos', url: 'algorithmie', component: Algos },
+            { name: 'Audiovisuel', img:'motion', url: 'audiovisuel', component: Videos, exact: false },
+            { name: 'Graphisme', img:'graphic', url: 'graphisme', component: Graphism, exact: false },
+            { name: 'Applications', img:'wireframe', url: 'apps', component: Apps, exact: false },
+            { name: 'Algorithmie', img:'algos', url: 'algorithmie', component: Algos, exact: false },
     ]}
 }
