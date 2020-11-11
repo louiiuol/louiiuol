@@ -68,6 +68,7 @@
                             font-size: .85rem;
                             line-height: .9rem;
                             padding: .5rem 0;
+                            max-width: 325px;
                         }
                         em { font-size: .75rem; color: $legend; }
                     }
@@ -77,6 +78,9 @@
                 }
             }
         }
+    }
+    @include for-tablet-only {
+        iframe { @include sized(57vw !important, 31vw !important); }
     }
     @include for-phone-and-tablet {
         flex-direction: column;
