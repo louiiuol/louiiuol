@@ -43,6 +43,6 @@ section#profil {
         overflow: hidden;
         ul { animation: fadeInLeft $transition-fast forwards 1.2s;}
         p.legend-intro { animation: flipInX $transition-fast forwards 1s; }
-        p.outro { animation: flipInX $transition-fast forwards 1.6s; }
+        p.outro { animation: flipInX $transition-fast forwards 1.6s; margin-top: 1rem; }
     }
 }

@@ -11,11 +11,13 @@
         padding-top: .5rem;
     }
     .video-details {
+        margin-left: 4vw;
         iframe {
             border: none;
             box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
-            @include sized(67vw, 38vw);
+            @include sized(65vw, 34vw);
             @include max-sized(1280px, 720px);
+            
             cursor: zoom-in;
             margin: 0 auto;
         }
@@ -80,6 +82,7 @@
         }
     }
     @include for-tablet-only {
+        .videos-details {margin-left: 2vw;}
         iframe { @include sized(57vw !important, 31vw !important); }
     }
     @include for-phone-and-tablet {
@@ -89,6 +92,7 @@
             @include sized(100vw, auto);
             padding: 0;
         }
+        .video-details { margin-left: 0 !important; margin-top: 1rem; }
         iframe { @include sized(100vw !important, 80vw !important); }
         .infos {
             padding: .5rem; 

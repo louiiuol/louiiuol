@@ -93,15 +93,16 @@
             @include flex(column nowrap);
             background: rgb(245, 245, 245);
             z-index: 10;
-            & > a { width: 100%; &::before { width: 80%; background-color: $primary !important; } }
+            & > a { width: 100%; &::before { width: 0; background-color: none !important; } }
             & > a > header {
                 .Typist {
-                    top: 30px;
-                    text-align: cener;
-                    width: 100%;
+                    width: calc(100% - 128px);
+                    margin: 0 auto;
                     color: $primary;
                     text-shadow: none !important;
-                    
+                    top : 0;
+                    left: 0;
+                    transform: translate(0,0);
                     &, .span.Cursor { color: $primary !important; }
                 }
                 .category-icon { display: none; }

@@ -8,6 +8,7 @@ const links = [
     { name: 'codepen', src: 'https://codepen.io/louiiuol' },
     { name: 'github', src: 'https://github.com/louiiuol' },
     { name: 'codewars', src: 'https://www.codewars.com/users/louiiuol' },
+    {name: 'flickr', src:'https://www.flickr.com/photos/l0u-g/'}
 ]
 
 export const Profil = () =>
@@ -40,5 +41,7 @@ const Intro = () =>
             <li>Vérification du code via des tests d'intégration ou unitaire.</li>
             <li>Déploiement en continue des fonctionnalités via Github, Jenkins, AWS</li>
         </ul>
-        <p className='outro animated'><strong>Poste recherché</strong>: développeur full stack Javascript. <br />Si mon profil vous intéresse, n'hésitez pas à me contacter !</p>
+        <p className='outro animated'>
+            <strong>Poste recherché</strong>: développeur full stack Javascript. <br />Si mon profil vous intéresse, n'hésitez pas à me contacter !
+            </p>
     </div>)
