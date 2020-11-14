@@ -1,4 +1,4 @@
-# Hi there, glad you made it ! 🖖
+# Web developer fullstack JS | passioned by UX design
 
 <p align='center'> <a target='blank' href='https://louiiuol.github.io/louiiuol/' ><img src='./resources/intro.gif' /></a> </p>
 
