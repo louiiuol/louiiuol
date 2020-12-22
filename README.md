@@ -14,7 +14,6 @@
 
 ## Main languages & frameworks 🕹
 
-<p align='center'> <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=louiiuol&layout=compact&theme=nord' /> </p>
 <p align='center'> <img alt="main skills" src="./resources/skills.png" /> </p>
 
 ***
