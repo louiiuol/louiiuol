@@ -6,7 +6,7 @@
 
 > 🚀 **Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! 🕊
 >
-> - 🌍 I've just deployed my *[portfolio](https://louiiuol.github.io/louiiuol/)* with React & Github Pages !
+> - 🌍 I've just deployed my *[portfolio](https://louiiuol.github.io/louiiuol/)* with Vue, Typescript, Github CI, ..
 > - 📚 I’m currently **learning in depth Vue 3 with Composition API** and soon moving to Node.js frameworks ..
 > - 🎨 I'm probably **solving problems** on [codewars](https://www.codewars.com/users/louiiuol/completed) or designing various UI on [codepen](https://codepen.io/louiiuol) ..
 > - 💡 I’m looking to **collaborate with other project creators** .. Feel free to share your ideas !
