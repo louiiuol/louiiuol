@@ -1,10 +1,10 @@
-# Web developer fullstack JS, passioned by UX design 🎨
+# Web developer fullstack TS, passioned by UX design 🎨
 
 <p align='center'> <a target='blank' href='https://louiiuol.github.io/louiiuol/' ><img src='./resources/intro.gif' /></a> </p>
 
 ## Presentation 🎙
 
-> 🚀 **Padawan Web developer** that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! 🕊
+> 🚀 Confirmed Web developer that loves to **design** and **develop** all sort of web projects ! Mainly working on a weird language that is Javascript, and  more recently discovering peace with Typescript ! 🕊
 >
 > - 🌍 I'm developing my new **portfolio** with *Vue, Typescript, i18n, Github CI, .. and much more!* [(old one here)](https://louiiuol.github.io/louiiuol/)*
 > - 📚 I’m currently **learning in depth Vue 3 with Composition API** and soon moving to Node.js frameworks ..
