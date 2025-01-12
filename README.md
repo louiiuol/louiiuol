@@ -12,12 +12,20 @@
 
 ### Frameworks 📐
 
+#### UI
+
 ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=plastic&logo=angular&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/-Tailwind-06B6D4?style=plastic&logo=tailwindcss&logoColor=white)
-![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=plastic&logo=nestjs&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=plastic&logo=node.js&logoColor=white)
-![RxJS](https://img.shields.io/badge/-RxJS-B7178C?style=plastic&logo=reactivex&logoColor=white)
+
+#### Server
+
 ![Nx](https://img.shields.io/badge/-Nx-143055?style=plastic&logo=nx&logoColor=white)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=plastic&logo=node.js&logoColor=white)
+![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=plastic&logo=nestjs&logoColor=white)
+![RxJS](https://img.shields.io/badge/-RxJS-B7178C?style=plastic&logo=reactivex&logoColor=white)
+
+#### Database
+
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=plastic&logo=mysql&logoColor=white)
 ![Supabase](https://img.shields.io/badge/-Supabase-3FCF8E?style=plastic&logo=supabase&logoColor=white)
 ![Drizzle](https://img.shields.io/badge/-drizzle-C5F74F?style=plastic&logo=drizzle&logoColor=white)
